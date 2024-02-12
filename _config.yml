@@ -1,0 +1,21 @@
+# Required & Optional Header and Footer Elements used in _layouts/default.html
+title: Your Page Title
+description: Describing What You Do
+url: https://TR-Systems.github.io/modernist/
+# Optional Header Elements
+# logo is 36x36 icon to left of title, with description below
+logo: images/logo-github.png
+# Optional links in the upper right corner of the header
+# Two lines, keep text and words short to fit in box, use <br> to force break
+about_url: https://TR-Systems.github.io/modernist/about.html
+about_text: About<br>Your Site
+hlink1_url: https://TR-Systems.github.io/modernist/
+hlink1_text: Link to<br>Somewhere
+# Required Footer Elements
+copyright: Copyright yyyy Your Name, Your Location
+# Info1 in italics, info2 plain text
+# Do not publish email addresses, you will be spammed beyond belief.
+contact_info1: me here
+contact_info2: or there
+# Optional Footer Element - link to your repo
+repo_url: https://github.com/TR-Systems/modernist
