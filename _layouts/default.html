@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- {% include google-analytics.html %} -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        {% if site.logo %} 
+          <h1><img src="{{ site.logo }}" width="36" height="36"> {{ site.title }}</h1>
+        {% else %}
+          <h1>{{ site.title }}</h1>
+        {% endif %}
+        <p><em>{{ site.description | default: site.github.project_tagline }}</em></p>
+        <ul>
+          {% if site.hlink1_url %}
+            <li><a href="{{ site.hlink1_url }}"><strong>{{ site.hlink1_text }}</strong></a></li>
+          {% endif %}
+          {% if site.about_url %}
+            <li><a href="{{ site.about_url }}"><strong>{{ site.about_text }}</strong></a></li>
+          {% endif %}
+          <li><a href="{{ site.url }}"><strong>Home<br>Page</strong></a></li>
+        </ul>
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+    </div>
+    <footer>
+      <p>Contact: <em>{{ site.contact_info1 }}</em> {{ site.contact_info2 }}</p>
+      {% if site.repo_url %}
+        <p><small>Website powered by Github Pages using modified Modernist Theme: <a target="_blank" href="{{ site.repo_url }}">
+        <em>Fork my repo and get started here!</em></a></small></p>
+      {% else %}
+        <p><small>Website powered by Github Pages using modified Modernist Theme</small></p>
+      {% endif %}
+      <p>&copy<small><em>{{ site.copyright }}</em></small></p> 
+    </footer>
+  </body>
+</html>
