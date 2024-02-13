@@ -58,11 +58,6 @@ p {
   padding:0;
 }
 
-strong {
-  color:#222;
-  font-weight:700;
-}
-
 header {
   border-radius: 8px 8px 0 0;
   background:#C6EAFA;
@@ -88,7 +83,6 @@ header {
     &.view {
       display:none;
       font-weight:700;
-      -webkit-font-smoothing:antialiased;
 
       a {
         color:#06c;
@@ -173,7 +167,6 @@ header {
 
 footer {
   margin:0 auto;
-  padding:10px 0 0;
   p {
     color: #fff;
     text-align: center;
@@ -198,16 +191,11 @@ section {
 h1, h2, h3, h4, h5, h6 {
   color:#222;
   padding:0;
-  margin:0 0 20px;
-  line-height:1.2;
+  margin:0 0 12px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
-}
-
-h1, h2, h3 {
-  line-height:1.1;
+  margin:0 0 12px;
 }
 
 h1 {
@@ -223,7 +211,7 @@ h3, h4, h5, h6 {
 }
 
 blockquote {
-  margin:0 -20px 20px;
+  margin:0 -12px 12px;
   padding:15px 20px 1px 40px;
   font-style:italic;
   background:#ccc;
