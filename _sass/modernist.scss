@@ -147,16 +147,13 @@ section {
   position:relative;
 }
 
-h3 {
-  padding:0;
-  margin-top: 6px;
-  margin-bottom: 0;
-  text-decoration: underline;
-}
-
 p {
   margin: 0px, 6px, 6px, 12px;
   padding:0;
+}
+
+li:not(:last-child) {
+    padding-bottom: 8px;
 }
 
 /* Table design from W3Schools example, with mods */
