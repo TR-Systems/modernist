@@ -19,11 +19,6 @@ body {
   border-radius: 8px;
 }
 
-/* Is default */
-header, section, footer {
-  display: block;
-}
-
 header {
   border-radius: 8px 8px 0 0;
   background:#C6EAFA;
@@ -143,6 +138,16 @@ footer {
     font-weight: bold;
     text-decoration: underline;
   }
+}
+
+/* ????????????????????? */
+section {
+  padding:15px 20px;
+  font-size:15px;
+  border-top:1px solid #fff;
+  background:#FFFFFF;
+  border-radius: 0 0 8px 8px;
+  position:relative;
 }
 
 h1 {
