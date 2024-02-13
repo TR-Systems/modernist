@@ -195,6 +195,13 @@ tr:nth-child(even){background-color: #f2f2f2;}
 
 tr:hover {background-color: #ddd;}
 
+blockquote {
+  padding:6px 6px 1px 6px;
+  background:#ccc;
+  background:rgba(#000, 0.06);
+  color:#222;
+}
+
 img {
   max-width:100%;
 }
