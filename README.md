@@ -38,18 +38,36 @@ Tis all for now, back soon. Hope someone out there finds this Theme useful and l
 Thanks for checking it out.
 
 # Test Header1
-text
+text here
+
+1. text with break<br>
+more text
+2. text
+3. text
+
+* text with break<br>
+more text
+* next bullet
+    * four spaces to get nested bullet with break<br>
+    and more text
+    * and one more
+    * last nested bullet
+* last one
+
+> blockquote text with break<br>more text
+>
+> second paragraph
+
 ## Test Header2
 text
+
 ### Test Header3
 text
-### Test Header3
-text
+
 #### Test Header4
 text
-#### Test Header4
-regular text
 
-> blockquote text
+##### Test Header5
+text
 
-regular text
+End of Document
