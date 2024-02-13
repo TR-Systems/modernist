@@ -39,15 +39,16 @@ Thanks for checking it out.
 
 # Test Header1
 text
-# Test Header2
+## Test Header2
 text
-# Test Header3
+### Test Header3
 text
-# Test Header3
+### Test Header3
 text
-# Test Header4
+#### Test Header4
 text
-# Test Header4
+#### Test Header4
+regular text
 
 > blockquote text
 
