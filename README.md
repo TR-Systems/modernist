@@ -8,11 +8,11 @@ Good for static display of system documentation and articles of interest on full
 ### Do Not Fork this Repo
 This repo is defined as a template. When viewing TR-Systems/modernist on Github, click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***.
 ### Use a Team/Pro Account
-Even as a total newbie to Github, I recommend this low-cost option so you can get a custom domain name and publish from a private repo.
+Even as a total newbie to Github, I recommend this low-cost option so you can use a custom domain name and publish from a private repo in a separate Team account (e.g TR-Systems), instead of publishing from your personal account on Github.
 ### Modifications
-I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I also removed a lot of fluff that isn't needed from the overloaded style sheet (too many cooks in the kitchen), such as all of the text and box shadows, which only makes text blurry. Shadows are good only for really LARGE CAP fonts and the box shadows were defined with only 1 or 2px so hardly even visible. Those are all gone, about a dozen specs in all.
+I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I removed a lot of formatting and fluff that I didn't like from the overloaded style sheet (too many cooks in the kitchen).
 ### Editing and Publishing
-The repo has two branches. Apply all changes and new content to the top level "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. I'm all new at github so there might be a better way to manage changes and publishing but this works for me since I do all editing online. I will get around to using git on the desktop eventually.
+The repo has two branches. Apply changes and new content to the "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. There may be a better way but this works for me since I do all editing online. I will get around to using git on the desktop eventually.
 ### Make it Your Own
 I have designed this site so ALL YOU NEED TO DO is **edit _config.yml** to make it your own.
 
@@ -20,9 +20,9 @@ I have designed this site so ALL YOU NEED TO DO is **edit _config.yml** to make 
 
 **_sass/modernist.scss** is the style sheet and since it was developed and modified in the public domain, it is rather complex and difficult to follow. I made plenty of changes from the original (removing fluff and formatting I didn't like) but nothing major. Proceed with caution.
 ### Google Analytics
-There is a sample google analytics snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
+There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
 ### Table Layout
-I used the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. Very useful. And since my system doc uses tables, W3Schools showed me the way, and you will see how in the style sheet. It even uses the hover feature. For example, here is a list of the cars I owned from age 18 to 23.
+I used the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. Very useful. And since my system doc uses tables, W3Schools showed me the way, and you will see how in the style sheet. For example, here is a list of the cars I owned from age 18 to 23.
 
 | Year | Make | Model | Color | Years Owned | Notes |
 | ---- | ---- | ----- | ----- | ----------- | ----- |
