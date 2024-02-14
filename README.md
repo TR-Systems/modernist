@@ -30,8 +30,28 @@ Two optional link buttons are provided in the upper right corner of the header. 
 
 **_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was a mess so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style. So just grab it and go.
 
+**_sass/rouge-base16-dark.scss** provides highlighting for code snippets (java, ruby, others?), like this:
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+```js
+        estate = msg.eventState.text()
+        etype = msg.eventType.text()
+        etype = ">" + etype + "<"
+        for (event in SupportedEvents) {
+            if (etype == event) {
+                ok = true
+                break}
+```
+
 ### Color Scheme
-This page uses the color scheme from the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
+Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
 
 | Background Colors | Color1 | Color2 |
 | ----------------- | ------ | ------ |
