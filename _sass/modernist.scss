@@ -180,41 +180,6 @@ tr:nth-child(even){background-color: #f2f2f2;}
 
 tr:hover {background-color: #ddd;}
 
-blockquote {
-  margin: 2px 20px 2px 20px;
-  padding:6px 6px 6px 6px;
-  background:#ccc;
-  background:rgba(#000, 0.06);
-  color:#222;
-}
-
-img {
-  max-width:100%;
-}
-
-code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
-  font-size:12px;
-  overflow-x:auto;
-}
-
-pre {
-  padding:20px;
-  background: #3A3C42;
-  color:#f8f8f2;
-  margin:0 -20px 20px;
-
-  code {
-    color:#f8f8f2;
-  }
-
-  li & {
-    margin-left:-60px;
-    padding-left:60px;
-  }
-}
-
 dt {
   color:#222;
   font-weight:700;
