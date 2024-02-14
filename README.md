@@ -45,7 +45,7 @@ This page uses the color scheme from the Github Modernist original but it's easy
 | header:ul: background:#5198DF; | <img width="48" src="images/color-5198DF.png"> | x |
 | header:ul: background: linear-gradient(#77B9FB, #3782CD); | <img width="48" src="images/color-77B9FB.png"> | <img width="48" src="images/color-3782CD.png"> |
 | section: background:#FFFFFF; | WHITE | x |
-| th: background-color: #06C; | <img width="48" src="images/color-0066CC.png"> | x |
+| th: background-color: #3782CD; | <img width="48" src="images/color-3782CD.png"> | x |
 
 ### Google Analytics
 There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
