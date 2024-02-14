@@ -42,15 +42,9 @@ var fun = function lang(l) {
 
 Some indented code in a blockquote:
 
->        estate = msg.eventState.text()
->        etype = msg.eventType.text()
->        if (debuga) {log.debug "eventType: " + etype}
->        if (debuga) {log.debug "eventState: " + estate}
->        etype = ">" + etype + "<"
->        for (event in SupportedEvents) {
->            if (etype == event) {
->                ok = true
->                break}
+> Blockquote text
+>
+> Second paragraph
 
 ### Color Scheme
 Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
@@ -109,7 +103,8 @@ more text
 > second paragraph
 
 ## Test Header2
-text
+
+> block quote text with long line that should scroll xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ### Test Header3
 text
