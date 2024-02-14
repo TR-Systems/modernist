@@ -1,3 +1,6 @@
+/* Code Highlighter */
+@import "rouge-base16-dark";
+
 html {
   background: #6C7989;
   background: #6C7989 linear-gradient(#6C7989, #434B55) fixed;
@@ -69,7 +72,6 @@ header {
     border-radius:5px;
     width:auto;
     /* Without this, there is no border around the link buttons in the list. */
-    /* I have no idea how this works - you can take it out if you want */
     &:before {
       content:'';
       position:absolute;
@@ -179,6 +181,41 @@ td, th {
 tr:nth-child(even){background-color: #f2f2f2;}
 
 tr:hover {background-color: #ddd;}
+
+blockquote {
+  margin: 2px 20px 2px 20px;
+  padding:6px 6px 6px 6px;
+  background:#ccc;
+  background:rgba(#000, 0.06);
+  color:#222;
+}
+
+img {
+  max-width:100%;
+}
+
+code, pre {
+  font-family:Lucida Console, Monaco, Terminal; 
+  color:#333;
+  font-size:12px;
+  overflow-x:auto;
+}
+
+pre {
+  padding:20px;
+  background: #3A3C42;
+  color:#f8f8f2;
+  margin:0 -20px 20px;
+
+  code {
+    color:#f8f8f2;
+  }
+
+  li & {
+    margin-left:-60px;
+    padding-left:60px;
+  }
+}
 
 dt {
   color:#222;
