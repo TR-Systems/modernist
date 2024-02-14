@@ -33,7 +33,7 @@ Two optional link buttons are provided in the upper right corner of the header. 
 ### Color Scheme
 This page uses the color scheme from the Github Modernist original but it's easy to find and change in the style sheet.
 
-<html> background: linear-gradient(#6C7989, #434B55)
+html: background: linear-gradient(#6C7989, #434B55)
    
 work in progress
 
