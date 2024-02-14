@@ -30,6 +30,13 @@ Two optional link buttons are provided in the upper right corner of the header. 
 
 **_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was a mess so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style. So just grab it and go!
 
+### Color Scheme
+This page uses the color scheme from the Github Modernist original but it's easy to find and change in the style sheet.
+
+<html> background: linear-gradient(#6C7989, #434B55)
+   
+work in progress
+
 ### Google Analytics
 There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
 
