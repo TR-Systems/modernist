@@ -31,13 +31,12 @@ Two optional link buttons are provided in the upper right corner of the header. 
 **_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was a mess so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style. So just grab it and go.
 
 ### Color Scheme
-This page uses the color scheme from the Github Modernist original but it's easy to find and change in the style sheet.
+This page uses the color scheme from the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
 
 | Background Colors | Color1 | Color2 |
 | ----------------- | ------ | ------ |
 | html: background: #6C7989; | <img width="48" src="images/color-6C7989.png"> | x |
 | html: background: linear-gradient(#6C7989, #434B55) | <img width="48" src="images/color-6C7989.png"> | <img width="48" src="images/color-434B55.png"> |
-| wrapper: background: #DEDEDE; | <img width="48" src="images/color-DEDEDE.png"> | x |
 | header: background: #C6EAFA; | <img width="48" src="images/color-C6EAFA.png"> | x |
 | header: background: linear-gradient(#DDFBFC, #C6EAFA); | <img width="48" src="images/color-DDFBFC.png"> | <img width="48" src="images/color-C6EAFA.png"> |
 | header: border-bottom:2px solid #B2D2E1; | <img width="48" src="images/color-B2D2E1.png"> | x |
