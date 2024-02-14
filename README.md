@@ -40,9 +40,9 @@ This page uses the color scheme from the original. Changing it may require chang
 | header: background: #C6EAFA; | <img width="48" src="images/color-C6EAFA.png"> | x |
 | header: background: linear-gradient(#DDFBFC, #C6EAFA); | <img width="48" src="images/color-DDFBFC.png"> | <img width="48" src="images/color-C6EAFA.png"> |
 | header: border-bottom:2px solid #B2D2E1; | <img width="48" src="images/color-B2D2E1.png"> | x |
-| header:before: background:rgba(#000, 0.1);<br>(10% black, color of border around link buttons) | Light Gray | x |
-| header:ul: background:#5198DF; | <img width="48" src="images/color-5198DF.png"> | x |
-| header:ul: background: linear-gradient(#77B9FB, #3782CD); | <img width="48" src="images/color-77B9FB.png"> | <img width="48" src="images/color-3782CD.png"> |
+| header: ul: before: background:rgba(#000, 0.1);<br>10% black, color of background upon which links are placed, forming border,<br>which is the sole purpose of the ul:before style section | Light Gray | x |
+| header: ul: background: #5198DF; | <img width="48" src="images/color-5198DF.png"> | x |
+| header: ul: background: linear-gradient(#77B9FB, #3782CD); | <img width="48" src="images/color-77B9FB.png"> | <img width="48" src="images/color-3782CD.png"> |
 | section: background:#FFFFFF; | WHITE | x |
 | th: background-color: #3782CD; | <img width="48" src="images/color-3782CD.png"> | x |
 
