@@ -68,12 +68,23 @@ header {
     background: linear-gradient(#77B9FB, #3782CD);
     border-radius:5px;
     width:auto;
+    /* Without this, there is no border around the items in the list. */
+    &:before {
+      content:'';
+      position:absolute;
+      z-index:-1;
+      left:-5px;
+      top:-4px;
+      right:-5px;
+      bottom:-6px;
+      background:rgba(#000, 0.1);
+      border-radius: 8px;
+    }
 
     li {
       width:100px;
       float:left;
       border-right:1px solid #3A7CBE;
-      height:38px;
 
       &.single {
         border:none;
