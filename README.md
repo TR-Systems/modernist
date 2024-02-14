@@ -30,22 +30,6 @@ Two optional link buttons are provided in the upper right corner of the header. 
 
 **_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was a mess so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style. So just grab it and go.
 
-**_sass/rouge-base16-dark.scss** provides highlighting for code snippets (java, ruby, others?), like this:
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-Some indented code in a blockquote:
-
-> Blockquote text
->
-> Second paragraph
-
 ### Color Scheme
 Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
 
@@ -82,14 +66,24 @@ Tis all for now, back soon. Hope someone out there finds this Theme useful and l
 Thanks for checking it out.
 
 # Test Header1
-text here
+paragraph text
 
-1. text with break<br>
+Some Java code with highlighting
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+1. ordered list with break<br>
 more text
-2. text
-3. text
+2. list2
+3. list3
 
-* text with break<br>
+* unordered text with break<br>
 more text
 * next bullet
     * four spaces to get nested bullet with break<br>
@@ -104,7 +98,6 @@ more text
 
 ## Test Header2
 
-> block quote text with long line that should scroll xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ### Test Header3
 text
