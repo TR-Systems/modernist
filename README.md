@@ -40,15 +40,17 @@ var fun = function lang(l) {
 }
 ```
 
-```js
-        estate = msg.eventState.text()
-        etype = msg.eventType.text()
-        etype = ">" + etype + "<"
-        for (event in SupportedEvents) {
-            if (etype == event) {
-                ok = true
-                break}
-```
+Some indented code in a blockquote:
+
+>        estate = msg.eventState.text()
+>        etype = msg.eventType.text()
+>        if (debuga) {log.debug "eventType: " + etype}
+>        if (debuga) {log.debug "eventState: " + estate}
+>        etype = ">" + etype + "<"
+>        for (event in SupportedEvents) {
+>            if (etype == event) {
+>                ok = true
+>                break}
 
 ### Color Scheme
 Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
