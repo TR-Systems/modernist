@@ -69,18 +69,6 @@ header {
     border-radius:5px;
     width:auto;
 
-    &:before {
-      content:'';
-      position:absolute;
-      z-index:-1;
-      left:-5px;
-      top:-4px;
-      right:-5px;
-      bottom:-6px;
-      background:rgba(#000, 0.1);
-      border-radius: 8px;
-    }
-
     li {
       width:100px;
       float:left;
