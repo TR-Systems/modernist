@@ -68,7 +68,8 @@ header {
     background: linear-gradient(#77B9FB, #3782CD);
     border-radius:5px;
     width:auto;
-    /* Without this, there is no border around the items in the list. */
+    /* Without this, there is no border around the link buttons in the list. */
+    /* I have no idea how this works - you can take it out if you want */
     &:before {
       content:'';
       position:absolute;
@@ -83,9 +84,9 @@ header {
 
     li {
       width:100px;
+      height:36px;
       float:left;
       border-right:1px solid #3A7CBE;
-      height:32px;
 
       &.single {
         border:none;
@@ -93,7 +94,8 @@ header {
     }
 
     li + li {
-      width:100px;
+      width: 100px;
+      height: 36px;
       border-left:1px solid #8BBEF3;
     }
 
