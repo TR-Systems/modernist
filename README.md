@@ -1,5 +1,5 @@
 ## Modernist Theme for Github Pages by [TR Systems](https://TR-Systems.github.io/web/){:target="_blank"}
-### Under Construction and Testing!
+### Under Construction and Testing! (February 2024)
 This theme started out by copying the design of the built-in [Github Pages Modernist Theme](https://github.com/pages-themes/modernist){:target="_blank"}.
 
 If you're reading this on Github, click here to check it out on the web: [Modernist Theme by TR Systems](https://tr-systems.github.io/modernist/).
@@ -17,7 +17,7 @@ Even as a total newbie to Github, I recommend this low-cost option so you can us
 I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I removed a lot of formatting and fluff that I didn't like from the overloaded style sheet (too many cooks in the kitchen).
 
 ### Editing and Publishing
-The repo has two branches. Apply changes and new content to the "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. There may be a better way but this works for me since I do all editing online. I will get around to using git on the desktop eventually.
+The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. There may be a better way but this works for me since I do all editing online. I will get around to using git on the desktop eventually.
 
 ### Make it Your Own
 I have designed this site so ALL YOU NEED TO DO is **edit _config.yml, readme.md and about.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is.
@@ -26,15 +26,25 @@ There are only a few other simple things you need to do in order to publish your
 
 **_layouts/default.html** is used to build the header and footer and is substantially modified from the original. All content in the header and footer is supplied by variables in _config.yml. 
 
-Two optional link buttons are provided in the upper right corner of the header. If not configured, they will not be displayed. The default html file controls that and the style sheet controls how they are built and squeezed together. Rather tricky. *So don't mess with the header section of the style sheet!* Actually, have at it! 
+Two optional link buttons are provided in the upper right corner of the header. If not configured, they will not be displayed. The default html file controls that and the style sheet controls how the buttons are placed and squeezed together. Rather tricky. *So don't mess with the header section of the style sheet!* Actually, have at it. 
 
-**_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was a mess so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style. So just grab it and go!
+**_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was a mess so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style. So just grab it and go.
 
 ### Color Scheme
 This page uses the color scheme from the Github Modernist original but it's easy to find and change in the style sheet.
 
-html: background: linear-gradient(#6C7989, #434B55)
-   
+html: background: #6C7989;<br>
+html: background: linear-gradient(#6C7989, #434B55)<br>
+wrapper: background: #DEDEDE; /* Dark Gray */<br>
+header: background: #C6EAFA;<br>
+header: background: linear-gradient(#DDFBFC, #C6EAFA);<br>
+header: border-bottom:2px solid #B2D2E1;<br>
+header:before: background:rgba(#000, 0.1);<br>
+header:ul: background:#5198DF;<br>
+header:ul: background: linear-gradient(#77B9FB, #3782CD);<br>
+section: background:#FFFFFF;<br>
+th: background-color: #06C;
+
 work in progress
 
 ### Google Analytics
