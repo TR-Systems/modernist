@@ -40,8 +40,18 @@ var fun = function lang(l) {
 }
 ```
 
+```js
+        estate = msg.eventState.text()
+        etype = msg.eventType.text()
+        etype = ">" + etype + "<"
+        for (event in SupportedEvents) {
+            if (etype == event) {
+                ok = true
+                break}
+```
+
 ### Color Scheme
-This page uses the color scheme from the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
+Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
 
 | Background Colors | Color1 | Color2 |
 | ----------------- | ------ | ------ |
