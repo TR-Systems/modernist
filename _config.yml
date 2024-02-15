@@ -18,12 +18,11 @@ hlink1_text: Link to<br>Somewhere
 # Contact Info1 in italics, info2 plain text
 # Do not publish email addresses, you will be spammed beyond belief.
 # First line of footer with "Contact: " prefix
-contact_info1: me here
-contact_info2: <em>or here at the little G mail place</em>
+contact_info1: <strong>Contact: </strong>
+contact_info2: <em>trsystems.help</em> at the little G mail place.
 # Second line
 footer_text1: Website powered by Github Pages using modified Modernist Theme
 footer_text2: <em>Use my template and get started today!</em>
 footer_url: https://github.com/TR-Systems/modernist
 # Last line
 copyright: Copyright yyyy Your Name, Your Location
-
