@@ -21,7 +21,7 @@ I only copied what was needed and then modified the style sheet, default html an
 The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. There may be a better way but this works for me since I do all editing online. I will get around to using git on the desktop eventually.
 
 ### Make it Your Own
-I have designed this site so ALL YOU NEED TO DO is **edit _config.yml, readme.md and about.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is.
+I have designed this site so ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is.
 
 There are only a few other simple things you need to do in order to publish your web site, and that's where [Github Pages Help](https://docs.github.com/en/pages){:target="_blank"} comes in handy. All of Github is very well documented in their Help pages. Github for Dummies helped me out in the very beginning, too.
 
