@@ -1,3 +1,4 @@
+exclude: [README.md]
 # Required & Optional Header and Footer Elements used in _layouts/default.html
 title: Your Logo and Site Title
 description: Describing What You Do
@@ -13,14 +14,16 @@ about_url: https://TR-Systems.github.io/modernist/about.html
 about_text: About<br>Your Site
 hlink1_url: https://TR-Systems.github.io/modernist/
 hlink1_text: Link to<br>Somewhere
-# Required Footer Elements
-copyright: Copyright yyyy Your Name, Your Location
+# Optional Footer Elements
 # Contact Info1 in italics, info2 plain text
 # Do not publish email addresses, you will be spammed beyond belief.
+# First line of footer with "Contact: " prefix
 contact_info1: me here
-contact_info2: or there at G mail
-# Optional Footer Element - link to your public repo
-# Or change default html to your liking
-# If not specified, the repo link and text won't be shown
-repo_url: https://github.com/TR-Systems/modernist
-repo_text: Use my template and get started today!
+contact_info2: <em>or here at the little G mail place</em>
+# Second line
+footer_text1: Website powered by Github Pages using modified Modernist Theme
+footer_text2: <em>Use my template and get started today!</em>
+footer_url: https://github.com/TR-Systems/modernist
+# Last line
+copyright: Copyright yyyy Your Name, Your Location
+

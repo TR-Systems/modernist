@@ -30,7 +30,7 @@ In there are two optional link buttons in the upper right corner of the header. 
 
 **_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was a mess so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style. So just grab it and go.
 
-**_sass/rouge-base16-dark.scss** is the style sheet for code highlighting. I sure won't be messing with that, other than trying to set it to the 30px left and 24px right body margins so it lines up with all other content. See below.
+**_sass/rouge-base16-dark.scss** is the style sheet for code highlighting. I sure won't be messing with that, other than trying to set it to the 30px left and 24px right "<section>" padding so it lines up with all other content. See below. I'm still learning margins and padding and where to apply them in the style sheet to get the desired effect.
 
 ### Color Scheme
 Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
@@ -70,7 +70,7 @@ Thanks for checking it out.
 # Test Header1
 paragraph text
 
-Some Java code with highlighting
+Some Java code with highlighting. How do I get this to line up left/right with the rest of the content?
 
 ```js
 // Javascript code with syntax highlighting.

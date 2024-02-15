@@ -38,12 +38,11 @@
       </section>
     </div>
     <footer>
-      <p>Contact: <em>{{ site.contact_info1 }}</em> {{ site.contact_info2 }}</p>
-      {% if site.repo_url %}
-        <p><small>Website powered by Github Pages using modified Modernist Theme: <a target="_blank" href="{{ site.repo_url }}">
-        <em>{{ site.repo_text }}</em></a></small></p>
+      <p>{{ site.contact_info1 }} {{ site.contact_info2 }}</p>
+      {% if site.footer_url %}
+        <p><small>{{ site.footer_text1 }} <a target="_blank" href="{{ site.repo_url }}">{{ site.footer_text2 }}</a></small></p>
       {% else %}
-        <p><small>Website powered by Github Pages using modified Modernist Theme</small></p>
+        <p><small>{{ site.footer_text1 }} {{ site.footer_text2 }}</small></p>
       {% endif %}
       <p>&copy<small><em>{{ site.copyright }}</em></small></p> 
     </footer>
