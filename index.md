@@ -35,6 +35,9 @@ In there are two optional link buttons in the upper right corner of the header. 
 
 I am still learning margins and padding and where to apply them in the style sheet to get the desired effect.
 
+### @Media Print, Screen Styles
+I've only begun to explore. Current style settings are all original but definitely needs changes since I widened the content section substantially. It's in here that you can make it smaller/better for tablets and phones (e.g. smaller fonts, much smaller h1 h2 headings, etc.). Tables like that shown below will be a problem on small screens.
+
 ### Table Layout
 I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. Very useful. And since my system doc uses tables, W3Schools showed me the way, as you see below and in the style sheet.
 
