@@ -105,7 +105,7 @@ header {
     a {
       line-height:1;
       font-size:11px;
-      color:#fff;
+      color:white;
       display:block;
       text-align:center;
       text-decoration:none;
@@ -116,7 +116,7 @@ header {
       strong {
         font-size:14px;
         display:block;
-        color:#fff;
+        color:white;
       }
     }
   }
@@ -126,12 +126,12 @@ footer {
   margin:0 auto;
 
   p {
-    color: #fff;
+    color: white;
     text-align: center;
   }
 
   a {
-    color: #fff;
+    color: white;
     font-weight: bold;
     text-decoration: underline;
   }
@@ -139,8 +139,7 @@ footer {
 
 section {
   padding: 2px 24px 6px 30px;
-  border-top: 1px solid #fff;
-  background: #FFFFFF;
+  background: white;
   border-radius: 0 0 8px 8px;
   position: relative;
 }
