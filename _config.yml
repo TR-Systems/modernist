@@ -22,7 +22,7 @@ hlink1_text: Link to<br>Somewhere
 contact_info1: <strong>Contact:</strong>
 contact_info2: <em>trsystems.help</em> at the little G mail place.
 # Second para/line with font-size: small in default.html
-footer_text1: Website powered by Github Pages using modified Modernist Theme:
+footer_text1: Website powered by Github Pages using modified Modernist Theme
 # Text2 displayed only if url is specified
 footer_text2: <em>Use my template and get started today!</em>
 footer_url: https://github.com/TR-Systems/modernist
