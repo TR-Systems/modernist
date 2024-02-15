@@ -1,4 +1,4 @@
-## Modernist Theme for Github Pages by [TR Systems](https://TR-Systems.github.io/web/){:target="_blank"}
+## Modernist Theme for Github Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
 ### Under Construction and Testing! (February 2024)
 This theme started out by copying the design of the built-in [Github Pages Modernist Theme](https://github.com/pages-themes/modernist){:target="_blank"}.
 

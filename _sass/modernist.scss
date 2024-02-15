@@ -7,12 +7,12 @@ html {
   height: 100%;
 }
 /*   padding: 10px 0; */
+/*   margin: 8px; */
+/*   font-weight: normal; */
 body {
-  margin: 8px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: black;
-  font-weight: normal;
 }
 /* Removed background color and changed width to 900 */
 .wrapper {
@@ -29,16 +29,16 @@ header {
   padding:15px 20px;
   border-bottom:2px solid #B2D2E1;
 
+/*    margin:0; */
+/*    padding:0; */
   h1 {
-    margin:0;
-    padding:0;
     font-size:24px;
     line-height:1.2;
     color:#069;
   }
 
+/*     margin:0; */
   p {
-    margin:0;
     color:#61778B;
     width:600px; /* make it long enough for site.description */
     font-size:14px;
@@ -73,12 +73,12 @@ header {
       content:'';
       position:absolute;
       z-index:-1;
-      left:-5px;
-      top:-4px;
-      right:-5px;
+      left:-6px;
+      top:-6px;
+      right:-6px;
       bottom:-6px;
-      background:rgba(#000, 0.1);
       border-radius: 8px;
+      background:rgba(#000, 0.1);
     }
 
     li {
