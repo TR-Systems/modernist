@@ -24,27 +24,29 @@ I have designed this site so ALL YOU NEED TO DO is **edit _config.yml, readme.md
 
 There are only a few other simple things you need to do in order to publish your web site, and that's where [Github Pages Help](https://docs.github.com/en/pages){:target="_blank"} comes in handy. All of Github is very well documented in their Help pages. Github for Dummies helped me out in the very beginning, too.
 
-**_layouts/default.html** is used to build the header and footer and is substantially modified from the original. All content in the header and footer is supplied by variables in _config.yml. 
+**_layouts/default.html** is used to build the header and footer and is substantially modified from the original. All content in the header and footer is supplied by **custom local variables in _config.yml**. 
 
-Two optional link buttons are provided in the upper right corner of the header. If not configured, they will not be displayed. The default html file controls that and the style sheet controls how the buttons are placed and squeezed together. Rather tricky. *So don't mess with the header section of the style sheet!* Actually, have at it. 
+In there are two optional link buttons in the upper right corner of the header. If not configured, they will not be displayed. Since nav is currently through the home page, that link is on all pages. The default html file controls that and the style sheet controls how the buttons are placed and squeezed together, with a 6px gray border around them. Rather tricky. *So don't mess with the header section of the style sheet!* Actually, have at it. It's always fun to play around and learn new things in the process. That's the whole point of this for me.
 
 **_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was a mess so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style. So just grab it and go.
+
+**_sass/rouge-base16-dark.scss** is the style sheet for code highlighting. I sure won't be messing with that, other than trying to set it to the 30px left and 24px right body margins so it lines up with all other content. See below.
 
 ### Color Scheme
 Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
 
-| Background Colors | Color1 | Color2 |
-| ----------------- | ------ | ------ |
-| html: background: #6C7989; | <img width="48" src="images/color-6C7989.png"> | x |
-| html: background: linear-gradient(#6C7989, #434B55) | <img width="48" src="images/color-6C7989.png"> | <img width="48" src="images/color-434B55.png"> |
-| header: background: #C6EAFA; | <img width="48" src="images/color-C6EAFA.png"> | x |
-| header: background: linear-gradient(#DDFBFC, #C6EAFA); | <img width="48" src="images/color-DDFBFC.png"> | <img width="48" src="images/color-C6EAFA.png"> |
-| header: border-bottom:2px solid #B2D2E1; | <img width="48" src="images/color-B2D2E1.png"> | x |
-| header: ul: before: background:rgba(#000, 0.1);<br>10% black, color of background upon which links are placed, forming border,<br>which is the sole purpose of the ul:before style section | Light Gray | x |
-| header: ul: background: #5198DF; | <img width="48" src="images/color-5198DF.png"> | x |
-| header: ul: background: linear-gradient(#77B9FB, #3782CD); | <img width="48" src="images/color-77B9FB.png"> | <img width="48" src="images/color-3782CD.png"> |
-| section: background:#FFFFFF; | WHITE | x |
-| th: background-color: #3782CD; | <img width="48" src="images/color-3782CD.png"> | x |
+| Selector | Background Colors | Color1 | Color2 |
+| -------- | ----------------- | ------ | ------ |
+| html | background: #6C7989; | <img width="48" src="images/color-6C7989.png"> | x |
+| html | background: linear-gradient(#6C7989, #434B55) | <img width="48" src="images/color-6C7989.png"> | <img width="48" src="images/color-434B55.png"> |
+| header | background: #C6EAFA; | <img width="48" src="images/color-C6EAFA.png"> | x |
+| header | background: linear-gradient(#DDFBFC, #C6EAFA); | <img width="48" src="images/color-DDFBFC.png"> | <img width="48" src="images/color-C6EAFA.png"> |
+| header | border-bottom:2px solid #B2D2E1; | <img width="48" src="images/color-B2D2E1.png"> | x |
+| header: ul: before: | background:rgba(#000, 0.1);<br>10% black, color of background upon which links are placed, forming border,<br>which is the sole purpose of the ul:before style section | Light Gray | x |
+| header: ul: | background: #5198DF; | <img width="48" src="images/color-5198DF.png"> | x |
+| header: ul: | background: linear-gradient(#77B9FB, #3782CD); | <img width="48" src="images/color-77B9FB.png"> | <img width="48" src="images/color-3782CD.png"> |
+| section | background:#FFFFFF; | WHITE | x |
+| th | background-color: #3782CD; | <img width="48" src="images/color-3782CD.png"> | x |
 
 ### Google Analytics
 There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
