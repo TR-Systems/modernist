@@ -1,14 +1,15 @@
 ## Modernist Theme for Github Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
 ### Under Construction and Testing! (February 2024)
-This theme started out by copying the design of the built-in [Github Pages Modernist Theme](https://github.com/pages-themes/modernist){:target="_blank"}.
 
-If you're reading this on Github, click here to check it out on the web: [Modernist Theme by TR Systems](https://tr-systems.github.io/modernist/){:target="_blank"}.
+Click here to open the repo for this web site on Github: [Modernist Theme by TR-Systems](https://github.com/TR-Systems/modernist){:target="_blank"}.
+
+This theme started out by copying the design of the built-in [Github Pages Modernist Theme (opens the public repo)](https://github.com/pages-themes/modernist){:target="_blank"}, which looks [like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
 
 ### Usage
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, thus the home page button on every page header. This page (index.md) is your home page.
 
 ### Do Not Fork this Repo
-This repo is defined as a template. When viewing TR-Systems/modernist on Github, click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***.
+When viewing TR-Systems/modernist repo on Github, click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***.
 
 ### Use a Team/Pro Account
 Even as a total newbie to Github, I recommend this low-cost option so you can use a custom domain name and publish from a private repo in a separate Team account (e.g TR-Systems), instead of publishing from a public repo on your personal account.
