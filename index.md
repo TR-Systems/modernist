@@ -31,7 +31,15 @@ In there are two optional link buttons in the upper right corner of the header. 
 
 **_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was a mess so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style. So just grab it and go.
 
-**_sass/rouge-base16-dark.scss** is the style sheet for code highlighting. I sure won't be messing with that, other than trying to set it to the 30px left and 24px right "<section>" padding so it lines up with all other content. See below. I'm still learning margins and padding and where to apply them in the style sheet to get the desired effect.
+**_sass/rouge-base16-dark.scss** is the style sheet for code highlighting. I sure won't be messing with that, other than trying to set it to the 30px left and 24px right padding defined in the section selector so it lines up with all other content. See below. 
+
+I am still learning margins and padding and where to apply them in the style sheet to get the desired effect.
+
+### Table Layout
+I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. Very useful. And since my system doc uses tables, W3Schools showed me the way, as you see below and in the style sheet.
+
+### List Item Spacing
+I use a lot of bulleted and numbered lists in my doc and like a little space between each item, so that's something I added to the style sheet.
 
 ### Color Scheme
 Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
@@ -51,9 +59,6 @@ Same as the original. Changing it may require changing the color of elements wit
 
 ### Google Analytics
 There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
-
-### Table Layout
-I used the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. Very useful. And since my system doc uses tables, W3Schools showed me the way, and you see above and will see how in the style sheet.
 
 Tis all for now. Hope someone out there finds this Theme useful and lets me know. That would make my day.
 
