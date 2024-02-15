@@ -14,14 +14,17 @@ about_url: https://TR-Systems.github.io/modernist/about.html
 about_text: About<br>Your Site
 hlink1_url: https://TR-Systems.github.io/modernist/
 hlink1_text: Link to<br>Somewhere
-# Three lines for Footer Content
+# Three paragraphs (lines) for Footer Content
+# Notice how you can apply simple html emphasis formatting
+# BUT only because default.html DOES NOT
 # Do not publish email addresses, you will be spammed beyond belief.
-# First line of footer
+# First para/line of footer
 contact_info1: <strong>Contact:</strong>
 contact_info2: <em>trsystems.help</em> at the little G mail place.
-# Second line
-footer_text1: Website powered by Github Pages using modified Modernist Theme
+# Second para/line with font-size: small in default.html
+footer_text1: Website powered by Github Pages using modified Modernist Theme:
+# Text2 displayed only if url is specified
 footer_text2: <em>Use my template and get started today!</em>
 footer_url: https://github.com/TR-Systems/modernist
-# Last line
-copyright: Copyright yyyy Your Name, Your Location
+# Third para/line
+copyright: <em>Copyright yyyy Your Name, Your Location</em>
