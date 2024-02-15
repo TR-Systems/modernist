@@ -17,7 +17,7 @@ hlink1_text: Link to<br>Somewhere
 # Three lines for Footer Content
 # Do not publish email addresses, you will be spammed beyond belief.
 # First line of footer
-contact_info1: <strong>Contact: </strong>
+contact_info1: <strong>Contact:</strong>
 contact_info2: <em>trsystems.help</em> at the little G mail place.
 # Second line
 footer_text1: Website powered by Github Pages using modified Modernist Theme
