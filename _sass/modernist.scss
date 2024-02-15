@@ -41,7 +41,7 @@ header {
     margin:0;
     color:#61778B;
     width:600px; /* make it long enough for site.description */
-    font-size:13px;
+    font-size:14px;
 
     &.view {
       display:none;
@@ -50,10 +50,6 @@ header {
       a {
         color:#06c;
         text-decoration: none;
-      }
-
-      small {
-        font-weight:400;
       }
     }
   }
