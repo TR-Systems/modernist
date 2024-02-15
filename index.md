@@ -2,10 +2,10 @@
 ### Under Construction and Testing! (February 2024)
 This theme started out by copying the design of the built-in [Github Pages Modernist Theme](https://github.com/pages-themes/modernist){:target="_blank"}.
 
-If you're reading this on Github, click here to check it out on the web: [Modernist Theme by TR Systems](https://tr-systems.github.io/modernist/).
+If you're reading this on Github, click here to check it out on the web: [Modernist Theme by TR Systems](https://tr-systems.github.io/modernist/){:target="_blank"}.
 
 ### Usage
-Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, thus the home page button on every page header. This page (README.md) is your home page, which will be built as index.html.
+Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, thus the home page button on every page header. This page (index.md) is your home page.
 
 ### Do Not Fork this Repo
 This repo is defined as a template. When viewing TR-Systems/modernist on Github, click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***.
@@ -52,18 +52,9 @@ Same as the original. Changing it may require changing the color of elements wit
 There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
 
 ### Table Layout
-I used the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. Very useful. And since my system doc uses tables, W3Schools showed me the way, and you will see how in the style sheet. For example, here is a list of the cars I owned from age 18 to 23.
+I used the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. Very useful. And since my system doc uses tables, W3Schools showed me the way, and you see above and will see how in the style sheet.
 
-| Year | Make | Model | Color | Years Owned | Notes |
-| ---- | ---- | ----- | ----- | ----------- | ----- |
-| 67 | Chevy | Impala Station Wagon | Baby Blue | 74-75 | Modified 327 with Edelbrock and Holley 4bbl<br>Wish I had this car now :) |
-| 73 | Dodge | Charger | Turqoise w/<br>White Vinyl top | 75 | What was I thinking? |
-| 72 | MGB | GT Coupe | BR Green | 75-76 | Wrecked it, not my fault |
-| 67 | Chevy | Camaro | Brown/Black | 76-79 | For $750 cash after the wreck |
-
-It gets rather boring and embarrassing too from there. And yes, there was and still is a mini-van in the list, absolutely, must have for home improviement project work and road trippin'.
-
-Tis all for now, back soon. Hope someone out there finds this Theme useful and lets me know! That would make my day.
+Tis all for now. Hope someone out there finds this Theme useful and lets me know. That would make my day.
 
 Thanks for checking it out.
 
