@@ -19,7 +19,7 @@ hlink1_text: Link to<br>Somewhere
 # Do not publish email addresses, you will be spammed beyond belief.
 # First line of footer with "Contact: " prefix
 contact_info1: me here
-contact_info2: or there at G mail
+contact_info2: <em>or here at the little G mail place</em>
 # Second line
 footer_text1: Website powered by Github Pages using modified Modernist Theme
 footer_text2: <em>Use my template and get started today!</em>
