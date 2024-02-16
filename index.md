@@ -9,7 +9,7 @@ This theme started out by copying the design of the built-in [Github Pages Moder
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, thus the home page button on every page header. This page (index.md) is your home page.
 
 ### Do Not Fork this Repo
-When viewing TR-Systems/modernist repo on Github, click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***.
+When viewing TR-Systems/modernist repo on Github, click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***. Give your repo a web friendly name like "web" or "mything" since the repo name is the top level path in the URL for your website.
 
 ### Use a Team/Pro Account
 Even as a total newbie to Github, I recommend this low-cost option so you can use a custom domain name and publish from a private repo in a separate Team account (e.g TR-Systems), instead of publishing from a public repo on your personal account.
