@@ -3,7 +3,7 @@
 
 Click here to open the repo for this web site on Github: [Modernist Theme by TR-Systems](https://github.com/TR-Systems/modernist){:target="_blank"}.
 
-This theme started out by copying the design of the built-in [Github Pages Modernist Theme (opens the public repo)](https://github.com/pages-themes/modernist){:target="_blank"}, which looks [like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
+This theme started out by copying the design of the built-in [Github Pages Modernist Theme (opens the public repo)](https://github.com/pages-themes/modernist){:target="_blank"}, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
 
 ### Usage
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, thus the home page button on every page header. This page (index.md) is your home page.
