@@ -10,10 +10,10 @@ logo: images/logo-github.png
 # Optional links in the upper right corner of the header
 # Two lines only, keep text and words short to fit in box, use <br> to force break
 # Update with your userid and repo name
-about_url: https://TR-Systems.github.io/modernist/about.html
 about_text: About<br>Your Site
-hlink1_url: https://TR-Systems.github.io/modernist/
-hlink1_text: Link to<br>Somewhere
+about_url: https://TR-Systems.github.io/modernist/about.html
+hlink1_text: Open Repo<br>On GitHub
+hlink1_url: https://github.com/TR-Systems/modernist
 # Three paragraphs (lines) for Footer Content
 # Notice how you can apply simple html emphasis formatting
 # BUT only because default.html DOES NOT
