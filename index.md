@@ -18,12 +18,14 @@ Even as a total newbie to Github, I recommend this low-cost option so you can us
 I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I removed a lot of formatting and fluff that I didn't like from the overloaded style sheet (too many cooks in the kitchen).
 
 ### Editing and Publishing
-The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. There may be a better way but this works for me since I do all editing online. I will get around to using git on the desktop eventually.
+The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. There may be a better way but this works for me since I do all editing online. 
+
+I will get around to using Git, Ruby and Jekyll on the desktop soon for development and testing but that will take some work and won't be so easy. I just picked up a new raspberry pi 4 for that purpose, but I'm going to try it on Windows, too. [Start here.](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} 
 
 ### Make it Your Own
-ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is.
+ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is to use Github markdown formatting for your content. 
 
-There are only a few other simple things you need to do in order to publish your web site, and that's where [Github Pages Help](https://docs.github.com/en/pages){:target="_blank"} comes in handy. All of Github is very well documented in their Help pages. Github for Dummies helped me out in the very beginning, too.
+There are only a few other simple things you need to do in order to publish your web site, and that's where [Github Pages Help](https://docs.github.com/en/pages){:target="_blank"} and [Writing on Github](https://docs.github.com/en/get-started/writing-on-github){:target="_blank"} comes in handy. All of Github is very well documented in their Help pages. Github for Dummies helped me out in the very beginning, too.
 
 **_layouts/default.html** is used to build the header and footer and is substantially modified from the original. All content in the header and footer is supplied by **custom local variables in _config.yml**. 
 
