@@ -23,7 +23,7 @@
         <p><em>{{ site.description | default: site.github.project_tagline }}</em></p>
         <ul>
           {% if site.hlink1_url %}
-            <li><a href="{{ site.hlink1_url }}"><strong>{{ site.hlink1_text }}</strong></a></li>
+            <li><a target="_blank" href="{{ site.hlink1_url }}"><strong>{{ site.hlink1_text }}</strong></a></li>
           {% endif %}
           {% if site.about_url %}
             <li><a href="{{ site.about_url }}"><strong>{{ site.about_text }}</strong></a></li>
