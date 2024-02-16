@@ -1,18 +1,18 @@
-## Modernist Theme for Github Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
+## Modernist Theme for GitHub Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
 ### Under Construction and Testing! (February 2024)
 
-Click here to open the repo for this web site on Github: [Modernist Theme by TR-Systems](https://github.com/TR-Systems/modernist){:target="_blank"}.
+Click the link above to open the public template repository for this theme on GitHub.
 
-This theme started out by copying the design of the built-in [Github Pages Modernist Theme (opens the public repo)](https://github.com/pages-themes/modernist){:target="_blank"}, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
+This theme started out by copying the design of the built-in [GitHub Pages Modernist Theme (opens the public repo)](https://github.com/pages-themes/modernist){:target="_blank"}, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
 
 ### Usage
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, thus the home page button on every page header. This page (index.md) is your home page.
 
 ### Do Not Fork this Repo
-When viewing TR-Systems/modernist repo on Github, click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***. Give your repo a web friendly name like "web" or "mything" since the repo name is the top level path in the URL for your website.
+When viewing TR-Systems/modernist repo on GitHub, click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***. Give your repo a web friendly name like "web" or "mything" since the repo name is the top level path in the URL for your website.
 
 ### Use a Team/Pro Account
-Even as a total newbie to Github, I recommend this low-cost option so you can use a custom domain name and publish from a private repo in a separate Team account (e.g TR-Systems), instead of publishing from a public repo on your personal account.
+Even as a total newbie to GitHub, I recommend this low-cost option so you can use a custom domain name and publish from a private repo in a separate Team account (e.g TR-Systems), instead of publishing from a public repo on your personal account.
 
 ### Modifications
 I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I removed a lot of formatting and fluff that I didn't like from the overloaded style sheet (too many cooks in the kitchen).
@@ -23,9 +23,9 @@ The repo has two branches. Apply changes and new content to the top level "edit"
 I will get around to using Git, Ruby and Jekyll on the desktop soon for development and testing but that will take some work and won't be so easy. I just picked up a new raspberry pi 4 for that purpose, but I'm going to try it on Windows, too. [Start here.](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} 
 
 ### Make it Your Own
-ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is to use Github markdown formatting for your content. 
+ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is to use GitHub markdown formatting for your content. 
 
-There are only a few other simple things you need to do in order to publish your web site, and that's where [Github Pages Help](https://docs.github.com/en/pages){:target="_blank"} and [Writing on Github](https://docs.github.com/en/get-started/writing-on-github){:target="_blank"} comes in handy. All of Github is very well documented in their Help pages. Github for Dummies helped me out in the very beginning, too.
+There are only a few other simple things you need to do in order to publish your web site, and that's where [GitHub Pages Help](https://docs.github.com/en/pages){:target="_blank"} and [Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github){:target="_blank"} comes in handy. All of GitHub is very well documented in their Help pages. GitHub for Dummies helped me out in the very beginning, too.
 
 **_layouts/default.html** is used to build the header and footer and is substantially modified from the original. All content in the header and footer is supplied by **custom local variables in _config.yml**. 
 
