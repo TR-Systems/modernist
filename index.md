@@ -52,16 +52,16 @@ Same as the original. Changing it may require changing the color of elements wit
 
 | Selector | Background Colors | Color1 | Color2 |
 | -------- | ----------------- | ------ | ------ |
-| html | background: #6C7989; | <img width="48" src="images/color-6C7989.png"> | x |
-| html | background: linear-gradient(#6C7989, #434B55) | <img width="48" src="images/color-6C7989.png"> | <img width="48" src="images/color-434B55.png"> |
-| header | background: #C6EAFA; | <img width="48" src="images/color-C6EAFA.png"> | x |
-| header | background: linear-gradient(#DDFBFC, #C6EAFA); | <img width="48" src="images/color-DDFBFC.png"> | <img width="48" src="images/color-C6EAFA.png"> |
-| header | border-bottom:2px solid #B2D2E1; | <img width="48" src="images/color-B2D2E1.png"> | x |
+| html | background: #6C7989; | <img width="48" src="assets/images/color-6C7989.png"> | x |
+| html | background: linear-gradient(#6C7989, #434B55) | <img width="48" src="assets/images/color-6C7989.png"> | <img width="48" src="assets/images/color-434B55.png"> |
+| header | background: #C6EAFA; | <img width="48" src="assets/images/color-C6EAFA.png"> | x |
+| header | background: linear-gradient(#DDFBFC, #C6EAFA); | <img width="48" src="assets/images/color-DDFBFC.png"> | <img width="48" src="assets/images/color-C6EAFA.png"> |
+| header | border-bottom:2px solid #B2D2E1; | <img width="48" src="assets/images/color-B2D2E1.png"> | x |
 | header: ul: before: | background:rgba(#000, 0.1); | Light Gray | x |
-| header: ul: | background: #5198DF; | <img width="48" src="images/color-5198DF.png"> | x |
-| header: ul: | background: linear-gradient(#77B9FB, #3782CD); | <img width="48" src="images/color-77B9FB.png"> | <img width="48" src="images/color-3782CD.png"> |
+| header: ul: | background: #5198DF; | <img width="48" src="assets/images/color-5198DF.png"> | x |
+| header: ul: | background: linear-gradient(#77B9FB, #3782CD); | <img width="48" src="assets/images/color-77B9FB.png"> | <img width="48" src="assets/images/color-3782CD.png"> |
 | section | background:#FFFFFF; | WHITE | x |
-| th | background-color: #3782CD; | <img width="48" src="images/color-3782CD.png"> | x |
+| th | background-color: #3782CD; | <img width="48" src="assets/images/color-3782CD.png"> | x |
 
 ### Google Analytics
 There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
