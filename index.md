@@ -1,5 +1,6 @@
 ## Modernist Theme for GitHub Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
 ### Under Construction and Testing! (February 2024)
+### 2-18-24: Currently TESTING local build and serve on Windows PC and it's NOT WORKING!
 
 Click the link above to open the public template repository for this theme on GitHub.
 
