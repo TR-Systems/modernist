@@ -70,29 +70,28 @@ PLEASE REMOVE THE INCLUDE STATEMENT FROM THE DEFAUL HTML file before publishing 
 
 Then, after you get your own GA account set up for your stream, update the code in the google-analytics file and put the include back.
 
-## Build and Test on Windows 10 (updated 2-18-24)
-I am now trying to clone, edit and test locally on Windows, without success. Here are the steps I used.
+## Build and Test on Windows
+<small><em>Last updated: 2024-02-19 11:30am</em></small>
 
-1. Install Git and GitHub Desktop
-2. Install Ruby and Jekyll per the [GitHub and Jekyll doc](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} (all ok).
+Still trying to clone, edit and test locally on Windows, without success. Here is the last approach I used:
+
+1. Install Git and GitHub Desktop (all good)
+2. Install Ruby and Jekyll per the [GitHub and Jekyll doc](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} (all good).
 3. Clone the repo using GitHub Desktop
-4. Open Git Bash and switch to the repo root (edit branch)
-5. Run: **jekyll new --skip-bundle ***--force*** .** (because it's not empty)
-6. Remove markdown files created by Jekyll for the new site
-7. Edit **Gemfile** as noted above
-8. Edit **_config.yml** to put back everything from the original since it was overwritten, keeping the excludes defined by Jekyll and adding one for the readme.
-9. Run **bundle install** (OK)
-10. Run **bundle exec jekyll serve**
-11. Get error, then Run **bundle install webrick** (that gem is in the Gemfile)
-12. Run **bundle exec jekyll serve**
-13. Error: File to import not found: **tr-systems-modernist**
+4. Add **Gemfile** to modernist root directory with these three lines:
+<pre>source "https://rubygems.org"
+gem "github-pages", group: :jekyll_plugins
+gem "webrick"</pre>
+5. Add **Gemfile** to **.gitignore**
+6. Run **bundle add webrick** (ok)
+7. Run **bundle install** (ok)
+8. Run **bundle exec jekyll serve**
+9. **Error:** jekyll 3.9.5 | File to import not found or unreadable: **tr-systems-modernist**.
 
 **@import** in **assets/css/style.scss** is simply not working for me LOCALLY.
 
-The problem is, famous last words from a lifetime in IT, the rat holes of internet search do me no good here and in that respect, all search engines suck because all they do is return hundreds or thousands of posts JUST LIKE THIS, without or without solutions, and not even coming close to solving MY problem. AI is stupid.
-
 ### Workaround For Now
-Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.css** (replacing the import). The site now builds locally and I can make changes to style.css on the fly for quick fire testing of style changes.
+Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.scss** (replacing the import). The site now builds locally and I can make changes to style.scss on the fly for quick fire testing of style changes.
 
 #### Catch you later...
 Tis all for now. Hope someone out there finds this Theme useful and lets me know. That would make my day.
