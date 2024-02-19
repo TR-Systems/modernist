@@ -19,22 +19,7 @@ Even as a total newbie to GitHub, I recommend this low-cost option so you can us
 I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I removed a lot of formatting and fluff that I didn't like from the overloaded style sheet (too many cooks in the kitchen).
 
 ### Editing and Publishing
-The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "gh-pages" branch for the automatic "pages build" process. There may be a better way but this works for me since I've been doing all editing online.
-
-Update: 2-18-24:
-
-I am now trying to clone, edit and test locally on Windows, without success. Here are the steps I've taken to go Local on Windows 10 PC:
-
-1. [Install Ruby and Jekyll per the GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"}.
-2. Clone the repo using GitHub Desktop
-3. Open Git Bash and switch to the repo root directory
-4. Run: **jekyll new --skip-bundle --force .** (because it's not empty)
-5. Edit: Gemfile as noted above and _config.yml to suit my needs
-6. Run: **bundle install** (OK)
-7. Run: **bundle exec jekyll serve**
-8. Error: File to import not found: **tr-systems-modernist**
-
-[GitHub Pages help](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} shows how to create a new site using the built-in Jekyll minima theme but it doesn't show me how to take an existing repo that builds without error on GitHub and configure it locally for testing with **Jekyll serve** on localhost:4000. So if you know how, please let me know! Thanks!
+The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "gh-pages" branch for the automatic "pages build" process. There may be a better way but this works for me since I've been doing all editing online up to this point. More on that below.
 
 ### Make it Your Own
 ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is to use GitHub markdown formatting for your content. 
@@ -79,6 +64,26 @@ Same as the original. Changing it may require changing the color of elements wit
 ### Google Analytics
 There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
 
+## Build and Test on Windows 10 (updated 2-18-24)
+I am now trying to clone, edit and test locally on Windows, without success. Here are the steps I used.
+
+1. [Install Ruby and Jekyll per the GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"}.
+2. Clone the repo using GitHub Desktop
+3. Open Git Bash and switch to the repo root directory
+4. Run: **jekyll new --skip-bundle --force .** (because it's not empty)
+5. Edit: Gemfile as noted above and _config.yml to suit my needs
+6. Run: **bundle install** (OK)
+7. Run: **bundle exec jekyll serve**
+8. Error: File to import not found: **tr-systems-modernist**
+
+[GitHub Pages help](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} shows how to create a new site using the built-in Jekyll minima theme but it doesn't show me how to take an existing repo that builds without error on GitHub without using a built-in theme and then clone and configure it locally for testing with **Jekyll serve** on localhost:4000. So if you know how, please let me know! Thanks!
+
+@Import in **assets/css/style.scss** is simply not working for me. And yes, I have front matter comments in that file too like the Jekyll doc says but that didn't work either. It HAS TO BE something simple in the structure or naming or whatever I'm doing, which I know not.
+
+#### Workaround For Now
+Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.css** (replacing the imports). The site now builds locally and I can make changes to style.css on the fly for quick fire testing of style changes.
+
+#### Catch you later...
 Tis all for now. Hope someone out there finds this Theme useful and lets me know. That would make my day.
 
 Thanks for checking it out.
