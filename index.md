@@ -19,9 +19,7 @@ Even as a total newbie to GitHub, I recommend this low-cost option so you can us
 I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I removed a lot of formatting and fluff that I didn't like from the overloaded style sheet (too many cooks in the kitchen).
 
 ### Editing and Publishing
-The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "gh-pages" branch for the automatic "pages build" process. There may be a better way but this works for me since I do all editing online. 
-
-I will get around to using Git, Ruby and Jekyll on the desktop soon for development and testing but that will take some work and won't be so easy. I just picked up a new raspberry pi 4 for that purpose, but I'm going to try it on Windows, too. [Start here.](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} 
+The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "gh-pages" branch for the automatic "pages build" process. There may be a better way but this works for me since I've been doing all editing online up to this point. More on that below.
 
 ### Make it Your Own
 ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is to use GitHub markdown formatting for your content. 
@@ -32,11 +30,13 @@ There are only a few other simple things you need to do in order to publish your
 
 In there are two optional link buttons in the upper right corner of the header. If not configured, they will not be displayed. Since nav is currently through the home page, that link is on all pages. The default html file controls that and the style sheet controls how the buttons are placed and squeezed together, with a 6px gray border around them. Rather tricky. *So don't mess with the header section of the style sheet!* Actually, have at it. It's always fun to play around and learn new things in the process. That's the whole point of this for me.
 
-**_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was disorganized and hard to follow so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style, which I then apply to my tr-systems site. So just grab it and go.
+**_sass/tr-systems-modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was disorganized and hard to follow so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style, which I then apply to my tr-systems site. So just grab it and go.
 
 **_sass/rouge-base16-dark.scss** is the style sheet for code highlighting. I sure won't be messing with that, other than trying to set it to the 30px left and 24px right padding defined in the section selector so it lines up with all other content. See below. 
 
 I am still learning margins and padding and where to apply them in the style sheet to get the desired effect.
+
+**assets/css/style.scss** is the "main" style sheet that imports the two sheets from **_sass**.
 
 ### @Media Print, Screen Styles
 I've only begun to explore. Current style settings are all original but definitely needs changes since I widened the content section substantially. It's in here that you can make it smaller/better for tablets and phones (e.g. smaller fonts, much smaller h1 h2 headings, etc.). Tables like that shown below will be a problem on small screens.
@@ -66,6 +66,33 @@ Same as the original. Changing it may require changing the color of elements wit
 ### Google Analytics
 There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
 
+## Build and Test on Windows 10 (updated 2-18-24)
+I am now trying to clone, edit and test locally on Windows, without success. Here are the steps I used.
+
+1. Install Git and GitHub Desktop
+2. Install Ruby and Jekyll per the [GitHub and Jekyll doc](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} (all ok).
+3. Clone the repo using GitHub Desktop
+4. Open Git Bash and switch to the repo root (edit branch)
+5. Run: **jekyll new --skip-bundle ***--force*** .** (because it's not empty)
+6. Remove markdown files created by Jekyll for the new site
+7. Edit **Gemfile** as noted above
+8. Edit **_config.yml** to put back everything from the original since it was overwritten, keeping the excludes defined by Jekyll and adding one for the readme.
+9. Run **bundle install** (OK)
+10. Run **bundle exec jekyll serve**
+11. Get error, then Run **bundle install webrick** (that gem is in the Gemfile)
+12. Run **bundle exec jekyll serve**
+13. Error: File to import not found: **tr-systems-modernist**
+
+[GitHub Pages help](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} shows how to create a new site using the default built-in Jekyll minima theme but it doesn't show me how to take an existing repo that builds without error on GitHub, without using a built-in theme, and then clone and configure it locally for testing with **Jekyll serve** on localhost:4000. So if you know how, please let me know! Thanks!
+
+@Import in **assets/css/style.scss** is simply not working for me LOCALLY. For some reason, it's not picking up my style sheets during the build. It HAS TO BE something simple in the structure or naming or whatever I'm doing, which I know not.
+
+The problem is, famous last words from a lifetime in IT, the rat holes of internet search do me no good here and in that respect, all search engines suck because all they do is return hundreds or thousands of posts JUST LIKE THIS, without or without solutions, and not even coming close to solving MY problem. AI is stupid.
+
+### Workaround For Now
+Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.css** (replacing the imports). The site now builds locally and I can make changes to style.css on the fly for quick fire testing of style changes.
+
+#### Catch you later...
 Tis all for now. Hope someone out there finds this Theme useful and lets me know. That would make my day.
 
 Thanks for checking it out.

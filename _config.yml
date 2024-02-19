@@ -49,6 +49,7 @@ exclude:
 # Header and Footer Elements used in _layouts/default.html
 
 title: Your Logo and Site Title
+
 description: Describing What You Do
 
 # Update with your github userid and repo name
@@ -75,12 +76,13 @@ hlink1_url: https://github.com/tr-systems/modernist
 # Notice how you can apply simple html emphasis formatting
 # BUT only because default.html DOES NOT
 # Do not publish email addresses, you will be spammed beyond belief.
-# First para/line of footer
+
+# First line of footer
 
 contact_info1: <strong>Contact:</strong>
 contact_info2: <em>trsystems.help</em> at the little G mail place.
 
-# Second para/line with font-size: small in default.html
+# Second line with font-size: small in default.html
 
 footer_text1: Website powered by Github Pages using modified Modernist Theme
 
@@ -89,6 +91,6 @@ footer_text1: Website powered by Github Pages using modified Modernist Theme
 footer_text2: <em>Use my template and get started today!</em>
 footer_url: https://tr-systems.github.io/modernist/
 
-# Third para/line
+# Third line of footer, with &copy symbol preceding in default.html
 
 copyright: <em>Copyright yyyy Your Name, Your Location</em>
