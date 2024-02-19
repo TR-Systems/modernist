@@ -1,30 +1,94 @@
-exclude: [README.md]
-# Required & Optional Header and Footer Elements used in _layouts/default.html
+# Welcome to Jekyll!
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+#
+# title: Your awesome title
+# email: your-email@example.com
+# description:
+# baseurl:
+# url:
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+# Build settings
+# theme:
+
+# plugins:
+#   - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Header and Footer Elements used in _layouts/default.html
+
 title: Your Logo and Site Title
 description: Describing What You Do
+
 # Update with your github userid and repo name
-url: https://TR-Systems.github.io/modernist/
+
+url: https://tr-systems.github.io/modernist/
+baseurl: ""
+
 # Optional Header Elements
 # logo is 36x36 icon to left of title, with description below
+
 logo: assets/images/logo-github.png
+
 # Optional links in the upper right corner of the header
 # Two lines only, keep text and words short to fit in box, use <br> to force break
 # Update with your userid and repo name
+
 about_text: About<br>Your Site
-about_url: https://TR-Systems.github.io/modernist/about.html
+about_url: https://tr-systems.github.io/modernist/about.html
+
 hlink1_text: Open Repo<br>On GitHub
-hlink1_url: https://github.com/TR-Systems/modernist
+hlink1_url: https://github.com/tr-systems/modernist
+
 # Three paragraphs (lines) for Footer Content
 # Notice how you can apply simple html emphasis formatting
 # BUT only because default.html DOES NOT
 # Do not publish email addresses, you will be spammed beyond belief.
 # First para/line of footer
+
 contact_info1: <strong>Contact:</strong>
 contact_info2: <em>trsystems.help</em> at the little G mail place.
+
 # Second para/line with font-size: small in default.html
+
 footer_text1: Website powered by Github Pages using modified Modernist Theme
+
 # Text2 displayed only if url is specified
+
 footer_text2: <em>Use my template and get started today!</em>
-footer_url: https://TR-Systems.github.io/modernist/
+footer_url: https://tr-systems.github.io/modernist/
+
 # Third para/line
+
 copyright: <em>Copyright yyyy Your Name, Your Location</em>
