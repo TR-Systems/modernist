@@ -9,7 +9,7 @@ description: Describing What You Do
 
 # Update with your github userid and repo name
 
-url: https://TR-Systems.github.io/modernist/
+url: https://tr-systems.github.io/modernist/
 
 # Optional Header Elements
 # logo is 36x36 icon to left of title, with description below
@@ -21,28 +21,30 @@ logo: assets/images/logo-github.png
 # Update with your userid and repo name
 
 about_text: About<br>Your Site
-about_url: https://TR-Systems.github.io/modernist/about.html
+about_url: https://tr-systems.github.io/modernist/about.html
 
 hlink1_text: Open Repo<br>On GitHub
-hlink1_url: https://github.com/TR-Systems/modernist
+hlink1_url: https://github.com/tr-systems/modernist
 
 # Three paragraphs (lines) for Footer Content
 # Notice how you can apply simple html emphasis formatting
 # BUT only because default.html DOES NOT
 # Do not publish email addresses, you will be spammed beyond belief.
-# First paragraph/line of footer
+
+# First line of footer
 
 contact_info1: <strong>Contact:</strong>
 contact_info2: <em>trsystems.help</em> at the little G mail place.
 
-# Second paragraph/line with font-size: small in default.html
+# Second line with font-size: small in default.html
 
 footer_text1: Website powered by Github Pages using modified Modernist Theme
 
 # Text2 displayed only if url is specified
-footer_text2: <em>Use my template and get started today!</em>
-footer_url: https://TR-Systems.github.io/modernist/
 
-# Third footer paragraph/line
+footer_text2: <em>Use my template and get started today!</em>
+footer_url: https://tr-systems.github.io/modernist/
+
+# Third line of footer, with &copy symbol preceding in default.html
 
 copyright: <em>Copyright yyyy Your Name, Your Location</em>
