@@ -30,11 +30,13 @@ There are only a few other simple things you need to do in order to publish your
 
 In there are two optional link buttons in the upper right corner of the header. If not configured, they will not be displayed. Since nav is currently through the home page, that link is on all pages. The default html file controls that and the style sheet controls how the buttons are placed and squeezed together, with a 6px gray border around them. Rather tricky. *So don't mess with the header section of the style sheet!* Actually, have at it. It's always fun to play around and learn new things in the process. That's the whole point of this for me.
 
-**_sass/modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was disorganized and hard to follow so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style, which I then apply to my tr-systems site. So just grab it and go.
+**_sass/tr-systems-modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was disorganized and hard to follow so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style, which I then apply to my tr-systems site. So just grab it and go.
 
 **_sass/rouge-base16-dark.scss** is the style sheet for code highlighting. I sure won't be messing with that, other than trying to set it to the 30px left and 24px right padding defined in the section selector so it lines up with all other content. See below. 
 
 I am still learning margins and padding and where to apply them in the style sheet to get the desired effect.
+
+**assets/css/style.scss** is the "main" style sheet that imports the two sheets from **_sass**.
 
 ### @Media Print, Screen Styles
 I've only begun to explore. Current style settings are all original but definitely needs changes since I widened the content section substantially. It's in here that you can make it smaller/better for tablets and phones (e.g. smaller fonts, much smaller h1 h2 headings, etc.). Tables like that shown below will be a problem on small screens.
