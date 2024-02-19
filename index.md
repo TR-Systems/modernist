@@ -50,6 +50,8 @@ I use a lot of bulleted and numbered lists in my doc and like a little space bet
 ### Color Scheme
 Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
 
+The colors are shown using small image files that I created from screen shots on [color sites](https://www.color-hex.com/){:target="_blank"}. There is a better way, and I will find it.
+
 | Selector | Background Colors | Color1 | Color2 |
 | -------- | ----------------- | ------ | ------ |
 | html | background: #6C7989; | <img width="48" src="assets/images/color-6C7989.png"> | x |
@@ -91,7 +93,7 @@ gem "webrick"</pre>
 **@import** in **assets/css/style.scss** is simply not working for me LOCALLY.
 
 ### Workaround For Now
-Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.scss** (replacing the import). The site now builds locally and I can make changes to style.scss on the fly for quick fire testing of style changes.
+Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.scss** (replacing the import). The site now builds locally and I can make changes to style.scss on the fly for quick fire testing of style changes. But I can't push them back up to GitHub.
 
 #### Catch you later...
 Tis all for now. Hope someone out there finds this Theme useful and lets me know. That would make my day.
