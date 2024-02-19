@@ -19,7 +19,7 @@ Even as a total newbie to GitHub, I recommend this low-cost option so you can us
 I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I removed a lot of formatting and fluff that I didn't like from the overloaded style sheet (too many cooks in the kitchen).
 
 ### Editing and Publishing
-The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "gh-pages" branch for the automatic "pages build" process. There may be a better way but this works for me since I've been doing all editing online up to this point. More on that below.
+The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. There may be a better way but this works for me since I've been doing all editing online up to this point. More on that below.
 
 ### Make it Your Own
 ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make it your own. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is to use GitHub markdown formatting for your content. 
