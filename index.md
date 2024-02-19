@@ -69,20 +69,27 @@ There is a sample snippet in the _includes folder, but the statement to include 
 ## Build and Test on Windows 10 (updated 2-18-24)
 I am now trying to clone, edit and test locally on Windows, without success. Here are the steps I used.
 
-1. [Install Ruby and Jekyll per the GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"}.
-2. Clone the repo using GitHub Desktop
-3. Open Git Bash and switch to the repo root directory
-4. Run: **jekyll new --skip-bundle --force .** (because it's not empty)
-5. Edit: Gemfile as noted above and _config.yml to suit my needs
-6. Run: **bundle install** (OK)
-7. Run: **bundle exec jekyll serve**
-8. Error: File to import not found: **tr-systems-modernist**
+1. Install Git and GitHub Desktop
+2. Install Ruby and Jekyll per the [GitHub and Jekyll doc](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} (all ok).
+3. Clone the repo using GitHub Desktop
+4. Open Git Bash and switch to the repo root (edit branch)
+5. Run: **jekyll new --skip-bundle ***--force*** .** (because it's not empty)
+6. Remove markdown files created by Jekyll for the new site
+7. Edit **Gemfile** as noted above
+8. Edit **_config.yml** to put back everything from the original since it was overwritten, keeping the excludes defined by Jekyll and adding one for the readme.
+9. Run **bundle install** (OK)
+10. Run **bundle exec jekyll serve**
+11. Get error, then Run **bundle install webrick** (that gem is in the Gemfile)
+12. Run **bundle exec jekyll serve**
+13. Error: File to import not found: **tr-systems-modernist**
 
-[GitHub Pages help](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} shows how to create a new site using the built-in Jekyll minima theme but it doesn't show me how to take an existing repo that builds without error on GitHub without using a built-in theme and then clone and configure it locally for testing with **Jekyll serve** on localhost:4000. So if you know how, please let me know! Thanks!
+[GitHub Pages help](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} shows how to create a new site using the default built-in Jekyll minima theme but it doesn't show me how to take an existing repo that builds without error on GitHub, without using a built-in theme, and then clone and configure it locally for testing with **Jekyll serve** on localhost:4000. So if you know how, please let me know! Thanks!
 
-@Import in **assets/css/style.scss** is simply not working for me. And yes, I have front matter comments in that file too like the Jekyll doc says but that didn't work either. It HAS TO BE something simple in the structure or naming or whatever I'm doing, which I know not.
+@Import in **assets/css/style.scss** is simply not working for me LOCALLY. For some reason, it's not picking up my style sheets during the build. It HAS TO BE something simple in the structure or naming or whatever I'm doing, which I know not.
 
-#### Workaround For Now
+The problem is, famous last words from a lifetime in IT, the rat holes of internet search do me no good here and in that respect, all search engines suck because all they do is return hundreds or thousands of posts JUST LIKE THIS, without or without solutions, and not even coming close to solving MY problem. AI is stupid.
+
+### Workaround For Now
 Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.css** (replacing the imports). The site now builds locally and I can make changes to style.css on the fly for quick fire testing of style changes.
 
 #### Catch you later...
