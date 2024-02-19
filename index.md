@@ -63,8 +63,12 @@ Same as the original. Changing it may require changing the color of elements wit
 | section | background:#FFFFFF; | WHITE | x |
 | th | background-color: #3782CD; | <img width="48" src="assets/images/color-3782CD.png"> | x |
 
-### Google Analytics
-There is a sample snippet in the _includes folder, but the statement to include it in the head section of the default html ***is commented out***. Update the snippet and then remove the comment after you get your GA account set up. That's all there is to it.
+## Google Analytics
+**Google Analytics is configured on this site for the GA streeam "tr-systems.github.io/modernist/"**.
+
+PLEASE REMOVE THE INCLUDE STATEMENT FROM THE DEFAUL HTML file before publishing your site.
+
+Then, after you get your own GA account set up for your stream, update the code in the google-analytics file and put the include back.
 
 ## Build and Test on Windows 10 (updated 2-18-24)
 I am now trying to clone, edit and test locally on Windows, without success. Here are the steps I used.
