@@ -72,7 +72,7 @@ PLEASE REMOVE THE INCLUDE STATEMENT FROM THE DEFAUL HTML file before publishing 
 
 Then, after you get your own GA account set up for your stream, update the code in the google-analytics file and put the include back.
 
-## Build and Test on Windows
+## Test on Windows
 <small><em>Last updated: 2024-02-19 11:30am</em></small>
 
 Still trying to clone, edit and test locally on Windows, without success. Here is the last approach I used:
