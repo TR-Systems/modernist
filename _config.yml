@@ -21,10 +21,10 @@ logo: assets/images/logo-github.png
 # Update with your userid and repo name
 
 about_text: About<br>Your Site
-about_url: https://TR-Systems.github.io/modernist/about.html
+about_url: https://tr-systems.github.io/modernist/about.html
 
 hlink1_text: Open Repo<br>On GitHub
-hlink1_url: https://github.com/TR-Systems/modernist
+hlink1_url: https://github.com/tr-systems/modernist
 
 # Three paragraphs (lines) for Footer Content
 # Notice how you can apply simple html emphasis formatting
@@ -43,6 +43,6 @@ footer_text1: Website powered by Github Pages using modified Modernist Theme
 footer_text2: <em>Use my template and get started today!</em>
 footer_url: https://TR-Systems.github.io/modernist/
 
-# Third footer paragraph/line
+# Third footer paragraph/line, wuth p
 
 copyright: <em>Copyright yyyy Your Name, Your Location</em>
