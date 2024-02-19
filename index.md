@@ -36,7 +36,7 @@ In there are two optional link buttons in the upper right corner of the header. 
 
 I am still learning margins and padding and where to apply them in the style sheet to get the desired effect.
 
-**assets/css/style.scss** is the "main" style sheet that imports the two sheets from **_sass**.
+**assets/css/style.scss** is used to import the **tr-systems-modernist** style sheet for inclusion in the site.
 
 ### @Media Print, Screen Styles
 I've only begun to explore. Current style settings are all original but definitely needs changes since I widened the content section substantially. It's in here that you can make it smaller/better for tablets and phones (e.g. smaller fonts, much smaller h1 h2 headings, etc.). Tables like that shown below will be a problem on small screens.
@@ -83,14 +83,12 @@ I am now trying to clone, edit and test locally on Windows, without success. Her
 12. Run **bundle exec jekyll serve**
 13. Error: File to import not found: **tr-systems-modernist**
 
-[GitHub Pages help](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"} shows how to create a new site using the default built-in Jekyll minima theme but it doesn't show me how to take an existing repo that builds without error on GitHub, without using a built-in theme, and then clone and configure it locally for testing with **Jekyll serve** on localhost:4000. So if you know how, please let me know! Thanks!
-
-@Import in **assets/css/style.scss** is simply not working for me LOCALLY. For some reason, it's not picking up my style sheets during the build. It HAS TO BE something simple in the structure or naming or whatever I'm doing, which I know not.
+**@import** in **assets/css/style.scss** is simply not working for me LOCALLY.
 
 The problem is, famous last words from a lifetime in IT, the rat holes of internet search do me no good here and in that respect, all search engines suck because all they do is return hundreds or thousands of posts JUST LIKE THIS, without or without solutions, and not even coming close to solving MY problem. AI is stupid.
 
 ### Workaround For Now
-Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.css** (replacing the imports). The site now builds locally and I can make changes to style.css on the fly for quick fire testing of style changes.
+Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.css** (replacing the import). The site now builds locally and I can make changes to style.css on the fly for quick fire testing of style changes.
 
 #### Catch you later...
 Tis all for now. Hope someone out there finds this Theme useful and lets me know. That would make my day.
