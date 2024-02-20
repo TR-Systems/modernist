@@ -96,6 +96,28 @@ gem "webrick"</pre>
 ### Workaround For Now
 Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.scss** (replacing the import). The site now builds locally and I can make changes to style.scss on the fly for quick fire testing of style changes. But I can't push them back up to GitHub.
 
+## Test and Develop on Raspberry Pi 4 B
+2-20-24: Ok, here we go, starting with a fresh ras pi.
+
+1. Install Ruby and Jekyll per the doc referenced above and confirm:<br>
+ruby -v returns 3.1.2p20<br>
+jekyll -v returns 4.3.3
+2. Cd to local **github** folder and run **git clone 'url to modernist repo'**
+3. Create and save **Gemfile** to repo root and **.gitignore** as above for Windows
+4. Cd to **modernist** and run **git fetch** to get some changes between step 2 and now
+5. **sudo su**
+7. Run **bundle add webrick**<br>
+Adds a LOT of Jekyll gems, themes and other web stuff, a brick of web I guess.
+8. **exit** out of su
+9. Run **bundle install**<br>
+Ok, 97 gems now installed (same as on Windows)
+10. Run **bundle exec jekyll serve**
+11. Yay! It works! 
+
+FINALLY, for the first time in this never ending all time consuming silly winter project of mine, something actually worked on the first attempt! Without a single rat hole to chase down first.
+
+Good time to take a good long break and get outside.
+
 #### Catch you later...
 Tis all for now. Hope someone out there finds this design useful and lets me know. That would make my day.
 
