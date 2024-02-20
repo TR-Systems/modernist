@@ -1,10 +1,11 @@
-## Modernist Theme for GitHub Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
+## Modernist Design for GitHub Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
 ### Under Construction and Testing! (February 2024)
-### 2-18-24: Currently TESTING local build and serve on Windows PC and it's NOT WORKING!
 
-Click the link above to open the public template repository for this theme on GitHub.
+Click the link above to open the **public template repository** for this website design on GitHub.
 
-This theme started out by copying the design of the built-in [GitHub Pages Modernist Theme (opens the public repo)](https://github.com/pages-themes/modernist){:target="_blank"}, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
+Please note: This is not a Jekyll Theme. It is a website design that you can copy and use as your own. On GitHub, Jekyll is used behind the scenes to "build" the site that GitHub "deploys" to the world at github.io.
+
+This design started out by copying the design of the built-in [GitHub Pages Modernist Theme (opens the public repo)](https://github.com/pages-themes/modernist){:target="_blank"}, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
 
 ### Usage
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, thus the home page button on every page header. This page (index.md) is your home page.
@@ -96,7 +97,7 @@ gem "webrick"</pre>
 Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.scss** (replacing the import). The site now builds locally and I can make changes to style.scss on the fly for quick fire testing of style changes. But I can't push them back up to GitHub.
 
 #### Catch you later...
-Tis all for now. Hope someone out there finds this Theme useful and lets me know. That would make my day.
+Tis all for now. Hope someone out there finds this design useful and lets me know. That would make my day.
 
 Thanks for checking it out.
 
