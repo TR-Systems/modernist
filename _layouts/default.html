@@ -25,8 +25,8 @@
           {% if site.hlink1_url %}
             <li><a target="_blank" href="{{ site.hlink1_url }}"><strong>{{ site.hlink1_text }}</strong></a></li>
           {% endif %}
-          {% if site.about_url %}
-            <li><a href="{{ site.about_url }}"><strong>{{ site.about_text }}</strong></a></li>
+          {% if site.about_page %}
+            <li><a href="{{ site.url }}/{{ site.about_page }}"><strong>{{ site.about_text }}</strong></a></li>
           {% endif %}
           <li><a href="{{ site.url }}"><strong>Home<br>Page</strong></a></li>
         </ul>
