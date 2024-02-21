@@ -48,6 +48,8 @@ gem "webrick"</pre>
 ### Workaround For Now
 Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.scss** (replacing the import). The site now builds locally and I can make changes to style.scss on the fly for quick fire testing of style changes. But I can't push style.scss back up to GitHub so I have to make the identical changes in tr-systems-modernist, which is a pain.
 
+This issue has been posted on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}, knowing that Jekyll on Windows is *not officially supported*.
+
 ---
 ### Test and Develop on Raspberry Pi 4 B
 2-20-24: Ok, here we go, starting with a fresh ras pi.
@@ -74,6 +76,8 @@ Good time to take a good long break and get outside.
 #### Catch you later...
 Tis all for now. Hope someone out there finds this design useful and lets me know. That would make my day.
 
+Thanks for stopping by and checking it out!
+
 ---
 ## Design Elements
 #### Table Layout
@@ -99,12 +103,6 @@ The colors are shown using small image files that I created from screen shots on
 | header: ul: | background: linear-gradient(#77B9FB, #3782CD); | <img width="48" src="assets/images/color-77B9FB.png"> | <img width="48" src="assets/images/color-3782CD.png"> |
 | section | background:#FFFFFF; | WHITE | x |
 | th | background-color: #3782CD; | <img width="48" src="assets/images/color-3782CD.png"> | x |
-
-
-I have posted this problem on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}.
-
-
-Thanks for checking it out.
 
 # Test Header1
 paragraph text
