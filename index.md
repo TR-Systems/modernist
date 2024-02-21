@@ -1,11 +1,10 @@
 ## Modernist Design for GitHub Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
 ### Under Construction and Testing! (February 2024)
-
-Click the link above to open the **public template repository** for this website design on GitHub.
-
-Please note: This is not a Jekyll Theme. It is a website design that you can copy and use as your own. On GitHub, Jekyll is used behind the scenes to "build" the site that GitHub "deploys" to the world at github.io.
+I am new to GitHub and using this as a learning tool and for developing and testing changes for my tr-systems site. At some point, this may become static and I may move on to a more complex design, with a different starting point.
 
 This design started out by copying the design of the built-in [GitHub Pages Modernist Theme (opens the public repo)](https://github.com/pages-themes/modernist){:target="_blank"}, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
+
+Click the link above to open the **public template repository** for this website design on GitHub.
 
 ### Usage
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, thus the home page button on every page header. This page (index.md) is your home page.
