@@ -126,7 +126,7 @@ Thanks for checking it out.
 # Test Header1
 paragraph text
 
-Some Java code with highlighting. How do I get this to line up left/right with the rest of the content?
+Some Java code with highlighting by **rouge-github.scss**.
 
 ```js
 // Javascript code with syntax highlighting.
