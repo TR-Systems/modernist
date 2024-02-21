@@ -26,19 +26,6 @@ ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make i
 
 There are only a few other simple things you need to do in order to publish your web site, and that's where [GitHub Pages Help](https://docs.github.com/en/pages){:target="_blank"} and [Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github){:target="_blank"} comes in handy. All of GitHub is very well documented in their Help pages. GitHub for Dummies helped me out in the very beginning, too.
 
-**_layouts/default.html** is used to build the header and footer and is substantially modified from the original. All content in the header and footer is supplied by **custom local variables in _config.yml**. 
-
-In there are two optional link buttons in the upper right corner of the header. If not configured, they will not be displayed. Since nav is currently through the home page, that link is on all pages. The default html file controls that and the style sheet controls how the buttons are placed and squeezed together, with a 6px gray border around them. Rather tricky. *So don't mess with the header section of the style sheet!* Actually, have at it. It's always fun to play around and learn new things in the process. That's the whole point of this for me.
-
-**_sass/tr-systems-modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was disorganized and hard to follow so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style, which I then apply to my tr-systems site. So just grab it and go.
-
-**_sass/rouge-github.scss** is the default Rouge style sheet used in GitHub for code highlighting, replacing **rouge-base16-dark** that came with the original, which I have left in the **_sass** folder. I also removed all of the custom styling of **code** and **pre** elements from the original, so I can start with html defaults and take it from there.
-
-**assets/css/style.scss** is used to import the **tr-systems-modernist** style sheet for inclusion in the site, which then imports rouge-github.
-
-### @Media Print, Screen Styles
-I've only begun to explore. Current style settings are all original but definitely needs changes since I widened the content section substantially. It's in here that you can make it smaller/better for tablets and phones (e.g. smaller fonts, much smaller h1 h2 headings, etc.). Tables like that shown below will be a problem on small screens.
-
 ### Table Layout
 I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. And since my system doc uses tables, W3Schools showed me the way, as you see below and in the style sheet.
 
@@ -135,12 +122,12 @@ var fun = function lang(l) {
 }
 ```
 
-1. ordered list with break<br>
+1. numbered list with break<br>
 more text
 2. list2
 3. list3
 
-* unordered text with break<br>
+* bullet list with break<br>
 more text
 * next bullet
     * four spaces to get nested bullet with break<br>
@@ -149,20 +136,40 @@ more text
     * last nested bullet
 * last one
 
+Definition List (dl)
+: HTML/CSS Tag: **dl**
+
+Definition Term
+: HTML/CSS Tag: **dt**
+
+Definition Description
+: HTML/CSS Tag: **dd**
+
 > blockquote text with break<br>more text
 >
 > second paragraph
 
-## Test Header2
-content
-
+## Test Header2 with horizontal line (hr) below
+***
+some test
 ### Test Header3
 content
-
 #### Test Header4
 content
-
 ##### Test Header5
 content
+## Technical Details
+**_layouts/default.html** is used to build the header and footer and is substantially modified from the original. All content in the header and footer is supplied by **custom local variables in _config.yml**. 
+
+In there are two optional link buttons in the upper right corner of the header. If not configured, they will not be displayed. Since nav is currently through the home page, that link is on all pages. The default html file controls that and the style sheet controls how the buttons are placed and squeezed together, with a 6px gray border around them. Rather tricky. *So don't mess with the header section of the style sheet!* Actually, have at it. It's always fun to play around and learn new things in the process. That's the whole point of this for me.
+
+**_sass/tr-systems-modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was disorganized and hard to follow so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style, which I then apply to my tr-systems site. So just grab it and go.
+
+**_sass/rouge-github.scss** is the default Rouge style sheet used in GitHub for code highlighting, replacing **rouge-base16-dark** that came with the original, which I have left in the **_sass** folder. I also removed all of the custom styling of **code** and **pre** elements from the original, so I can start with html defaults and take it from there.
+
+**assets/css/style.scss** is used to import the **tr-systems-modernist** style sheet for inclusion in the site, which then imports rouge-github.
+
+### @Media Print, Screen Styles
+I've only begun to explore. Current style settings are all original but definitely needs changes since I widened the content section substantially. It's in here that you can make it smaller/better for tablets and phones (e.g. smaller fonts, much smaller h1 h2 headings, etc.). Tables like that shown above will be a problem on small screens.
 
 End of Document
