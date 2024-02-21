@@ -24,11 +24,7 @@ There are only a few other simple things you need to do in order to publish your
 The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. There may be a better way but this works for me since I've been doing all editing online up to this point. More on that below.
 
 ### Google Analytics
-**Google Analytics is configured on this site for the GA streeam "tr-systems.github.io/modernist/"**.
-
-PLEASE REMOVE THE INCLUDE STATEMENT FROM THE DEFAUL HTML file before publishing your site.
-
-Then, after you get your own GA account set up for your stream, update the code in the google-analytics file and put the include back.
+**Google Analytics is configured on this site for the GA stream "tr-systems.github.io/modernist/"** by using an **if** statement in **_layouts/default.html** that you will need to update or remove, along with the **include** statement and the GA snippet file for tr-systems in the **_includes** folder.
 
 ---
 ## Test on Windows
