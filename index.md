@@ -33,17 +33,15 @@ In there are two optional link buttons in the upper right corner of the header. 
 
 **_sass/tr-systems-modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was disorganized and hard to follow so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style, which I then apply to my tr-systems site. So just grab it and go.
 
-**_sass/rouge-base16-dark.scss** is the style sheet for code highlighting. I sure won't be messing with that, other than trying to set it to the 30px left and 24px right padding defined in the section selector so it lines up with all other content. See below. 
+**_sass/rouge-github.scss** is the default Rouge style sheet used in GitHub for code highlighting, replacing **rouge-base16-dark** that came with the original, which I have left in the **_sass** folder. I also removed all of the custom styling of **code** and **pre** elements from the original, so I can start with html defaults and take it from there.
 
-I am still learning margins and padding and where to apply them in the style sheet to get the desired effect.
-
-**assets/css/style.scss** is used to import the **tr-systems-modernist** style sheet for inclusion in the site.
+**assets/css/style.scss** is used to import the **tr-systems-modernist** style sheet for inclusion in the site, which then imports rouge-github.
 
 ### @Media Print, Screen Styles
 I've only begun to explore. Current style settings are all original but definitely needs changes since I widened the content section substantially. It's in here that you can make it smaller/better for tablets and phones (e.g. smaller fonts, much smaller h1 h2 headings, etc.). Tables like that shown below will be a problem on small screens.
 
 ### Table Layout
-I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. Very useful. And since my system doc uses tables, W3Schools showed me the way, as you see below and in the style sheet.
+I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. And since my system doc uses tables, W3Schools showed me the way, as you see below and in the style sheet.
 
 ### List Item Spacing
 I use a lot of bulleted and numbered lists in my doc and like a little space between each item, so that's something I added to the style sheet.
@@ -94,7 +92,9 @@ gem "webrick"</pre>
 **@import** in **assets/css/style.scss** is simply not working for me LOCALLY.
 
 ### Workaround For Now
-Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.scss** (replacing the import). The site now builds locally and I can make changes to style.scss on the fly for quick fire testing of style changes. But I can't push them back up to GitHub.
+Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.scss** (replacing the import). The site now builds locally and I can make changes to style.scss on the fly for quick fire testing of style changes. But I can't push style.scss back up to GitHub so I have to make the identical changes in tr-systems-modernist, which is a pain.
+
+I have posted this problem on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}.
 
 ## Test and Develop on Raspberry Pi 4 B
 2-20-24: Ok, here we go, starting with a fresh ras pi.
@@ -155,15 +155,15 @@ more text
 > second paragraph
 
 ## Test Header2
-
+content
 
 ### Test Header3
-text
+content
 
 #### Test Header4
-text
+content
 
 ##### Test Header5
-text
+content
 
 End of Document
