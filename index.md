@@ -28,31 +28,57 @@ The repo has two branches. Apply changes and new content to the top level "edit"
 
 ---
 ## Test on Windows
-<small><em>Last updated: 2024-02-19 11:30am</em></small> Still trying to clone, edit and test locally on Windows, without success. Here is the last approach I used:
+*Last updated: 2024-02-22*
 
-1. Install Git and GitHub Desktop (all good)
-2. Install Ruby and Jekyll per the [GitHub and Jekyll doc](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll){:target="_blank"} (all good).
-3. Clone the repo using GitHub Desktop
-4. Add **Gemfile** to modernist root directory with these three lines:
-<pre>source "https://rubygems.org"
+1. Install [Git Bash](https://gitforwindows.org/){:target="_blank} and [GitHub Desktop for Windows](https://docs.github.com/en/desktop) (all good)<br>
+Git has many install options. I took the defaults except unchecked the *Scalar support for Large Repositories* or something like that.
+2. Install [Ruby](https://rubyinstaller.org/) and [Jekyll](https://jekyllrb.com/docs/installation/windows/){:target="_blank) per the [GitHub and Jekyll doc](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll){:target="_blank"} (all good).<br>
+When installing Ruby, take the defaults and be sure to run the ridk process at the end. I installed Ruby at c:\Ruby32. This app is huge.
+3. Open Command Prompt or Git Bash and confirm:
+```
+ruby -v returns Ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) x64-mingw-ucrt<br>
+gem -v returns 3.4.19
+bundle -v returns Bundler version 2.5.6
+jekyll -v returns jekyll 4.3.3
+```
+4. Clone the top level edit branch of the modernist repo using GitHub Desktop
+5. Add **.gitignore** file to modernist root (did I do this?)
+```
+_site
+_posts
+Gemfile
+Gemfile.lock
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+```
+5. Add **Gemfile** to modernist root:
+```
+source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
-gem "webrick"</pre>
-5. Add **Gemfile** to **.gitignore**
-6. Run **bundle add webrick** (ok)
-7. Run **bundle install** (ok)
-8. Run **bundle exec jekyll serve**
-9. **Error:** jekyll 3.9.5 | File to import not found or unreadable: **tr-systems-modernist**.
+gem "webrick"
+```
+6. Open Git Bash and switch to modernist root (edit branch)
+7. Run **bundle add webrick** (ok)
+8. Run **bundle install** (ok)
+9. Run **bundle exec jekyll serve**
+10. **Error:** jekyll 3.9.5 | File to import not found or unreadable: **tr-systems-modernist**.
 
-**@import** in **assets/css/style.scss** is simply not working for me LOCALLY.
+**@import** in **assets/css/style.scss** is simply not working locally. This issue has been posted on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}, knowing that Jekyll on Windows is *not officially supported*.
 
 ### Workaround For Now
-Copy the contents of the two style sheets in **_sass** and paste them directly **assets/css/style.scss** (replacing the import). The site now builds locally and I can make changes to style.scss on the fly for quick fire testing of style changes. But I can't push style.scss back up to GitHub so I have to make the identical changes in tr-systems-modernist, which is a pain.
-
-This issue has been posted on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}, knowing that Jekyll on Windows is *not officially supported*.
+1. Copy the contents of the rouge and modernist style sheets in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter*.
+2. Run **bundle exec jekyll serve**<br>
+The site now builds. See it here: http://localhost:4000
+3. You can now make content and style changes *on the fly* with the jekyll server running.
+4. When you're done, copy any changes to **style.scss** to **tr-systems-modernist** and push them up to GitHub, but DO NOT PUSH **style.scss**!.
+5. Then, on GitHub, create a pull request into the publish branch for "pages build and deploy".
 
 ---
-### Test and Develop on Raspberry Pi 4 B
-2-20-24: Ok, here we go, starting with a fresh ras pi.
+
+## Test on Raspberry Pi
+2-20-24: Ok, here we go, starting with a fresh Ras pi 4 B.
 
 1. Install Ruby and Jekyll per the doc referenced above and confirm:<br>
 ruby -v returns 3.1.2p20<br>
