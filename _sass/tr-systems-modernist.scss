@@ -156,11 +156,16 @@ section {
   position: relative;
 }
 
-/* margin: top 0, left/right 0, bottom 15 */
+/* margin: top 0, left/right 0, bottom NNpx */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, {
   padding:0;
-  margin:0 0 15px;
+  margin:0 0 6px;
+}
+
+h3, h4, h5, h6 {
+  padding:0;
+  margin:0 0 4px;
 }
 
 p, ul, ol, table, pre, dl {
