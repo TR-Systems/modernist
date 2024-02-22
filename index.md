@@ -42,7 +42,7 @@ bundle -v returns Bundler version 2.5.6
 jekyll -v returns jekyll 4.3.3
 ```
 4. Clone the top level edit branch of the modernist repo using GitHub Desktop
-5. Add **.gitignore** file to modernist root (did I do this?)
+5. Add **.gitignore** file to modernist root
 ```
 _site
 _posts
@@ -58,12 +58,13 @@ vendor
 source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 gem "webrick"
+gem "wdm"
 ```
 6. Open Git Bash and switch to modernist root (edit branch)
-7. Run **bundle add webrick** (ok)
-8. Run **bundle install** (ok)
-9. Run **bundle exec jekyll serve**
-10. **Error:** jekyll 3.9.5 | File to import not found or unreadable: **tr-systems-modernist**.
+7. Run **bundle install**<br>
+Ok, 98 gems installed, a brick of web I guess.
+8. Run **bundle exec jekyll serve**
+9. **Error:** jekyll 3.9.5 | File to import not found or unreadable: **tr-systems-modernist**.
 
 **@import** in **assets/css/style.scss** is simply not working locally. This issue has been posted on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}, knowing that Jekyll on Windows is *not officially supported*.
 
