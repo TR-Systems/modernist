@@ -7,9 +7,7 @@ html {
   background: #6C7989 linear-gradient(#6C7989, #434B55) fixed;
   height: 100%;
 }
-/*   padding: 10px 0; */
-/*   margin: 8px; */
-/*   font-weight: normal; */
+
 body {
   padding: 12px 0;
   margin: 0;
@@ -18,6 +16,7 @@ body {
   color: black;
   min-height: calc(100% - 100px);
 }
+
 /* Removed background color and changed width to 900 */
 .wrapper {
   width: 900px;
@@ -157,6 +156,8 @@ section {
   position: relative;
 }
 
+/* margin: top 0, left/right 0, bottom 15 */
+
 h1, h2, h3, h4, h5, h6 {
   padding:0;
   margin:0 0 15px;
@@ -168,6 +169,18 @@ p, ul, ol, table, pre, dl {
 
 li:not(:last-child) {
   padding-bottom: 8px;
+}
+
+code, pre {
+  font-size:14px;
+  overflow-x:auto;
+}
+
+pre {
+  padding:6px;
+  border: 4px solid silver;
+  border-radius: 6px;
+  background: aliceblue;
 }
 
 /* Table design from W3Schools example, with mods */
@@ -192,7 +205,7 @@ td, th {
 
 tr:nth-child(even){background-color: rgba(#000, 0.1);}
 
-tr:hover {background-color: #ddd;}
+tr:hover {background-color: aliceblued;} /* was ddd */
 
 blockquote {
   margin: 0 0 15px;
@@ -200,6 +213,9 @@ blockquote {
   background: #ccc;
   background: rgba(#000, 0.06);
   color: #222;
+  border: 4px solid silver;
+  border-radius: 6px;
+  background: aliceblue;
 }
 
 img {
