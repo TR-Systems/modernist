@@ -85,16 +85,22 @@ The site now builds. See it here: http://localhost:4000
 ruby -v returns 3.1.2p20<br>
 jekyll -v returns 4.3.3
 2. Cd to local **github** folder and run **git clone 'url to modernist repo'**
-3. Create and save **Gemfile** to repo root and **.gitignore** as above for Windows
-4. Cd to **modernist** and run **git fetch** to get some changes between step 2 and now
-5. **sudo su**
+3. Create and save **Gemfile** to repo root as above for Windows
+4. Add **Gemfile** to modernist root, without "wdm"
+```
+source "https://rubygems.org"
+gem "github-pages", group: :jekyll_plugins
+gem "webrick"
+```
+5. Cd to **modernist** and run **git fetch** to get some changes between step 2 and now
+6. **sudo su**
 7. Run **bundle add webrick**<br>
 Adds a LOT of Jekyll gems, themes and other web stuff, a brick of web I guess.
 8. **exit** out of su
 9. Run **bundle install**<br>
-Ok, 97 gems now installed (same as on Windows)
-10. Run **bundle exec jekyll serve**
-11. Yay! It works! 
+Ok, 97 gems now installed (one less than Windows, no wdm)
+11. Run **bundle exec jekyll serve**
+12. Yay! It works! 
 
 FINALLY, for the first time in this never ending all time consuming silly winter project of mine, something actually worked on the first attempt! Without a single rat hole to chase down first.
 
