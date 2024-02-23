@@ -85,7 +85,7 @@ The site now builds. See it here: http://localhost:4000
 ruby -v returns 3.1.2p20<br>
 jekyll -v returns 4.3.3
 2. Cd to local **github** folder and run **git clone 'url to modernist repo'**
-3. Create and save **Gemfile** to repo root as above for Windows
+3. Add **.gitignore** file to repo root as above for Windows
 4. Add **Gemfile** to modernist root, without "wdm"
 ```
 source "https://rubygems.org"
