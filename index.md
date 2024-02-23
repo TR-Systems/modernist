@@ -134,7 +134,7 @@ The colors are shown using small image files that I created from screen shots on
 # Test Header1
 paragraph text
 
-Some Java code with highlighting by **rouge-github.scss**.
+##### Java code with highlighting by **rouge-github.scss**.
 
 ```js
 // Javascript code with syntax highlighting.
@@ -144,10 +144,26 @@ var fun = function lang(l) {
 }
 ```
 
+##### Groovy code
+
+```groovy
+    errcd = "OK"
+    for (feature in MotionFeatures) {
+        if (filter == "" || filter.contains("$feature.key")) {
+            if (device.currentValue("$feature.value") != "NA") {
+                errcd = SetFeatureState("$feature.value",newstate)
+                if (errcd != "OK") {break}
+            } else {
+                if (filter.contains("$feature.key")) {log.info "Requested feature *$feature.key* is NA"}
+            }
+        }
+    }
+```
+
 1. numbered list with break<br>
 more text
-2. list2
-3. list3
+2. two
+3. three
 
 * bullet list with break<br>
 more text
@@ -158,7 +174,11 @@ more text
     * last nested bullet
 * last one
 
-Definition List (dl)
+> blockquote text with break<br>more text
+>
+> second paragraph
+
+Definition List
 : HTML/CSS Tag: **dl**
 
 Definition Term
@@ -167,18 +187,15 @@ Definition Term
 Definition Description
 : HTML/CSS Tag: **dd**
 
-> blockquote text with break<br>more text
->
-> second paragraph
-
-## Test Header2 with horizontal line (hr) below
-***
-some test
+## Test Header2
+content
 ### Test Header3
 content
 #### Test Header4
 content
 ##### Test Header5
+content
+###### Test Header65
 content
 ## Technical Details
 I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I removed a lot of formatting and fluff that I didn't like from the overloaded style sheet (too many cooks in the kitchen).
