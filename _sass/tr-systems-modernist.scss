@@ -41,6 +41,14 @@ header {
   padding:15px 20px;
   border-bottom:2px solid #B2D2E1;
 
+  img {
+    border: 2px solid #3782CD;
+    border-radius: 4px;
+    background: none;
+    padding:0;
+    max-width:48px;
+  }
+
   h1 {
     margin:0;
     padding:0;
@@ -222,15 +230,20 @@ blockquote {
   p {margin-bottom: 0}
 }
 
+/* 4px matching blue border with 8px of silver padding */
 img {
+  padding: 8px;
+  border: 4px solid #3782CD;
+  border-radius: 8px;
+  background:silver;
   max-width:100%;
 }
 
 hr {
-  background: #6C7989;
+  background: #6C7989 linear-gradient(to right, #6C7989, #434B55);
   color: #6C7989;
   height: 6px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 dt {
