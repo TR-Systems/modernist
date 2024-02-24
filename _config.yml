@@ -1,3 +1,5 @@
+# This is what you get when you run "jekyll new" to initialize a new site localy
+# All of the custom stuff for the modernist theme starts below
 # Welcome to Jekyll!
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
@@ -70,8 +72,10 @@ logo: assets/images/logo-github.png
 about_text: About<br>Your Site
 about_page: about.html
 
-hlink1_text: Open Repo<br>On GitHub
-hlink1_url: https://github.com/tr-systems/modernist
+# url takes precedence over page, see default.html
+hlink1_text: Test<br>Page
+hlink1_page: test.html
+# hlink1_url: https://to somewhere else
 
 # Three paragraphs (lines) for Footer Content
 # Notice how you can apply simple html emphasis formatting
