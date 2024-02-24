@@ -1,6 +1,12 @@
 ## Style Sheet Test Page
 
 #### Table Testing
+Trying to fill a table data cell with a background color.
+
+| Hex Code | Color |
+| -------- | ----- |
+| #6C7989 | <span style="font-size:36px;height:36px;width:36px;background:#6C7989;"> x </span> |
+| next | next |
 
 | Type | Model | Firmware | Web Version | Purchased |
 | ---- | ----- | -------- | ----------- | --------- |
@@ -12,12 +18,26 @@
 ---
 
 #### Picture Testing
+Style sheet provides the background, padding and border. Width setting in markdown controls the sizing. These run from 20% to 100%
 
-| piped text is table?
+<img width="20%" src="assets/images/ebike6.jpg" alt="Bike">
 
-| piped text with image after break<br><img width="240" src="assets/images/ebike6.jpg" alt="Bike" style="border:4px solid blue;border-radius:8px;padding:12px;background:silver;">
+<img width="40%" src="assets/images/ebike6.jpg" alt="Bike">
 
-text after
+<img width="60%" src="assets/images/ebike6.jpg" alt="Bike">
+
+<img width="80%" src="assets/images/ebike6.jpg" alt="Bike">
+
+<img src="assets/images/ebike6.jpg" alt="Bike">
+
+#### Pipe Testing
+Using the Pipe/Vertical Bar Symbol yields table cells
+
+| One pipe, one table data cells
+
+| Two bars with image after the second | <img width="240" src="assets/images/ebike6.jpg" alt="Bike">
+
+Fun stuff...
 
 ---
 
