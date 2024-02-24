@@ -18,17 +18,9 @@ Trying to fill a table data cell with a background color.
 ---
 
 #### Picture Testing
-Style sheet provides the background, padding and border. Width setting in markdown controls the sizing. These run from 20% to 100%
+Style sheet provides the background, padding and border. Width=20% in markdown controls the size.
 
 <img width="20%" src="assets/images/ebike6.jpg" alt="Bike">
-
-<img width="40%" src="assets/images/ebike6.jpg" alt="Bike">
-
-<img width="60%" src="assets/images/ebike6.jpg" alt="Bike">
-
-<img width="80%" src="assets/images/ebike6.jpg" alt="Bike">
-
-<img src="assets/images/ebike6.jpg" alt="Bike">
 
 #### Pipe Testing
 Using the Pipe/Vertical Bar Symbol yields table cells
