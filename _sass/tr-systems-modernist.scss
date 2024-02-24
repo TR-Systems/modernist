@@ -227,10 +227,10 @@ img {
 }
 
 hr {
-  background: #6C7989;
+  background: #6C7989 linear-gradient(to right, #6C7989, #434B55);
   color: #6C7989;
   height: 6px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 dt {

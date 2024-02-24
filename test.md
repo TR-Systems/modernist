@@ -11,4 +11,14 @@
 
 ---
 
+#### Picture Testing
+
+| piped text is table?
+
+| piped text with image after break<br><img width="240" src="assets/images/ebike6.jpg" alt="Bike" style="border:4px solid blue;border-radius:8px;padding:12px;background:silver;">
+
+text after
+
+---
+
 End of Document
