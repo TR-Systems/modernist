@@ -46,7 +46,6 @@ header {
     border-radius: 4px;
     background: none;
     padding:0;
-    max-width:48px;
   }
 
   h1 {
@@ -202,6 +201,12 @@ table {
   font-size: 14px;
   border-collapse: collapse;
   width: auto;
+
+  img {
+    border: none;
+    background: none;
+    padding:0;
+  }
 }
 
 th {
