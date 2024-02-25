@@ -61,9 +61,11 @@ description: Describing What You Do
 url: https://tr-systems.github.io/modernist/
 
 # Optional Header Elements
-# logo is 36x36 icon to left of title, with description below
+# logo is reduced to 32 wide, to left of title
+# favicon MUST BE 32x32
 
 logo: assets/images/logo-github.png
+favicon: assets/images/logo-github.png
 
 # Optional links in the upper right corner of the header
 # Two lines only, keep text and words short to fit in box, use <br> to force break
