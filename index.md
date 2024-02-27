@@ -26,14 +26,18 @@ The repo has two branches. Apply changes and new content to the top level "edit"
 ### Google Analytics
 **Google Analytics is configured on this site for the GA stream "tr-systems.github.io/modernist/"** by using an **if** statement in **_layouts/default.html** that you will need to update or remove, along with the **include** statement and the GA snippet file for tr-systems in the **_includes** folder.
 
+### Getting Started
+[GitHub Pages Help](https://docs.github.com/en/pages){:target="_blank"}. I spent hours studying this material. I'm trying to make this so you don't really have to, once you understand what a pull request is all about, that is.
+
 ---
+
 ## Test on Windows
 *Last updated: 2024-02-22*
 
-1. Install [Git Bash](https://gitforwindows.org/){:target="_blank} and [GitHub Desktop for Windows](https://docs.github.com/en/desktop) (all good)<br>
-Git has many install options. I took the defaults except unchecked the *Scalar support for Large Repositories* or something like that.
-2. Install [Ruby](https://rubyinstaller.org/) and [Jekyll](https://jekyllrb.com/docs/installation/windows/){:target="_blank) per the [GitHub and Jekyll doc](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll){:target="_blank"} (all good).<br>
-When installing Ruby, take the defaults and be sure to run the ridk process at the end. I installed Ruby at c:\Ruby32. This app is huge.
+1. Install [Git Bash](https://gitforwindows.org/){:target="_blank"} and [GitHub Desktop for Windows](https://desktop.github.com/){:target="_blank"} (all good)<br>
+Git has many install options. Take the defaults but do not include *Scalar support for Large Repositories*.
+2. Install [Ruby](https://rubyinstaller.org/){:target="_blank"} (all good).<br>
+Take the defaults and be sure to run the ridk process at the end. I installed Ruby at c:\Ruby32. This app is huge.
 3. Open Command Prompt or Git Bash and confirm:
 ```
 ruby -v returns Ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) x64-mingw-ucrt<br>

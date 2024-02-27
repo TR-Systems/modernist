@@ -20,7 +20,22 @@ Trying to fill a table data cell with a background color.
 #### Picture Testing
 Style sheet provides the background, padding and border. Width=20% in markdown controls the size.
 
-<img width="20%" src="assets/images/ebike6.jpg" alt="Bike">
+<img src="assets/images/ebike6.jpg" width="20%" alt="Bike"> Here is what you need to do.
+
+<div class="image-grid"><div class="item1">
+<img src="assets/images/ebike6.jpg"></div>
+<div class="item2">
+<p>You can and should first read the Disclaimers below and then test this yourself by connecting the ports, enabling and arming your Alarm Input and Output Events, and then triggering a manual alarm from the Alarm Out event on your camera (don't forget to clear it). See additional notes on the jumper wire in Camera Configuration below.</p>
+</div>
+<div class="item3">
+<img src="assets/images/ebike6.jpg">
+</div>
+<div class="item2">
+<p>You can and should first read the Disclaimers below and then test this yourself by connecting the ports, enabling and arming your Alarm Input and Output Events, and then triggering a manual alarm from the Alarm Out event on your camera (don't forget to clear it). See additional notes on the jumper wire in Camera Configuration below.</p>
+</div>
+</div>
+
+---
 
 #### Pipe Testing
 Using the Pipe/Vertical Bar Symbol yields table cells
