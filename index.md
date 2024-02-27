@@ -2,7 +2,7 @@
 ### Under Construction and Testing! (February 2024)
 I am new to GitHub and using this as a learning tool for developing and testing changes for my tr-systems site.
 
-Click this link above to open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"} for this website design on GitHub.
+Click this link to open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"} for this website design on GitHub.
 
 This design started out by copying the design of the built-in [GitHub Pages Modernist Theme (opens the public repo)](https://github.com/pages-themes/modernist){:target="_blank"}, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
 
