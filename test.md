@@ -1,9 +1,7 @@
 ## Style Sheet Test Page
 
 #### Picture Testing
-Style sheet creates the background and border. Control the size in markdown using the width setting.
-
-Make it small using width=10% <img width="10%" src="assets/images/zion-np.jpg" alt="Bike">  (of what you may ask?)
+The style sheet sets the background and border for all images, forming a picture frame. You control the size of the image in markdown using the width setting.
 
 Placing text and other content next to an image can be done in several ways and gets really complicated really fast, but I got his working with some custom styling and some html in the markdown. And that's the problem, it's all html, but still easy to write. Learn by example, enhance through further study.
 
