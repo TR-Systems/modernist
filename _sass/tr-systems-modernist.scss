@@ -55,14 +55,9 @@ header {
     margin:0;
     color:#61778B;
     font-size:15px;
-
+/*  Don't know what this does */
     &.view {
       display:none;
-
-/*      a { */
-/*        color:#06c; */
-/*        text-decoration: none; */
-/*      } */
     }
   }
 
@@ -95,8 +90,7 @@ header {
     li {
       width:100px;
       float:left;
-      border-right:1px solid #3A7CBE;
-      height:36px;
+      border-right:2px solid #3A7CBE;
 
       &.single {
         border:none;
@@ -105,30 +99,27 @@ header {
 
     li + li {
       width: 100px;
-      border-left:1px solid #8BBEF3;
-      height:36px;
+      border-left: 2px solid #8BBEF3;
     }
 
     li + li + li {
-      border-right:none;
-      width:100px;
+      border-right: none;
+      width: 100px;
+	  height: 38px;
     }
 
     a {
-      line-height:1;
-      font-size:11px;
-      color:white;
       display:block;
+      line-height:1;
+      font-size:12px;
+      font-weight:400;
+      color:white;
       text-align:center;
       text-decoration:none;
-      font-weight:400;
       padding-top:2px;
-      height:36px;
 
       strong {
         font-size:14px;
-        display:block;
-        color:white;
       }
     }
   }
@@ -185,12 +176,9 @@ h3, h4, h5, h6 {
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 15px;
+  margin:0 0 12px;
 }
 
-p {
-  padding:0;
-}
 li:not(:last-child) {
   padding-bottom: 8px;
 }
