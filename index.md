@@ -10,7 +10,7 @@ This design started out by copying the design of the built-in [GitHub Pages Mode
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page. This page is your home page.
 
 ### Use This Template
-Open TR-Systems/modernist repository on GitHub and then click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***. Give your repo a web friendly name like "web" or "mycoolthing" since the repo name is the top level path in the URL for your website.
+Open this repository on GitHub and then click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***. Give your repo a web friendly name like "web" or "mycoolthing" since the repo name is the top level path in the URL for your website.
 
 ### Use a Team/Pro Account
 Even as a total newbie to GitHub, I recommend this low-cost option so you can use a custom domain name and publish from a private repo in a separate Team account (e.g TR-Systems), instead of publishing from a public repo on your personal account.
@@ -73,7 +73,20 @@ Ok, 98 gems installed, a brick of web I guess.
 **@import** in **assets/css/style.scss** is simply not working locally. This issue has been posted on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}, knowing that Jekyll on Windows is *not officially supported*.
 
 ### Workaround For Now
-1. Copy the contents of the rouge and modernist style sheets in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter*.
+1. Copy the contents of **tr-systems-modernist** and **rouge-github** in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter, and removing the import for rouge from tr-systems-modernist*, so **style.scss** it looks like this:<br>
+
+```
+---
+---
+
+/* Modernist Theme for GitHub Pages by TR-Systems */
+html {
+... remainder of tr-systems-modernist
+
+/* Default GitHub Code Highlighter */
+... all of rouge-github or rouge-base16-dark if you want to try it.
+```
+
 2. Run **bundle exec jekyll serve**<br>
 The site now builds. See it here: http://localhost:4000
 3. You can now make content and style changes *on the fly* with the jekyll server running.
