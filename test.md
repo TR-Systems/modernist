@@ -18,20 +18,36 @@ Trying to fill a table data cell with a background color.
 ---
 
 #### Picture Testing
-Style sheet provides the background, padding and border. Width=20% in markdown controls the size.
+Style sheet creates the background and border. Control the size in markdown using the width setting.
 
-<img src="assets/images/ebike6.jpg" width="20%" alt="Bike"> Here is what you need to do.
+Make it small using width=10% (of what you may ask?)
 
-<div class="image-grid"><div class="item1">
-<img src="assets/images/ebike6.jpg"></div>
+<img width="10%" src="assets/images/zion-np.jpg" alt="Bike">
+
+Or big using width=320 (pixels)
+
+<img width="320" src="assets/images/zion-np.jpg">
+
+Placing text and other content next to an image can be done in several ways and gets really complicated really fast, but I got his working with some custom styling and some html in the page source.
+
+This is a "grid" element with two columns. The style sheet sets the width of the first column to 40%, for a big picture. I'm still working on giving that more flexibility. Like I said, it's complicated.
+
+<div class="image-grid">
+<div class="item1">
+	<img src="assets/images/zion-np.jpg">
+</div>
 <div class="item2">
-<p>You can and should first read the Disclaimers below and then test this yourself by connecting the ports, enabling and arming your Alarm Input and Output Events, and then triggering a manual alarm from the Alarm Out event on your camera (don't forget to clear it). See additional notes on the jumper wire in Camera Configuration below.</p>
+	<hr>
+    <p>Virgin River - Zion National Park</p>
+	<hr>
+	<p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
+	<p>In the source markdown, you can add additional div sections to define additional grid elements in sequence using additional div statements.</p>
 </div>
 <div class="item3">
-<img src="assets/images/ebike6.jpg">
+	<p>This is the next element in the grid and the margin is wrong. I know why but it would take too long to explain. So maybe you can figure out how to fix it.</p>
 </div>
-<div class="item2">
-<p>You can and should first read the Disclaimers below and then test this yourself by connecting the ports, enabling and arming your Alarm Input and Output Events, and then triggering a manual alarm from the Alarm Out event on your camera (don't forget to clear it). See additional notes on the jumper wire in Camera Configuration below.</p>
+<div class="item4">
+	<p>This is the last element in the grid.</p>
 </div>
 </div>
 
@@ -40,9 +56,9 @@ Style sheet provides the background, padding and border. Width=20% in markdown c
 #### Pipe Testing
 Using the Pipe/Vertical Bar Symbol yields table cells
 
-| One pipe, one table data cells
+| One pipe, one table data cell
 
-| Two bars with image after the second | <img width="240" src="assets/images/ebike6.jpg" alt="Bike">
+| Two pipes with image after the second.<br>Table styling in the style sheet modifies<br>image style to remove the picture frame<br>but retains the rounded radius border. | <img width="160" src="assets/images/zion-np.jpg">
 
 Fun stuff...
 
