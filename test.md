@@ -34,20 +34,20 @@ This is a "grid" element with two columns. The style sheet sets the width of the
 
 <div class="image-grid">
 <div class="item1">
-	<img src="assets/images/zion-np.jpg">
+    <img src="assets/images/zion-np.jpg">
 </div>
 <div class="item2">
-	<hr>
+    <hr>
     <p>Virgin River - Zion National Park</p>
-	<hr>
-	<p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
-	<p>In the source markdown, you can add additional div sections to define additional grid elements in sequence using additional div statements.</p>
+    <hr>
+    <p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
+    <p>In the source markdown, you can add additional div sections to define additional grid elements in sequence using additional div statements.</p>
 </div>
 <div class="item3">
-	<p>This is the next element in the grid and the margin is wrong. I know why but it would take too long to explain. So maybe you can figure out how to fix it.</p>
+    <p>This is the next element in the grid and the margin is wrong. I know why but it would take too long to explain. So maybe you can figure out how to fix it.</p>
 </div>
 <div class="item4">
-	<p>This is the last element in the grid.</p>
+    <p>This is the last element in the grid.</p>
 </div>
 </div>
 
