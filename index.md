@@ -73,7 +73,8 @@ Ok, 98 gems installed, a brick of web I guess.
 **@import** in **assets/css/style.scss** is simply not working locally. This issue has been posted on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}, knowing that Jekyll on Windows is *not officially supported*.
 
 ### Workaround For Now
-1. Copy the contents of **tr-systems-modernist** and **rouge-github** in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter, and removing the import for rouge from tr-systems-modernist*, so **style.scss** it looks like this:
+Copy the contents of **tr-systems-modernist** and **rouge-github** in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter, and removing the import for rouge from tr-systems-modernist*, so **style.scss** it looks like this:
+
 ```
 ---
 ---
@@ -85,11 +86,12 @@ html {
 /* Default GitHub Code Highlighter */
 ... all of rouge-github or rouge-base16-dark if you want to try it.
 ```
-2. Run **bundle exec jekyll serve**<br>
+
+1. Run **bundle exec jekyll serve**<br>
 The site now builds. See it here: http://localhost:4000
-3. You can now make content and style changes *on the fly* with the jekyll server running.
-4. When you're done, copy any changes to **style.scss** to **tr-systems-modernist** and push them up to GitHub, but DO NOT PUSH **style.scss**!.
-5. Then, on GitHub, create a pull request into the publish branch for "pages build and deploy".
+2. You can now make content and style changes *on the fly* with the jekyll server running.
+3. When you're done, copy any changes to **style.scss** to **tr-systems-modernist** and push them up to GitHub, but DO NOT PUSH **style.scss**!.
+4. Then, on GitHub, create a pull request into the publish branch for "pages build and deploy".
 
 ---
 
