@@ -3,45 +3,85 @@
 #### Picture Testing
 Style sheet creates the background and border. Control the size in markdown using the width setting.
 
-Make it small using width=10% (of what you may ask?)
+Make it small using width=10% <img width="10%" src="assets/images/zion-np.jpg" alt="Bike">  (of what you may ask?)
 
-<img width="10%" src="assets/images/zion-np.jpg" alt="Bike">
-
-Or big using width=320 (pixels)
-
-<img width="320" src="assets/images/zion-np.jpg">
-
-Placing text and other content next to an image can be done in several ways and gets really complicated really fast, but I got his working with some custom styling and some html in the page source.
+Placing text and other content next to an image can be done in several ways and gets really complicated really fast, but I got his working with some custom styling and some html in the markdown. And that's the problem, it's all html, but still easy to write. Learn by example, enhance through further study.
 
 This is a "grid" element with two columns. The style sheet sets the width of the first column to 40%, for a big picture. I'm still working on giving that more flexibility. Like I said, it's complicated.
 
 <div class="image-grid">
-<div class="item1">
-    <img src="assets/images/zion-np.jpg">
+<div class="column1">
+<img src="assets/images/zion-np.jpg">
+<p>First element in the grid, class=image-grid.column1.</p>
 </div>
-<div class="item2">
+<div class="column2">
+<p>Second element, class=image-grid.column2.</p>
 <hr>
 <p>Virgin River - Zion National Park</p>
 <hr>
 <p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
-<p>In the source markdown, you can add additional divs to define additional grid elements in sequence. We can also add a few thumbnails here after a break and a space between each.<br>
+<p>In the source markdown, you can add additional divs to define additional grid elements in sequence. We can also add a few thumbnails here after a break and a space between each and width=80,90,100px.<br>
 <img width="80" src="assets/images/zion-np.jpg"> 
 <img width="90" src="assets/images/zion-np.jpg"> 
 <img width="100" src="assets/images/zion-np.jpg"><br>
 Then a break after the last pic to end the paragraph</p>
 </div>
-<div class="item3">
-<p>Next element in the grid and the margin is wrong. I know why but it would take too long to explain.</p>
-<p>There is one thing I'm doing that throws everything off and that's the 8px picture frame around all images, also too hard to explain.</p>
+<div class="column1">
+<hr>
+<p>Third element, class image-grid.column1.</p>
+<pre>
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+</pre>
 </div>
-<div class="item4">
-<p>Last element in the grid, with a picture after two breaks, otherwise the pic shifts left. More styling issues with margins and padding.<br><br>
-<img width="100" src="assets/images/zion-np.jpg"><br>
-More text after another break.</p>
+<div class="column2">
+<hr>
+<p>Last element in the grid</p>
+<p>There is one thing I'm doing that throws everything off in terms of margins and padding and that's the 8px picture frame around all images, too hard to explain.</p>
 </div>
 </div>
 
 ---
+
+Here is the source markdown to produce that grid.
+
+```
+<div class="image-grid">
+<div class="column1">
+<img src="assets/images/zion-np.jpg">
+<p>First element in the grid, class=image-grid.column1.</p>
+</div>
+<div class="column2">
+<p>Second element, class=image-grid.column2.</p>
+<hr>
+<p>Virgin River - Zion National Park</p>
+<hr>
+<p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
+<p>In the source markdown, you can add additional divs to define additional grid elements in sequence. We can also add a few thumbnails here after a break and a space between each and width=80,90,100px.<br>
+<img width="80" src="assets/images/zion-np.jpg"> 
+<img width="90" src="assets/images/zion-np.jpg"> 
+<img width="100" src="assets/images/zion-np.jpg"><br>
+Then a break after the last pic to end the paragraph</p>
+</div>
+<div class="column1">
+<hr>
+<p>Third element, class image-grid.column1.</p>
+<pre>
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+</pre>
+</div>
+<div class="column2">
+<hr>
+<p>Last element in the grid</p>
+<p>There is one thing I'm doing that throws everything off in terms of margins and padding and that's the 8px picture frame around all images, too hard to explain.</p>
+</div>
+</div>
+```
 
 #### Pipe Testing
 Using the Pipe/Vertical Bar Symbol yields table cells
