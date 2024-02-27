@@ -162,6 +162,17 @@ section {
   position: relative;
 }
 
+.image-grid {
+  margin: 0 0 15px;
+  max-width: 870px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  align-items: left;
+/* Need to accomodate for 16px of image border  */
+  p {margin-left: 32px;}
+  hr {margin-left: 32px; height: 3px;}
+}
+
 /* margin: top 0, left/right 0, bottom NNpx */
 
 h1, h2, {
