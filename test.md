@@ -1,22 +1,5 @@
 ## Style Sheet Test Page
 
-#### Table Testing
-Trying to fill a table data cell with a background color.
-
-| Hex Code | Color |
-| -------- | ----- |
-| #6C7989 | <span style="font-size:36px;height:36px;width:36px;background:#6C7989;"> x </span> |
-| next | next |
-
-| Type | Model | Firmware | Web Version | Purchased |
-| ---- | ----- | -------- | ----------- | --------- |
-| Outdoor Mini-Dome (4) | DS-2CD-2543-G0-IS | v5.5.61 b180718<br>v5.6.820 b220519<br>v5.6.821 b230831 | v4.0.1 b180626<br>v4.0.1 b220610 | 3 in 2018<br>1 in 2023 |
-| Indoor Cube w/PIR | DS-2CD-2422-FWD-IW | v5.5.0 b170725 | v4.0.1 b170711 | 2018  |
-| Outdoor PTZ Mini-Dome | DS-2DE-3404-W-DE | v5.7.4 b221130<br>v5.8.1 b231108 | v4.0.1 b220121 | 2024 |
-| NVR | DS-7604-NI-Q1 | v4.32.110 b211009 | v4.0.1 b210914 | 2024 |
-
----
-
 #### Picture Testing
 Style sheet creates the background and border. Control the size in markdown using the width setting.
 
@@ -41,7 +24,11 @@ This is a "grid" element with two columns. The style sheet sets the width of the
 <p>Virgin River - Zion National Park</p>
 <hr>
 <p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
-<p>In the source markdown, you can add additional div sections to define additional grid elements in sequence using additional div statements.</p>
+<p>In the source markdown, you can add additional divs to define additional grid elements in sequence. We can also add a few thumbnails here after a break and a space between each.<br>
+<img width="80" src="assets/images/zion-np.jpg"> 
+<img width="90" src="assets/images/zion-np.jpg"> 
+<img width="100" src="assets/images/zion-np.jpg"><br>
+Then a break after the last pic to end the paragraph</p>
 </div>
 <div class="item3">
 <p>Next element in the grid and the margin is wrong. I know why but it would take too long to explain.</p>
@@ -62,6 +49,23 @@ Using the Pipe/Vertical Bar Symbol yields table cells
 | One pipe, one table data cell
 
 | Two pipes with image after the second.<br>Table styling in the style sheet modifies<br>image style to remove the picture frame<br>but retains the rounded radius border. | <img width="160" src="assets/images/zion-np.jpg">
+
+---
+
+#### Table Testing
+Trying to fill a table data cell with a background color.
+
+| Hex Code | Color |
+| -------- | ----- |
+| #6C7989 | <span style="font-size:36px;height:36px;width:36px;background:#6C7989;"> x </span> |
+| next | next |
+
+| Type | Model | Firmware | Web Version | Purchased |
+| ---- | ----- | -------- | ----------- | --------- |
+| Outdoor Mini-Dome (4) | DS-2CD-2543-G0-IS | v5.5.61 b180718<br>v5.6.820 b220519<br>v5.6.821 b230831 | v4.0.1 b180626<br>v4.0.1 b220610 | 3 in 2018<br>1 in 2023 |
+| Indoor Cube w/PIR | DS-2CD-2422-FWD-IW | v5.5.0 b170725 | v4.0.1 b170711 | 2018  |
+| Outdoor PTZ Mini-Dome | DS-2DE-3404-W-DE | v5.7.4 b221130<br>v5.8.1 b231108 | v4.0.1 b220121 | 2024 |
+| NVR | DS-7604-NI-Q1 | v4.32.110 b211009 | v4.0.1 b210914 | 2024 |
 
 Fun stuff...
 
