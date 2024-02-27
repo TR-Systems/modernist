@@ -50,7 +50,7 @@ This is a "grid" element with two columns. The style sheet sets the width of the
 <div class="item4">
     <p>Last element in the grid, with a picture after two breaks, otherwise the pic shifts left. More styling issues with margins and padding.<br><br>
     <img width="100" src="/assets/images/zion-np.jpg"><br>
-	More text after another break.</p>
+    More text after another break.</p>
 </div>
 </div>
 
