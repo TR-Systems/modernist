@@ -45,7 +45,7 @@ var fun = function lang(l) {
 
 ---
 
-Here is the source markdown to produce that grid.
+Here is the source html to produce that grid (see test.md). I believe this is the only way to achieve these results through any markdown translator. Good for short sections of a document, such as text alongside a large image.
 
 ```
 <div class="image-grid">
