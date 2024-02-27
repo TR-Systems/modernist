@@ -33,8 +33,8 @@ header {
   background:#C6EAFA;
   background: linear-gradient(#DDFBFC, #C6EAFA);
   position:relative;
-  padding:15px 20px;
-  border-bottom:2px solid #B2D2E1;
+  padding:12px 20px 4px 20px;
+  border-bottom:4px solid #B2D2E1;
 
   img {
     border: 2px solid #3782CD;
@@ -56,7 +56,6 @@ header {
     color:#61778B;
     font-size:15px;
 
-/*      font-weight:700; */
     &.view {
       display:none;
 
@@ -69,14 +68,13 @@ header {
 
   ul {
     margin:0;
-    padding:0;
+    padding:0 2px;
     list-style:none;
     position:absolute;
     z-index:1;
     right:20px;
-    top:10px;
-    height:38px;
-    padding:1px 0;
+    top:16px;
+    height:36px;
     background:#5198DF;
     background: linear-gradient(#77B9FB, #3782CD);
     border-radius:5px;
@@ -98,7 +96,7 @@ header {
       width:100px;
       float:left;
       border-right:1px solid #3A7CBE;
-      height:38px;
+      height:36px;
 
       &.single {
         border:none;
@@ -108,6 +106,7 @@ header {
     li + li {
       width: 100px;
       border-left:1px solid #8BBEF3;
+      height:36px;
     }
 
     li + li + li {
@@ -123,8 +122,8 @@ header {
       text-align:center;
       text-decoration:none;
       font-weight:400;
-      padding-top:6px;
-      height:40px;
+      padding-top:2px;
+      height:36px;
 
       strong {
         font-size:14px;
@@ -189,6 +188,9 @@ p, ul, ol, table, pre, dl {
   margin:0 0 15px;
 }
 
+p {
+  padding:0;
+}
 li:not(:last-child) {
   padding-bottom: 8px;
 }
