@@ -37,20 +37,20 @@ This is a "grid" element with two columns. The style sheet sets the width of the
     <img src="assets/images/zion-np.jpg">
 </div>
 <div class="item2">
-    <hr>
-    <p>Virgin River - Zion National Park</p>
-    <hr>
-    <p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
-    <p>In the source markdown, you can add additional div sections to define additional grid elements in sequence using additional div statements.</p>
+<hr>
+<p>Virgin River - Zion National Park</p>
+<hr>
+<p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
+<p>In the source markdown, you can add additional div sections to define additional grid elements in sequence using additional div statements.</p>
 </div>
 <div class="item3">
-    <p>Next element in the grid and the margin is wrong. I know why but it would take too long to explain.</p>
-    <p>There is one thing I'm doing that throws everything off and that's the 8px picture frame around all images, also too hard to explain.</p>
+<p>Next element in the grid and the margin is wrong. I know why but it would take too long to explain.</p>
+<p>There is one thing I'm doing that throws everything off and that's the 8px picture frame around all images, also too hard to explain.</p>
 </div>
 <div class="item4">
-    <p>Last element in the grid, with a picture after two breaks, otherwise the pic shifts left. More styling issues with margins and padding.<br><br>
-    <img width="100" src="/assets/images/zion-np.jpg"><br>
-	More text after another break.</p>
+<p>Last element in the grid, with a picture after two breaks, otherwise the pic shifts left. More styling issues with margins and padding.<br><br>
+<img width="100" src="/assets/images/zion-np.jpg"><br>
+More text after another break.</p>
 </div>
 </div>
 
