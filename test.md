@@ -1,71 +1,57 @@
 ## Style Sheet Test Page
 
-#### Picture Testing
-The style sheet sets the background and border for all images, forming a picture frame. You control the size of the image in markdown using the width setting.
+### Picture Testing
+By default for the **img** tag, the style sheet creates a *picture frame* with 4px of padding and 4px of rounded border, for a total increase in width and height of 16px, which you can over-ride by using one of the other image styles:
 
-Placing text and other content next to an image can be done in several ways and gets really complicated really fast, but I got his working with some custom styling and some html in the markdown. And that's the problem, it's all html, but still easy to write. Learn by example, enhance through further study.
+```
+<img width="20%" src="assets/images/zion-np.jpg" alt="Zion National Park">
+ <img class="img-border2" width="20%" src="assets/images/zion-np.jpg">
+ <img class="img-noborder" width="20%" src="assets/images/zion-np.jpg">
+ <img class="img-raw" width="200" src="assets/images/zion-np.jpg">
+```
 
-This is a "grid" element with two columns. The style sheet sets the width of the first column to 40%, for a big picture. I'm still working on giving that more flexibility. Like I said, it's complicated.
-
-<div class="image-grid">
-<div class="column1">
-<img src="assets/images/zion-np.jpg">
-<p>First element in the grid, class=image-grid.column1.</p>
-</div>
-<div class="column2">
-<p>Second element, class=image-grid.column2.</p>
-<hr>
-<p>Virgin River - Zion National Park</p>
-<hr>
-<p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
-<p>In the source markdown, you can add additional divs to define additional grid elements in sequence. We can also add a few thumbnails here after a break and a space between each and width=80,90,100px.<br>
-<img width="80" src="assets/images/zion-np.jpg"> 
-<img width="90" src="assets/images/zion-np.jpg"> 
-<img width="100" src="assets/images/zion-np.jpg"><br>
-Then a break after the last pic to end the paragraph</p>
-</div>
-<div class="column1">
-<hr>
-<p>Third element, class image-grid.column1.</p>
-<pre>
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-</pre>
-</div>
-<div class="column2">
-<hr>
-<p>Last element in the grid</p>
-<p>There is one thing I'm doing that throws everything off in terms of margins and padding and that's the 8px picture frame around all images, too hard to explain.</p>
-</div>
-</div>
+<img width="20%" src="assets/images/zion-np.jpg" alt="Zion National Park">
+ <img class="img-border2" width="20%" src="assets/images/zion-np.jpg">
+ <img class="img-noborder" width="20%" src="assets/images/zion-np.jpg">
+ <img class="img-raw" width="200" src="assets/images/zion-np.jpg">
 
 ---
 
-Here is the source html to produce that grid (see test.md). I believe this is the only way to achieve these results through any markdown translator. Good for short sections of a document, such as text alongside a large image.
+### Modernist Grid Styles
+Placing text and other content next to an image can be done in several ways and gets really complicated really fast, but I got his working with a custom grid class in the style sheet and html in the markdown. This appears to be the only way to create a grid out of markdown.
 
-```
-<div class="image-grid">
-<div class="column1">
-<img src="assets/images/zion-np.jpg">
-<p>First element in the grid, class=image-grid.column1.</p>
+You can run wild with these, so I'm providing two examples that you can use out of the box, provided you don't mind editing raw html in your pages, which is prone to the slightest slip or miss that makes your web page run wild, too.
+
+But it works and it ain't that hard. Easy to copy/paste the basic structure needed and then fill in the content.
+
+### 50-50 Grid
+Each element in the grid starts with a horizontal rule that spans the width of the column.
+
+<div class="grid-5050">
+<div class="c1">
+<hr>
+<h4>First Element in the Grid</h4>
+<img class="img-border2" src="assets/images/zion-np.jpg">
 </div>
-<div class="column2">
-<p>Second element, class=image-grid.column2.</p>
+
+<div class="c2">
+<hr>
+<h4>Second Element</h4>
 <hr>
 <p>Virgin River - Zion National Park</p>
 <hr>
-<p>Continue adding text to this grid element and it will flow alongside, remaining in this column and continuing past the bottom of the picture.</p>
-<p>In the source markdown, you can add additional divs to define additional grid elements in sequence. We can also add a few thumbnails here after a break and a space between each and width=80,90,100px.<br>
+<p>800x600 image resized by the browser to fit the column width and using the smaller border so it doesn't intrude on the gap between columns as much.</p>
+<p>Three images after this paragraph, with a space between and width=80, 100, 120.</p>
 <img width="80" src="assets/images/zion-np.jpg"> 
-<img width="90" src="assets/images/zion-np.jpg"> 
-<img width="100" src="assets/images/zion-np.jpg"><br>
-Then a break after the last pic to end the paragraph</p>
+<img width="100" src="assets/images/zion-np.jpg"> 
+<img width="120" src="assets/images/zion-np.jpg">
+<p>Then a new paragraph to end the content of this element.</p>
 </div>
-<div class="column1">
+
+<div class="c1">
 <hr>
-<p>Third element, class image-grid.column1.</p>
+<h4>Third Element</h4>
+<p>Formatted text. Code highlighting doesn't work here.</p>
 <pre>
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
@@ -73,24 +59,68 @@ var fun = function lang(l) {
 }
 </pre>
 </div>
-<div class="column2">
-<hr>
-<p>Last element in the grid</p>
-<p>There is one thing I'm doing that throws everything off in terms of margins and padding and that's the 8px picture frame around all images, too hard to explain.</p>
-</div>
-</div>
-```
 
-#### Pipe Testing
+<div class="c2">
+<hr>
+<h4>Fourth Element</h4>
+<p>More content</p>
+</div>
+</div>
+
+Next markdown paragraph after the grid.
+
+---
+
+### 66-33 Grid
+
+<div class="grid-6633">
+<div class="c1">
+<hr>
+<h4>First Element in the Grid</h4>
+<p>Using img-noborder.</p>
+<img class="img-noborder" src="assets/images/zion-np.jpg">
+</div>
+
+<div class="c2">
+<hr>
+<h4>Second Element</h4>
+<hr>
+<p>Virgin River - Zion National Park</p>
+<hr>
+</div>
+
+<div class="c1">
+<hr>
+<h4>Third Element</h4>
+<pre>
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+</pre>
+</div>
+
+<div class="c2">
+<hr>
+<h4>Images Without Borders</h4>
+<img class="img-noborder" src="assets/images/zion-np.jpg">
+</div>
+</div>
+
+Next markdown paragraph after the grid.
+
+---
+
+### Pipe Testing
 Using the Pipe/Vertical Bar Symbol yields table cells
 
 | One pipe, one table data cell
 
-| Two pipes with image after the second.<br>Table styling in the style sheet modifies<br>image style to remove the picture frame<br>but retains the rounded radius border. | <img width="160" src="assets/images/zion-np.jpg">
+| Two pipes with image after the second  | <img class="img-border2" width="160" src="assets/images/zion-np.jpg">
 
 ---
 
-#### Table Testing
+### Table Testing
 Trying to fill a table data cell with a background color.
 
 | Hex Code | Color |
@@ -104,6 +134,8 @@ Trying to fill a table data cell with a background color.
 | Indoor Cube w/PIR | DS-2CD-2422-FWD-IW | v5.5.0 b170725 | v4.0.1 b170711 | 2018  |
 | Outdoor PTZ Mini-Dome | DS-2DE-3404-W-DE | v5.7.4 b221130<br>v5.8.1 b231108 | v4.0.1 b220121 | 2024 |
 | NVR | DS-7604-NI-Q1 | v4.32.110 b211009 | v4.0.1 b210914 | 2024 |
+
+---
 
 Fun stuff...
 
