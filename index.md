@@ -1,13 +1,14 @@
 ## Modernist Design for GitHub Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
 ### Under Construction and Testing! (February 2024)
-I am new to GitHub and using this as a learning tool for developing and testing changes for my tr-systems site.
-
-Click this link to open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"} for this website design on GitHub.
+I am new to GitHub and using this as a learning tool for developing and testing changes for my tr-systems site. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"} for this website design on GitHub.
 
 This design started out by copying the GitHub Pages Modernist Theme, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
 
+### Recent Updates
+**2024-02-28**: Just added two new grid styles. Check it out on the [Test Page!](test.md)
+
 ### Usage
-Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, which I will be improving upon as time and interest dictates. This page is your home page.
+Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.
 
 ### Use This Template
 Open this repository on GitHub and then click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***. Give your repo a web friendly name like "web" or "mycoolthing" since the repo name is the top level path in the URL for your website.
@@ -143,16 +144,16 @@ The colors are shown using small image files that I created from screen shots on
 
 | Selector | Background Colors | Color1 | Color2 |
 | -------- | ----------------- | ------ | ------ |
-| html | background: #6C7989; | <img width="48" src="assets/images/color-6C7989.png"> | x |
-| html | background: linear-gradient(#6C7989, #434B55) | <img width="48" src="assets/images/color-6C7989.png"> | <img width="48" src="assets/images/color-434B55.png"> |
-| header | background: #C6EAFA; | <img width="48" src="assets/images/color-C6EAFA.png"> | x |
-| header | background: linear-gradient(#DDFBFC, #C6EAFA); | <img width="48" src="assets/images/color-DDFBFC.png"> | <img width="48" src="assets/images/color-C6EAFA.png"> |
-| header | border-bottom:2px solid #B2D2E1; | <img width="48" src="assets/images/color-B2D2E1.png"> | x |
+| html | background: #6C7989; | <img class="img-raw" width="48" src="assets/images/color-6C7989.png"> | x |
+| html | background: linear-gradient(#6C7989, #434B55) | <img class="img-raw" width="48" src="assets/images/color-6C7989.png"> | <img class="img-raw" width="48" src="assets/images/color-434B55.png"> |
+| header | background: #C6EAFA; | <img class="img-raw" width="48" src="assets/images/color-C6EAFA.png"> | x |
+| header | background: linear-gradient(#DDFBFC, #C6EAFA); | <img class="img-raw" width="48" src="assets/images/color-DDFBFC.png"> | <img class="img-raw" width="48" src="assets/images/color-C6EAFA.png"> |
+| header | border-bottom:2px solid #B2D2E1; | <img class="img-raw" width="48" src="assets/images/color-B2D2E1.png"> | x |
 | header: ul: before: | background:rgba(#000, 0.1); | Light Gray | x |
-| header: ul: | background: #5198DF; | <img width="48" src="assets/images/color-5198DF.png"> | x |
-| header: ul: | background: linear-gradient(#77B9FB, #3782CD); | <img width="48" src="assets/images/color-77B9FB.png"> | <img width="48" src="assets/images/color-3782CD.png"> |
+| header: ul: | background: #5198DF; | <img class="img-raw" width="48" src="assets/images/color-5198DF.png"> | x |
+| header: ul: | background: linear-gradient(#77B9FB, #3782CD); | <img class="img-raw" width="48" src="assets/images/color-77B9FB.png"> | <img class="img-raw" width="48" src="assets/images/color-3782CD.png"> |
 | section | background:#FFFFFF; | WHITE | x |
-| th | background-color: #3782CD; | <img width="48" src="assets/images/color-3782CD.png"> | x |
+| th | background-color: #3782CD; | <img class="img-raw" width="48" src="assets/images/color-3782CD.png"> | x |
 
 # Test Header1
 paragraph text
