@@ -61,6 +61,7 @@ header {
     }
   }
 
+/* All this just to build three link buttons */
   ul {
     margin:0;
     padding:0 2px;
@@ -68,8 +69,8 @@ header {
     position:absolute;
     z-index:1;
     right:20px;
-    top:16px;
-    height:36px;
+    top:12px;
+    height:34px;
     background:#5198DF;
     background: linear-gradient(#77B9FB, #3782CD);
     border-radius:5px;
@@ -79,14 +80,17 @@ header {
       content:'';
       position:absolute;
       z-index:-1;
-      left:-6px;
-      top:-6px;
-      right:-6px;
-      bottom:-6px;
+      left:-4px;
+      top:-4px;
+      right:-4px;
+      bottom:-4px;
       border-radius: 8px;
       background:rgba(#000, 0.1);
     }
 
+    li:not(:last-child) {
+      padding-bottom: 0;
+    }
     li {
       width:100px;
       float:left;
@@ -105,7 +109,6 @@ header {
     li + li + li {
       border-right: none;
       width: 100px;
-	  height: 38px;
     }
 
     a {
@@ -116,7 +119,7 @@ header {
       color:white;
       text-align:center;
       text-decoration:none;
-      padding-top:2px;
+      padding-top:1px;
 
       strong {
         font-size:14px;
