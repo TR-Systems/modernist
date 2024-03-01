@@ -1,13 +1,14 @@
 /* Dropdown Link Button for TOC or NAV */
 /* https://www.w3schools.com/howto/howto_js_dropdown.asp */
 .dropbtn {
+  width: 160px;
   background-color: #3782CD; /* 3498DB; */
   color: white;
   padding: 2px 12px;
   margin: 0 0 12px;
   font-size: 15px;
   font-weight: normal;
-  border: 4px solid gray;
+  border: 2px solid silver;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -35,4 +36,3 @@
 }
 .dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
-
