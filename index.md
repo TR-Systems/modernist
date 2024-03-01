@@ -1,14 +1,9 @@
-# Modernist Theme for GitHub Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
-### Under Construction and Testing! (February 2024)
-I am new to GitHub and using this as a learning tool for developing and testing changes for my tr-systems site. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"} for this website design on GitHub.
+---
+title: Modernist Theme for GitHub Pages by TR-Systems
+---
 
-This design started out by copying the GitHub Pages Modernist Theme, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
-
-### Recent Updates
-**2024-02-28**: Just added two new grid styles. Check it out on the [Test Page!](test.md)
-
-**Also NEW!** Easy to code dropdown button for both internal and external links.
-
+<div class="grid-toc">
+<div class="c1">
 <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
@@ -19,6 +14,21 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 <a href="test.html">Test Page</a>
 </div>
 </div>
+</div>
+<div class="c1">
+<h2>{{ page.title }}</h2>
+</div>
+</div>
+
+### Under Construction and Testing! (February 2024)
+I am new to GitHub and using this as a learning tool for developing and testing changes for my [TR-Systems site](https://tr-systems.github.io/web/){:target="_blank"}. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"} for this website design on GitHub.
+
+This design started out by copying the GitHub Pages Modernist Theme, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
+
+### Recent Updates
+**2024-02-28**: Just added two new grid styles. Check it out on the [Test Page!](test.md)
+
+**Also NEW!** Easy to code dropdown button for both internal and external links.
 
 ### Usage
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.

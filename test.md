@@ -1,4 +1,24 @@
-## Style Sheet Test Page
+---
+title: Style Sheet Test Page
+---
+
+<div class="grid-toc">
+<div class="c1">
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Table of Contents</button>
+<div id="myDropdown" class="dropdown-content">
+<a href="#grid-styles">Grid Styles</a>
+<a href="#50-50-grid">50-50 Grid</a>
+<a href="#66-33-grid">66-33 Grid</a>
+<a href="#pipe-testing">Pipe Testing</a>
+<a href="#table-testing">Table Testing</a>
+</div>
+</div>
+</div>
+<div class="c1">
+<h2>{{ page.title }}</h2>
+</div>
+</div>
 
 ### Picture Testing
 By default for the **img** tag, the style sheet creates a *picture frame* with 4px of padding and 4px of rounded border, for a total increase in width and height of 16px, which you can over-ride by using one of the other image styles:
@@ -17,7 +37,7 @@ By default for the **img** tag, the style sheet creates a *picture frame* with 4
 
 ---
 
-### Modernist Grid Styles
+### Grid Styles
 Placing text and other content next to an image can be done in several ways and gets really complicated really fast, but I got his working with a custom grid class in the style sheet and html in the markdown. This appears to be the only way to create a grid out of markdown.
 
 You can run wild with these, so I'm providing two examples that you can use out of the box, provided you don't mind editing raw html in your pages, which is prone to the slightest slip or miss that makes your web page run wild, too.
