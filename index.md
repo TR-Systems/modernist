@@ -1,4 +1,4 @@
-## Modernist Design for GitHub Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
+# Modernist Theme for GitHub Pages by [TR-Systems](https://TR-Systems.github.io/web/){:target="_blank"}
 ### Under Construction and Testing! (February 2024)
 I am new to GitHub and using this as a learning tool for developing and testing changes for my tr-systems site. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"} for this website design on GitHub.
 
@@ -6,6 +6,19 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 
 ### Recent Updates
 **2024-02-28**: Just added two new grid styles. Check it out on the [Test Page!](test.md)
+
+**Also NEW!** Easy to code dropdown button for both internal and external links.
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Table of Contents</button>
+<div id="myDropdown" class="dropdown-content">
+<a href="#test-on-windows">Test On Windows</a>
+<a href="#test-on-raspberry-pi">Test On Ras Pi</a>
+<a href="#design-elements">Design Elements</a>
+<a href="#technical-details">Technical Details</a>
+<a href="test.html">Test Page</a>
+</div>
+</div>
 
 ### Usage
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.
