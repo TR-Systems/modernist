@@ -108,7 +108,7 @@ html {
 ... remainder of tr-systems-modernist.scss
 
 /* Dropdown Link Button for TOC or NAV */
-... all of download
+... all of dropdown
 
 /* Default GitHub Code Highlighter */
 ... all of rouge-github or rouge-base16-dark if you want to try it.
