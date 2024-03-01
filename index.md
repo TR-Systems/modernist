@@ -97,7 +97,7 @@ Ok, 98 gems installed, a brick of web I guess.
 **@import** in **assets/css/style.scss** is simply not working locally. This issue has been posted on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}, knowing that Jekyll on Windows is *not officially supported*.
 
 ### Workaround For Now
-Copy the contents of **tr-systems-modernist** and **rouge-github** in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter, and removing the import for rouge from tr-systems-modernist*, so **style.scss** it looks like this:
+Copy the contents of **tr-systems-modernist**, **dropdown** and **rouge-github** in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter, and removing the import for rouge from tr-systems-modernist*, so **style.scss** it looks like this:
 
 ```
 ---
@@ -105,7 +105,10 @@ Copy the contents of **tr-systems-modernist** and **rouge-github** in **_sass** 
 
 /* Modernist Theme for GitHub Pages by TR-Systems */
 html {
-... remainder of tr-systems-modernist
+... remainder of tr-systems-modernist.scss
+
+/* Dropdown Link Button for TOC or NAV */
+... all of download
 
 /* Default GitHub Code Highlighter */
 ... all of rouge-github or rouge-base16-dark if you want to try it.
