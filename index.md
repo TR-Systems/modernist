@@ -1,5 +1,5 @@
 ---
-title: Modernist Theme for GitHub Pages by TR-Systems and lets make this really long
+title: Modernist Theme for GitHub Pages by TR-Systems
 ---
 
 <div class="grid-toc">
