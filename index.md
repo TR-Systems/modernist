@@ -3,7 +3,7 @@ title: Modernist Theme for GitHub Pages by TR-Systems
 ---
 
 <div class="grid-toc">
-<div class="c1">
+<div class="grid-toc-content">
 <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
@@ -15,7 +15,7 @@ title: Modernist Theme for GitHub Pages by TR-Systems
 </div>
 </div>
 </div>
-<div class="c1">
+<div class="grid-toc-content">
 <h2>{{ page.title }}</h2>
 </div>
 </div>

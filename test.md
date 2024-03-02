@@ -3,7 +3,7 @@ title: Style Sheet Test Page
 ---
 
 <div class="grid-toc">
-<div class="c1">
+<div class="grid-toc-content">
 <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
@@ -16,7 +16,7 @@ title: Style Sheet Test Page
 </div>
 </div>
 </div>
-<div class="c1">
+<div class="grid-toc-content">
 <h2>{{ page.title }}</h2>
 </div>
 </div>
@@ -52,7 +52,9 @@ You can run wild with these, so I'm providing four that you can use out of the b
 
 But it works and it ain't that hard. Easy to copy/paste the basic structure needed and then fill in the content.
 
-Grid classes "c1" and "c2" allows you to define styles for the elements within each column separately, and different from the default style for those elements. For example, you may want smaller text in one of the columns, or larger. On this site, the horizontal rule is resized from 6px to 3px to give it a better look in the confines of the grid.
+Grid classes "grid-c1" and "grid-c2" allows you to define styles for the elements in each column separately, if you want something different from the defined style for those elements. For example, you may want smaller or larger paragraph text in one of the columns. 
+
+On this site, the horizontal rule is resized from 6px to 3px to give it a better look in the confines of the grid.
 
 ```
 When entering HTML in your MD files, leave a blank line before and after
@@ -60,12 +62,12 @@ each block of code and DO NOT INDENT html tags for clarity. Every line should
 start with a <tag> and end with the terminator of that </tag> or any other tag.
 
 <div class="grid-5050">
-<div class="c1">
+<div class="grid-c1">
 <hr>
 <h4>First Element in the Grid</h4>
 </div>
-<div class="c2"><hr><h4>Second Element</h4></div>
-<div class="c1"><hr><h4>Third Element</h4></div>
+<div class="grid-c2"><hr><h4>Second Element</h4></div>
+<div class="grid-c1"><hr><h4>Third Element</h4></div>
 </div>
 
 ```
@@ -78,9 +80,7 @@ Use **grid-toc** to provide a table of contents button and the **page title** at
 title: Style Sheet Test Page
 ---
 
-<div class="grid-toc">
-<div class="c1">
-<div class="dropdown">
+<div class="grid-toc"><div class="grid-toc-content"><div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
 <a href="#grid-styles">Grid Styles</a>
@@ -89,11 +89,9 @@ title: Style Sheet Test Page
 <a href="#66-33-grid">66-33 Grid</a>
 <a href="#pipe-testing">Pipe Testing</a>
 <a href="#table-testing">Table Testing</a>
-</div>
-</div>
-</div>
-<div class="c1">
-<h2>{ { page.title  } }</h2>  /* but not with the space between the double braces. */
+</div></div></div>
+<div class="grid-toc-content">
+<h2>{ { page.title  } }</h2>  /* without the space between the double braces. */
 </div>
 </div>
 ```
@@ -104,14 +102,14 @@ Each element in the grid starts with a horizontal rule that spans the width of t
 Other grid classes include **grid-6633 and grid-3366**. Like I said, you can run wild.
 
 <div class="grid-5050">
-<div class="c1">
+<div class="grid-c1">
 <hr>
 <h4>First Element in the Grid</h4>
 <img class="img-border2" src="assets/images/zion-np.jpg">
 </div>
 
 
-<div class="c2">
+<div class="grid-c2">
 <hr>
 <h4>Second Element</h4>
 <hr>
@@ -125,7 +123,7 @@ Other grid classes include **grid-6633 and grid-3366**. Like I said, you can run
 <p>Then a new paragraph to end the content of this element.</p>
 </div>
 
-<div class="c1">
+<div class="grid-c1">
 <hr>
 <h4>Third Element</h4>
 <p>Formatted text. Code highlighting doesn't work here.</p>
@@ -137,7 +135,7 @@ var fun = function lang(l) {
 </pre>
 </div>
 
-<div class="c2">
+<div class="grid-c2">
 <hr>
 <h4>Fourth Element</h4>
 <p>More content</p>
@@ -151,14 +149,14 @@ Next markdown paragraph after the grid.
 ### 66-33 Grid
 
 <div class="grid-6633">
-<div class="c1">
+<div class="grid-c1">
 <hr>
 <h4>First Element in the Grid</h4>
 <p>Using img-noborder.</p>
 <img class="img-noborder" src="assets/images/zion-np.jpg">
 </div>
 
-<div class="c2">
+<div class="grid-c2">
 <hr>
 <h4>Second Element</h4>
 <hr>
@@ -166,7 +164,7 @@ Next markdown paragraph after the grid.
 <hr>
 </div>
 
-<div class="c1">
+<div class="grid-c1">
 <hr>
 <h4>Third Element</h4>
 <pre>
@@ -177,7 +175,7 @@ var fun = function lang(l) {
 </pre>
 </div>
 
-<div class="c2">
+<div class="grid-c2">
 <hr>
 <h4>Images Without Borders</h4>
 <img class="img-noborder" src="assets/images/zion-np.jpg">

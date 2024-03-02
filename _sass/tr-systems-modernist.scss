@@ -154,55 +154,44 @@ section {
 .grid-5050 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 900px; /* Same as Wraper */
-  margin: 0 0 12px; /* 12px after the grid */
   grid-column-gap: 32px;
-  .c1 {
-    hr {height: 3px;}
-  }  
-  .c2 {
-    hr {height: 3px;}
-  }
+  margin: 0 0 12px;
 }
 
 .grid-6633 {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  max-width: 900px; /* Same as Wraper */
-  margin: 0 0 12px;
   grid-column-gap: 32px;
-  .c1 {
-    hr {height: 3px;}
-  }  
-  .c2 {
-    hr {height: 3px;}
-  }
+  margin: 0 0 12px;
 }
 
 .grid-3366 {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  max-width: 900px; /* Same as Wraper */
-  margin: 0 0 12px;
   grid-column-gap: 32px;
-  .c1 {
-    hr {height: 3px;}
-  }  
-  .c2 {
-    hr {height: 3px;}
-  }
+  margin: 0 0 12px;
 }
 
 .grid-toc {
   display: grid;
   grid-template-columns: max-content 1fr;
-  max-width: 900px; /* Same as Wraper */
-  margin: 0 0 6px;
   grid-column-gap: 12px;
-  .c1 {
-    h2 {margin: 0;}
-	button {margin: 0;}
-  }
+  margin: 0 0 6px;
+}
+
+/* Grid Columns 1 and 2 */
+.grid-c1 {
+  hr {height: 3px;}
+}
+
+.grid-c2 {
+  hr {height: 3px;}
+}
+
+.grid-toc-content {
+  button {margin: 0;}
+  h1 {margin: 0;}
+  h2 {margin: 0;}
 }
 
 /* margin: top 0, left/right 0, bottom NNpx */
