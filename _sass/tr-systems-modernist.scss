@@ -36,7 +36,7 @@ section {
 .grid-hdr {
   display: grid;
   grid-column-gap: 0;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: max-content 1fr;
   margin-left: -30px;   /* negate section padding */
   margin-right: -30px;
   margin-bottom: 6px;
@@ -71,9 +71,8 @@ section {
     color: #434B55; /* #61778B #6C7989, #434B55 */
     font-size: 15px;
 	font-style: italic;
-/*  Hide Site Description when screen shrinks in @Media setting */
     &.view {
-      display:none;
+      display: block;
     }
   }
 
@@ -313,22 +312,14 @@ kbd {
   }
 }
 
-@media print, screen and (max-width:500px) {
-  header ul {
-    display:none;
-  }
-
-  header p.view {
-    display:block;
-  }
-
-  header p {
-    width:100%;
+@media print, screen and (max-width:700px) {
+  .header {
+    p.view {display:none;}
   }
 }
 
 @media print {
-  header p.view a small:before {
-    content:'at https://github.com/';
+  header ul {
+    display:none;
   }
 }
