@@ -317,6 +317,10 @@ kbd {
   .header {
     p.view {display:none;}
   }
+  .grid-hdr {
+    grid-template-columns: 1fr;
+	grid-column-gap: 8px;
+  }
   .grid-toc {
     grid-template-columns: 1fr;
 	grid-column-gap: 8px;
