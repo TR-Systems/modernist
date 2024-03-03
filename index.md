@@ -20,15 +20,16 @@ title: Modernist Theme for GitHub Pages by TR-Systems
 </div>
 </div>
 
-### Under Construction and Testing! (February 2024)
-I am new to GitHub and using this as a learning tool for developing and testing changes for my [TR-Systems site](https://tr-systems.github.io/web/){:target="_blank"}. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"} for this website design on GitHub.
+### Under Perpetual Construction and Testing!
+I am using this as a learning tool for developing and testing changes for my [TR-Systems site](https://tr-systems.github.io/web/){:target="_blank"}. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"}  on GitHub.
 
 This design started out by copying the GitHub Pages Modernist Theme, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
 
 ### Recent Updates
-**2024-02-28**: Just added two new grid styles. Check it out on the [Test Page!](test.md)
 
-**Also NEW!** Easy to code dropdown button for both internal and external links.
+| **24-02-28**: | New grid styles! Check it out on the [Test Page!](test.md)
+| **24-03-01**: | Easy to code **Table of Contents** button, and for any other links.
+| **24-03-03**: | Major overhaul of Header to simplify the style sheet and improve viewing on small screens.
 
 ### Usage
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.
@@ -51,7 +52,7 @@ The repo has two branches. Apply changes and new content to the top level "edit"
 **Google Analytics is configured on this site for the GA stream "tr-systems.github.io/modernist/"** by using an **if** statement in **_layouts/default.html** that you will need to update or remove, along with the **include** statement and the GA snippet file for tr-systems in the **_includes** folder.
 
 ### Getting Started
-[GitHub Pages Help](https://docs.github.com/en/pages){:target="_blank"}. I spent hours studying this material. I'm trying to make this so you don't really have to, once you understand what a pull request is all about, that is.
+[GitHub Pages Help](https://docs.github.com/en/pages){:target="_blank"}. I spent hours studying this material. I'm trying to make this so you don't really have to, *once you understand what a pull request is all about, that is. :)*
 
 ---
 
@@ -97,7 +98,7 @@ Ok, 98 gems installed, a brick of web I guess.
 **@import** in **assets/css/style.scss** is simply not working locally. This issue has been posted on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}, knowing that Jekyll on Windows is *not officially supported*.
 
 ### Workaround For Now
-Copy the contents of the **tr-systems-modernist**, **dropdown** and **rouge-github** style sheets in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter, and removing the import for rouge from tr-systems-modernist*, so **style.scss** it looks like this:
+Copy the *contents* of the **dropdown**, **rouge-github** and **tr-systems-modernist** style sheets in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter, and removing the import for rouge from tr-systems-modernist*, so **style.scss** it looks like this:
 
 ```
 ---
@@ -116,9 +117,11 @@ html {
 
 1. Run **bundle exec jekyll serve**<br>
 The site now builds. See it here: http://localhost:4000
-2. You can now make content and style changes *on the fly* with the jekyll server running.
-3. When you're done, copy any changes to **style.scss** to **tr-systems-modernist** and push them up to GitHub, but DO NOT PUSH **style.scss**!.
-4. Then, on GitHub, create a pull request into the publish branch for "pages build and deploy".
+2. You can now make content and style changes ***on the fly*** with the jekyll server running.
+3. When you're done, copy any changes you've made to **style.scss** into **tr-systems-modernist**.
+4. Push your content and style changes  up to the edit branch on GitHub using Git or GitHub Desktop, but DO NOT PUSH **style.scss**!
+5. Then, on GitHub, create a pull request into the publish branch for "pages build and deploy".
+6. Voila, websites made easy. Ha!
 
 ---
 
@@ -148,67 +151,12 @@ Ok, 97 gems now installed (one less than Windows, no wdm)
 
 FINALLY, for the first time in this never ending all time consuming silly winter project of mine, something actually worked on the first attempt! Without a single rat hole to chase down first.
 
-Good time to take a good long break and get outside.
-
-#### Catch you later...
-Tis all for now. Hope someone out there finds this design useful and lets me know. That would make my day.
-
-Thanks for stopping by and checking it out!
-
 ---
 ## Design Elements
-#### Table Layout
-I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} from W3Schools to learn how to be stylish. And since my system doc uses tables, W3Schools showed me the way, as you see below and in the style sheet.
+I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} and more from W3Schools to learn how to be stylish.
 
-#### List Item Spacing
-I use a lot of bulleted and numbered lists in my doc and like a little space between each item, so that's something I added to the style sheet.
-
-#### Color Scheme
-Same as the original. Changing it may require changing the color of elements within (i.e text colors, black or white). Linear-gradient will be used if the browser supports it otherwise it will use the solid color specified.
-
-The colors are shown using small image files that I created from screen shots on [color sites](https://www.color-hex.com/){:target="_blank"}. There is a better way, and I will find it.
-
-| Selector | Background Colors | Color1 | Color2 |
-| -------- | ----------------- | ------ | ------ |
-| html | background: #6C7989; | <img class="img-raw" width="48" src="assets/images/color-6C7989.png"> | x |
-| html | background: linear-gradient(#6C7989, #434B55) | <img class="img-raw" width="48" src="assets/images/color-6C7989.png"> | <img class="img-raw" width="48" src="assets/images/color-434B55.png"> |
-| header | background: #C6EAFA; | <img class="img-raw" width="48" src="assets/images/color-C6EAFA.png"> | x |
-| header | background: linear-gradient(#DDFBFC, #C6EAFA); | <img class="img-raw" width="48" src="assets/images/color-DDFBFC.png"> | <img class="img-raw" width="48" src="assets/images/color-C6EAFA.png"> |
-| header | border-bottom:2px solid #B2D2E1; | <img class="img-raw" width="48" src="assets/images/color-B2D2E1.png"> | x |
-| header: ul: before: | background:rgba(#000, 0.1); | Light Gray | x |
-| header: ul: | background: #5198DF; | <img class="img-raw" width="48" src="assets/images/color-5198DF.png"> | x |
-| header: ul: | background: linear-gradient(#77B9FB, #3782CD); | <img class="img-raw" width="48" src="assets/images/color-77B9FB.png"> | <img class="img-raw" width="48" src="assets/images/color-3782CD.png"> |
-| section | background:#FFFFFF; | WHITE | x |
-| th | background-color: #3782CD; | <img class="img-raw" width="48" src="assets/images/color-3782CD.png"> | x |
-
-# Test Header1
-paragraph text
-
-##### Java code with highlighting by **rouge-github.scss**.
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-##### Groovy code
-
-```groovy
-    errcd = "OK"
-    for (feature in MotionFeatures) {
-        if (filter == "" || filter.contains("$feature.key")) {
-            if (device.currentValue("$feature.value") != "NA") {
-                errcd = SetFeatureState("$feature.value",newstate)
-                if (errcd != "OK") {break}
-            } else {
-                if (filter.contains("$feature.key")) {log.info "Requested feature *$feature.key* is NA"}
-            }
-        }
-    }
-```
+### List Item Spacing
+Lists with a little space between. Easy to find and adjust in the style sheet.
 
 1. numbered list with break<br>
 more text
@@ -224,19 +172,71 @@ more text
     * last nested bullet
 * last one
 
+### Color Scheme and Table Style
+W3Schools helped me with the table design. The colors are shown using small image files that I created from screen shots on [color sites](https://www.color-hex.com/){:target="_blank"}. There is a better way, and I will find it, but not a priority.
+
+| Selector | Background Colors | Color1 | Color2 |
+| -------- | ----------------- | ------ | ------ |
+| html | background: #6C7989; | <img class="img-raw" width="48" src="assets/images/color-6C7989.png"> | x |
+| html | background: linear-gradient(#6C7989, #434B55) | <img class="img-raw" width="48" src="assets/images/color-6C7989.png"> | <img class="img-raw" width="48" src="assets/images/color-434B55.png"> |
+| header | background: #C6EAFA; | <img class="img-raw" width="48" src="assets/images/color-C6EAFA.png"> | x |
+| header | background: linear-gradient(#DDFBFC, #C6EAFA); | <img class="img-raw" width="48" src="assets/images/color-DDFBFC.png"> | <img class="img-raw" width="48" src="assets/images/color-C6EAFA.png"> |
+| header | border-bottom:2px solid #B2D2E1; | <img class="img-raw" width="48" src="assets/images/color-B2D2E1.png"> | x |
+| header: ul: before: | background:rgba(#000, 0.1); | Light Gray | x |
+| header: ul: | background: #5198DF; | <img class="img-raw" width="48" src="assets/images/color-5198DF.png"> | x |
+| header: ul: | background: linear-gradient(#77B9FB, #3782CD); | <img class="img-raw" width="48" src="assets/images/color-77B9FB.png"> | <img class="img-raw" width="48" src="assets/images/color-3782CD.png"> |
+| section | background:#FFFFFF; | WHITE | x |
+| th | background-color: #3782CD; | <img class="img-raw" width="48" src="assets/images/color-3782CD.png"> | x |
+
+
+### Java code with highlighting by **rouge-github.scss**.
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+### Groovy code
+
+```groovy
+    errcd = "OK"
+    for (feature in MotionFeatures) {
+        if (filter == "" || filter.contains("$feature.key")) {
+            if (device.currentValue("$feature.value") != "NA") {
+                errcd = SetFeatureState("$feature.value",newstate)
+                if (errcd != "OK") {break}
+            } else {
+                if (filter.contains("$feature.key")) {log.info "Requested feature *$feature.key* is NA"}
+            }
+        }
+    }
+```
+
+### Blockquote
+
 > blockquote text with break<br>more text
 >
 > second paragraph
 
-Definition List
-: HTML/CSS Tag: **dl**
+### Definition List
 
-Definition Term
-: HTML/CSS Tag: **dt**
+Style Sheet
+: Lets people know  how stylish you are
 
-Definition Description
-: HTML/CSS Tag: **dd**
+Wrapper (Generic Term)
+: Used to encapsulate content on a web page
 
+HTML/CSS Grids
+: Used to encapsulate content on a web page in a defined pattern of columns, rows and cells.
+
+### @Media Print, Screen Styles
+In here is where you can make it smaller/better for tablets and phones (e.g. smaller fonts, smaller h1 h2 headings, etc.). Also used to format for printing. Have not done much work in here.
+
+# Test Header1
+content
 ## Test Header2
 content
 ### Test Header3
@@ -248,19 +248,18 @@ content
 ###### Test Header65
 content
 ## Technical Details
-I only copied what was needed and then modified the style sheet, default html and config to get what you see here. I removed a lot of formatting and fluff that I didn't like from the overloaded style sheet (too many cooks in the kitchen).
+**_layouts/default.html** is used to build the header and footer. **Custom local variables in _config.yml** provide the content. Link buttons will not be displayed if they are not configured.
 
-**_layouts/default.html** is used to build the header and footer and is substantially modified from the original. All content in the header and footer is supplied by **custom local variables in _config.yml**. 
+**_sass/tr-systems-modernist.scss** is the primary style sheet, substantially modified from the original.
 
-In there are two optional link buttons in the upper right corner of the header. If not configured, they will not be displayed. Since nav is currently through the home page, that link is on all pages. The default html file controls that and the style sheet controls how the buttons are placed and squeezed together, with a 6px gray border around them. Rather tricky. *So don't mess with the header section of the style sheet!* Actually, have at it. It's always fun to play around and learn new things in the process. That's the whole point of this for me.
+**_sass/dropdown.scss** provides styling for the links button, the basics of which were obtained from W3Schools and then styled to match the theme here.
 
-**_sass/tr-systems-modernist.scss** is the style sheet and since it was developed and modified over years in the public domain, it was disorganized and hard to follow so I am still in the process of cleaning it up by first learning what everything does and then keeping only those mods and adding others to suit my style, which I then apply to my tr-systems site. So just grab it and go.
+**_sass/rouge-github.scss** is the default Rouge style sheet used in GitHub for code highlighting, replacing **rouge-base16-dark** that came with the original, which I have left in the **_sass** folder.
 
-**_sass/rouge-github.scss** is the default Rouge style sheet used in GitHub for code highlighting, replacing **rouge-base16-dark** that came with the original, which I have left in the **_sass** folder. I also removed all of the custom styling of **code** and **pre** elements from the original, so I can start with html defaults and take it from there.
+**assets/css/style.scss** is the **site style sheet**, which imports **tr-systems**, which imports **dropdown** and **rouge**.
 
-**assets/css/style.scss** is used to import the **tr-systems-modernist** style sheet for inclusion in the site, which then imports rouge-github.
+**Note:** If you change the name of the site style sheet, you need to update the reference in **default.html**.
 
-### @Media Print, Screen Styles
-I've only begun to explore. Current style settings are all original but definitely needs changes since I widened the content section substantially. It's in here that you can make it smaller/better for tablets and phones (e.g. smaller fonts, much smaller h1 h2 headings, etc.). Tables like that shown above will be a problem on small screens.
+---
 
 End of Document
