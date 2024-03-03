@@ -11,114 +11,98 @@ html {
 }
 
 body {
-  padding: 12px 0;
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: black;
-  min-height: calc(100% - 100px);
-}
-
-.wrapper {
-  width: 900px;
-  margin: 0 auto;      /* centers the wrapper on page */
-  padding-bottom: 8px; /* space between wrapper and footer */
+/*  min-height: calc(100% - 100px); ??? */
 }
 
 header, section, footer {
   display:block;
 }
 
-header {
-  border-radius: 8px 8px 0 0;
+.wrapper {
+  width: 900px;
+  margin: 0 auto;      /* centers the wrapper on page */
+}
+
+section {
+  padding: 0 30px;     /* margins for content in the wrapper */
+  background: white;
+  border-radius: 8px;
+  position: relative;
+}
+
+.grid-hdr {
+  display: grid;
+  grid-column-gap: 0;
+  grid-template-columns: 60% 40%;
+  margin-left: -30px;   /* negate section padding */
+  margin-right: -30px;
+  margin-bottom: 6px;
+  padding-top: 4px;
+  padding-bottom: 2px;
   background:#C6EAFA;
   background: linear-gradient(#DDFBFC, #C6EAFA);
-  position:relative;
-  padding:12px 20px 4px 20px;
+  border-radius: 8px 8px 0 0;
   border-bottom:4px solid #B2D2E1;
+}
 
+.header {
   img {
+    margin-left: 6px;
+	padding: 0;
     border: 2px solid #3782CD;
     border-radius: 4px;
     background: none;
-    padding:0;
   }
 
   h1 {
-    margin:0;
-    padding:0;
-    font-size:24px;
-    line-height:1.2;
-    color:#069;
+    margin-left: 6px;
+	margin-bottom: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #069;
   }
 
   p {
-    margin:0;
-    color:#61778B;
-    font-size:15px;
-/*  Don't know what this does */
+    margin: 0 6px 0;
+    color: #434B55; /* #61778B #6C7989, #434B55 */
+    font-size: 15px;
+	font-style: italic;
+/*  Hide Site Description when screen shrinks in @Media setting */
     &.view {
       display:none;
     }
   }
 
-/* All this just to build three link buttons */
   ul {
-    margin:0;
-    padding:0 2px;
-    list-style:none;
-    position:absolute;
-    z-index:1;
-    right:20px;
-    top:12px;
-    height:34px;
-    background:#5198DF;
-    background: linear-gradient(#77B9FB, #3782CD);
-    border-radius:5px;
-    width:auto;
-    /* Without this, there is no border around the link buttons in the list. */
-    &:before {
-      content:'';
-      position:absolute;
-      z-index:-1;
-      left:-4px;
-      top:-4px;
-      right:-4px;
-      bottom:-4px;
-      border-radius: 8px;
-      background:rgba(#000, 0.1);
+    list-style: none;
+    padding-bottom: 6px; /* push the buttoms up in the grid container */
+    margin-right: 12px;    /* and move them to the left */
+	margin-bottom: 0;     /* over-ride default ul style */
+
+    li {
+      float: right;
+	  padding: 2px 2px;
+      border: 3px solid #3A7CBE;
+	  border-radius: 6px;
+      background: #5198DF;
+      background: linear-gradient(#77B9FB, #3782CD);
     }
 
     li:not(:last-child) {
-      padding-bottom: 0;
-    }
-    li {
-      width:100px;
-      float:left;
-      border-right:2px solid #3A7CBE;
-
-      &.single {
-        border:none;
-      }
-    }
-
-    li + li {
-      width: 100px;
-      border-left: 2px solid #8BBEF3;
-    }
-
-    li + li + li {
-      border-right: none;
-      width: 100px;
+      margin-left: 4px;
+      padding: 2px 2px;
     }
 
     a {
       color: white;
       display: block;
-      font-size: 14px;
+      font-size: 12px;
       text-align: center;
       text-decoration: none;
-      padding-top: 1px;
 
       strong {
         font-weight: normal;
@@ -142,13 +126,6 @@ footer {
   }
 }
 
-section {
-  padding: 6px 30px 1px; /* margins for content in the wrapper */
-  background: white;
-  border-radius: 0 0 8px 8px;
-  position: relative;
-}
-
 .grid-5050 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -170,13 +147,6 @@ section {
   margin: 0 0 12px;
 }
 
-.grid-toc {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  grid-column-gap: 12px;
-  margin: 0 0 6px;
-}
-
 /* Grid Columns 1 and 2 */
 .grid-c1 {
   hr {height: 3px;}
@@ -186,13 +156,20 @@ section {
   hr {height: 3px;}
 }
 
+.grid-toc {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 12px;
+  margin: 0 0 6px;
+}
+
 .grid-toc-content {
   button {margin: 0;}
   h1 {margin: 0;}
   h2 {margin: 0;}
 }
 
-/* margin: top 0, left/right 0, bottom NNpx */
+/* margin adjustments: top 0, left/right 0, bottom NNpx */
 
 h1, h2, {
   padding:0;
@@ -263,8 +240,8 @@ img {
   padding: 4px;
   border: 4px solid #3782CD;
   border-radius: 8px;
-  background:silver;
-  max-width:100%;
+  background: silver;
+  max-width: 100%;
 }
 .img-border2 {
   padding: 2px;
@@ -310,14 +287,13 @@ kbd {
   vertical-align: middle;
 }
 
-@media print, screen and (max-width: 740px) {
+@media print, screen and (max-width: 900px) {
   body {
     padding:0;
   }
 
   .wrapper {
     border-radius: 0;
-    box-shadow: none;
     width:100%;
   }
 
@@ -337,7 +313,7 @@ kbd {
   }
 }
 
-@media print, screen and (max-width:580px) {
+@media print, screen and (max-width:500px) {
   header ul {
     display:none;
   }
