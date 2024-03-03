@@ -233,7 +233,7 @@ HTML/CSS Grids
 : Used to encapsulate content on a web page in a defined pattern of columns, rows and cells.
 
 ### @Media Print, Screen Styles
-In here is where you can make it smaller/better for tablets and phones (e.g. smaller fonts, smaller h1 h2 headings, etc.). Also used to format for printing. Have not done much work in here.
+In here is where you can make it smaller/better for tablet, phones and printers. I have it set to remove the description from the header and set all **grid-template-columns** to **1fr** (i.e single column grid, full width) when screen size is 600px or less. Other adjustments might include smaller h1 h2 fonts. But for now, it looks good on a phone.
 
 # Test Header1
 content
