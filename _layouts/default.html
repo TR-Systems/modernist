@@ -31,9 +31,9 @@
 	      <div class="item1">
             <div class="header">
               {% if site.logo %} 
-                <img src="{{ site.logo }}" width="32"><h1 style="display: inline;">{{ site.title }}</h1>
+                <img src="{{ site.logo }}" width="32"><h1 style="display:inline;">{{ site.title }}</h1>
               {% else %}
-                <h1>{{ site.title }}</h1>
+                <h1 style="display:block;">{{ site.title }}</h1>
               {% endif %}
               <p class="view">{{ site.description | default: site.github.project_tagline }}</p>
             </div>
