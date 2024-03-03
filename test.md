@@ -69,7 +69,6 @@ start with a <tag> and end with the terminator of that </tag> or any other tag.
 <div class="grid-c2"><hr><h4>Second Element</h4></div>
 <div class="grid-c1"><hr><h4>Third Element</h4></div>
 </div>
-
 ```
 
 ### TOC Made Easy
