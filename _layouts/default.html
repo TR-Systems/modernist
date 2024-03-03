@@ -43,14 +43,14 @@
                   <li><a target="_blank" href="{{ site.hlink1-url }}">{{ site.hlink1-text }}</a></li>
                 {% else %}
 	              {% if site.hlink1-page %}
-                      <li><a href="{{ site.url }}/{{ site.hlink1-page }}">{{ site.hlink1-text }}</a></li>
+                      <li><a href="{{ site.url }}{{ site.hlink1-page }}">{{ site.hlink1-text }}</a></li>
                   {% endif %}
                 {% endif %}
                 {% if site.about-page %}
-                  <li><a href="{{ site.url }}/{{ site.about-page }}">{{ site.about-text }}</a></li>
+                  <li><a href="{{ site.url }}{{ site.about-page }}">{{ site.about-text }}</a></li>
                 {% endif %}
                 {% if site.home-page %}
-                  <li><a href="{{ site.url }}/{{ site.home-page }}">{{ site.home-text }}</a></li>
+                  <li><a href="{{ site.url }}{{ site.home-page }}">{{ site.home-text }}</a></li>
                 {% endif %}
               </ul>
             </div>	
