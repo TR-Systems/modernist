@@ -78,9 +78,9 @@ section {
 
   ul {
     list-style: none;
-    padding-bottom: 6px; /* push the buttoms up in the grid container */
-    margin-right: 12px;    /* and move them to the left */
-	margin-bottom: 0;     /* over-ride default ul style */
+    margin-top: 4px;
+    margin-right: 8px;
+    margin-bottom: 0;
 
     li {
       float: right;
@@ -312,7 +312,7 @@ kbd {
   }
 }
 
-@media print, screen and (max-width:600px) {
+@media screen and (max-width:600px) {
 
   .header {
     p.view {display:none;}
