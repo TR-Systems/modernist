@@ -52,7 +52,9 @@ header, section, footer {
   }
 
   h1 {
+    display: inline;
     margin-left: 6px;
+    margin-bottom: 0;
     font-size: 24px;
     color: #069;
   }
@@ -310,7 +312,10 @@ footer {
 
   .header {
     p {display:none;}
-    h1 {font-size: .75em;}
+    h1 {
+      display: block;
+      font-size: 16px;
+    }
   }
   .grid-toc {
     grid-template-columns: 1fr;
