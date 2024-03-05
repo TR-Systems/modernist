@@ -7,7 +7,6 @@
 html {
   background: #6C7989;
   background: #6C7989 linear-gradient(#6C7989, #434B55) fixed;
-  height: 100%;
 }
 
 body {
@@ -273,10 +272,11 @@ kbd {
   vertical-align: middle;
 }
 
-footer {
+.footer {
   p {
     color: white;
     text-align: center;
+    margin-bottom: 4px;
   }
 
   a {

@@ -3,22 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   {% seo %}
-
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 {% if site.favicon %}
   <link rel="shortcut icon" href="{{ site.favicon }}">
 {% endif %}
-   
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
 <!-- Scripts for the Dropdown Links Button -->
-{% include dropdown.html %}
-
+{% include menu-button-script.html %}
 <!-- UPDATE the URL and the FILE! -->
 {% if site.url == "https://tr-systems.github.io/modernist" %}
   {% include tr-systems-ga.html %}
@@ -61,14 +53,14 @@
 
       </div>
     </div>
-    <footer>
+    <div class="footer">
       <p>{{ site.contact-info1 }} {{ site.contact-info2 }}</p>
       {% if site.footer-url %}
-        <p><small>{{ site.footer-text1 }} <a target="-blank" href="{{ site.footer-url }}">{{ site.footer-text2 }}a></small></p>
+        <p><small>{{ site.footer-text1 }} <a target="-blank" href="{{ site.footer-url }}">{{ site.footer-text2 }}</a></small></p>
       {% else %}
         <p><small>{{ site.footer-text1 }} {{ site.footer-text2 }}</small></p>
       {% endif %}
-      <p>&copy{{ site.copyright }}</p> 
-    </footer>
+      <p>&copy;{{ site.copyright }}</p> 
+    </div>
   </body>
 </html>
