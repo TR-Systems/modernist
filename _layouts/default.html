@@ -54,11 +54,11 @@
       </div>
     </div>
     <div class="footer">
-      <p>{{ site.contact-info1 }} {{ site.contact-info2 }}</p>
+      <p class="noprint">{{ site.contact-info1 }} {{ site.contact-info2 }}</p>
       {% if site.footer-url %}
-        <p><small>{{ site.footer-text1 }} <a target="-blank" href="{{ site.footer-url }}">{{ site.footer-text2 }}</a></small></p>
+        <p class="noprint"><small>{{ site.footer-text1 }} <a target="-blank" href="{{ site.footer-url }}">{{ site.footer-text2 }}</a></small></p>
       {% else %}
-        <p><small>{{ site.footer-text1 }} {{ site.footer-text2 }}</small></p>
+        <p class="noprint"><small>{{ site.footer-text1 }} {{ site.footer-text2 }}</small></p>
       {% endif %}
       <p>&copy;{{ site.copyright }}</p> 
     </div>

@@ -155,6 +155,12 @@ FINALLY, for the first time in this never ending all time consuming silly winter
 ## Design Elements
 I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} and more from W3Schools to learn how to be stylish.
 
+### Media Screen Styles
+Fully customized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. All grids with two columns are reset to one column.
+
+### Media Print Style
+Removes link buttons from header and toc/menu buttons from content. Also removes first two lines of footer, controlled in **default.html** by using "<p class=noprint>".
+
 ### List Item Spacing
 Lists with a little space between. Easy to find and adjust in the style sheet.
 
@@ -189,7 +195,7 @@ W3Schools helped me with the table design. The colors are shown using small imag
 | th | background-color: #3782CD; | <img class="img-raw" width="48" src="assets/images/color-3782CD.png"> | x |
 
 
-### Java code with highlighting by **rouge-github.scss**.
+#### Java code with highlighting by **rouge-github.scss**.
 
 ```js
 // Javascript code with syntax highlighting.
@@ -199,7 +205,7 @@ var fun = function lang(l) {
 }
 ```
 
-### Groovy code
+#### Groovy code
 
 ```groovy
     errcd = "OK"
@@ -215,13 +221,13 @@ var fun = function lang(l) {
     }
 ```
 
-### Blockquote
+#### Blockquote
 
 > blockquote text with break<br>more text
 >
 > second paragraph
 
-### Definition List
+#### Definition List
 
 Style Sheet
 : Lets people know  how stylish you are
@@ -231,9 +237,6 @@ Wrapper (Generic Term)
 
 HTML/CSS Grids
 : Used to encapsulate content on a web page in a defined pattern of columns, rows and cells.
-
-### @Media Print, Screen Styles
-In here is where you can make it smaller/better for tablet, phones and printers. I have it set to remove the description from the header and set all **grid-template-columns** to **1fr** (i.e single column grid, full width) when screen size is 600px or less. Other adjustments might include smaller h1 h2 fonts. But for now, it looks good on a phone.
 
 # Test Header1
 content
