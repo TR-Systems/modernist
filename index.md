@@ -31,9 +31,10 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 | **24-03-03** | Major overhaul of Header to simplify the style sheet and improve viewing on small screens.
 | **24-03-04** | Major overhaul of body structure in default html
 | **24-03-05** | More style changes to improve viewing on small screens
+| **24-03-05** | **Fully optimized for small screen viewing!**
 
 ### Usage
-Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.
+Good for static display of system documentation and other articles of interest. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.
 
 ### Use This Template
 Open this repository on GitHub and then click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***. Give your repo a web friendly name like "web" or "mycoolthing" since the repo name is the top level path in the URL for your website.
