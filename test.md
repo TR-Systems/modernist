@@ -5,7 +5,7 @@ title: Style Sheet Test Page
 <div class="grid-toc">
 <div class="grid-toc-content">
 <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Table of Contents</button>
+<button onclick="menuClick()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
 <a href="#grid-styles">Grid Styles</a>
 <a href="#toc-made-easy">TOC Made Easy</a>
