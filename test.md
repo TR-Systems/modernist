@@ -73,11 +73,9 @@ start with a <tag> and end with the terminator of that </tag> or any other tag.
 Use **grid-toc** to provide a table of contents button and the **page title** at the start of each page that warrants it.  The **page title** is a critical element that goes into the meta data of your site and used by search engines. Jekyll/Liquid will use the first h1 or h2 header as the page title by default, unless you provide it in the **front matter**, which you can then reference anywhere in your markdown or html, as you will see in both **index.md and test.md** and shown here:.
 
 ```
----
-title: Style Sheet Test Page
----
-
-<div class="grid-toc"><div class="grid-toc-content"><div class="dropdown">
+<div class="grid-toc">
+<div class="grid-toc-content">
+<div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
 <a href="#grid-styles">Grid Styles</a>
@@ -86,9 +84,9 @@ title: Style Sheet Test Page
 <a href="#66-33-grid">66-33 Grid</a>
 <a href="#pipe-testing">Pipe Testing</a>
 <a href="#table-testing">Table Testing</a>
-</div></div></div>
-<div class="grid-toc-content">
-<h2>{ { page.title  } }</h2>  /* without the space between the double braces. */
+</div>
+</div>
+<h2>{ { page.title } }</h2> /* without space between braces */
 </div>
 </div>
 ```
