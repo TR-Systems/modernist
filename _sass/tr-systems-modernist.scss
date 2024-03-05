@@ -292,6 +292,10 @@ kbd {
 
 @media screen and (max-width:600px) {
 
+  body {
+    font-size: 14px;
+  }
+
   .header {
     h1 {
       display: block;
