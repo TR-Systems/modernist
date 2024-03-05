@@ -286,30 +286,8 @@ kbd {
   }
 }
 
-@media print, screen and (max-width: 900px) {
-  body {
-    padding:0;
-  }
-
-  .wrapper {
-    border-radius: 0;
-    width:100%;
-  }
-
-  footer {
-    border-radius: 0;
-    padding:20px;
-    width:auto;
-
-    p {
-      float:none;
-      margin:0;
-    }
-
-    p + p {
-      float:none;
-    }
-  }
+@media screen and (max-width: 900px) {
+  .wrapper {width:100%;}
 }
 
 @media screen and (max-width:600px) {
@@ -322,6 +300,16 @@ kbd {
     p {display: none;}
     img {display: none}
   }
+
+  .content {
+    h1 {font-size: 1.2em;}
+    h2 {font-size: 1.2em;}
+    h3 {font-size: 1.1em;}
+    h4 {font-size: 1.0em;}
+    td {font-size: 12px;}
+    code, pre {font-size: 12px;}
+  }
+
   .grid-toc {
     grid-template-columns: 1fr;
 	grid-column-gap: 8px;
