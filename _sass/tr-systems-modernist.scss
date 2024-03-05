@@ -30,13 +30,6 @@ header, section, footer {
   background: white;
 }
 
-.grid-hdr {
-  display: grid;
-  grid-column-gap: 0;
-  grid-template-columns: max-content 1fr;
-  padding-bottom: 2px;
-}
-
 .header {
   background:#C6EAFA;
   background: linear-gradient(#DDFBFC, #C6EAFA);
@@ -44,6 +37,7 @@ header, section, footer {
   border-radius: 12px 12px 0 0;
 
   img {
+    display: inline;
     margin: 4px 0 0 4px;
     padding: 0;
     border: 2px solid #3782CD;
@@ -73,9 +67,9 @@ header, section, footer {
 
     li {
       float: right;
-	  padding: 2px 2px;
+      padding: 2px 2px;
       border: 3px solid #3A7CBE;
-	  border-radius: 6px;
+      border-radius: 6px;
       background: #5198DF;
       background: linear-gradient(#77B9FB, #3782CD);
     }
@@ -97,7 +91,14 @@ header, section, footer {
 
 .content {
   margin: 0;
-  padding: 0 30px 0;
+  padding: 0 30px;
+}
+
+.grid-hdr {
+  display: grid;
+  grid-column-gap: 0;
+  grid-template-columns: max-content 1fr;
+  padding-bottom: 2px;
 }
 
 .grid-toc {
@@ -114,10 +115,13 @@ header, section, footer {
   padding-bottom: 2px;
   margin-left: 6px;
   button {margin-bottom: 0;}
-  h1, h2, h3 {
+  h1, h2 {
     display: inline;
     margin: 0;
     font-size: 1.33em;
+  }
+  h3 {display: inline;
+      margin: 0;
   }
 }
 
@@ -311,11 +315,12 @@ footer {
 @media screen and (max-width:600px) {
 
   .header {
-    p {display:none;}
     h1 {
       display: block;
       font-size: 16px;
     }
+    p {display: none;}
+    img {display: none}
   }
   .grid-toc {
     grid-template-columns: 1fr;
