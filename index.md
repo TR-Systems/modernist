@@ -11,14 +11,13 @@ title: Modernist Theme for GitHub Pages by TR-Systems
 <a href="#test-on-raspberry-pi">Test On Ras Pi</a>
 <a href="#design-elements">Design Elements</a>
 <a href="#technical-details">Technical Details</a>
-<a href="test.html">Test Page</a>
+<a href="/test.html">Test Page</a>
 </div>
 </div>
-</div>
-<div class="grid-toc-content">
 <h2>{{ page.title }}</h2>
 </div>
 </div>
+
 
 ### Under Perpetual Construction and Testing!
 I am using this as a learning tool for developing and testing changes for my [TR-Systems site](https://tr-systems.github.io/web/){:target="_blank"}. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"}  on GitHub.
@@ -27,9 +26,10 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 
 ### Recent Updates
 
-| **24-02-28**: | New grid styles! Check it out on the [Test Page!](test.md)
-| **24-03-01**: | Easy to code **Table of Contents** button, and for any other links.
-| **24-03-03**: | Major overhaul of Header to simplify the style sheet and improve viewing on small screens.
+| **24-02-28** | New grid styles! Check it out on the [Test Page!](test.md)
+| **24-03-01** | Easy to code drop-down **Table of Contents** or **Link Menu** button.
+| **24-03-03** | Major overhaul of Header to simplify the style sheet and improve viewing on small screens.
+| **24-03-04** | Major overhaul of body structure to prepare for sticky stuff
 
 ### Usage
 Good for static display of system documentation and articles of interest on full screen browsers. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.

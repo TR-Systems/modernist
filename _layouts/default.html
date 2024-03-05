@@ -26,20 +26,17 @@
 </head>
   <body>
     <div class="wrapper">
-      <section>
+      <div class="header">
         <div class="grid-hdr">
-	      <div class="item1">
-            <div class="header">
+            <div class="item1">
               {% if site.logo %} 
                 <img src="{{ site.logo }}" width="32"><h1 style="display:inline;">{{ site.title }}</h1>
               {% else %}
                 <h1 style="display:block;">{{ site.title }}</h1>
               {% endif %}
-              <p class="view">{{ site.description | default: site.github.project_tagline }}</p>
+              <p>{{ site.description | default: site.github.project_tagline }}</p>
             </div>
-          </div>		  
-	      <div class="item2">
-            <div class="header">
+            <div class="item2">
               <ul>
                 {% if site.home-page %}
                   <li><a href="{{ site.url }}{{ site.home-page }}">{{ site.home-text }}</a></li>
@@ -50,18 +47,19 @@
                 {% if site.hlink1-url %}
                   <li><a target="_blank" href="{{ site.hlink1-url }}">{{ site.hlink1-text }}</a></li>
                 {% else %}
-	              {% if site.hlink1-page %}
+                  {% if site.hlink1-page %}
                       <li><a href="{{ site.url }}{{ site.hlink1-page }}">{{ site.hlink1-text }}</a></li>
                   {% endif %}
                 {% endif %}
               </ul>
-            </div>	
-          </div>	
+            </div>
         </div>
+      </div>
+      <div class="content">
 
         {{ content }}
 
-      </section>
+      </div>
     </div>
     <footer>
       <p>{{ site.contact-info1 }} {{ site.contact-info2 }}</p>

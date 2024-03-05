@@ -15,8 +15,6 @@ title: Style Sheet Test Page
 <a href="#table-testing">Table Testing</a>
 </div>
 </div>
-</div>
-<div class="grid-toc-content">
 <h2>{{ page.title }}</h2>
 </div>
 </div>
