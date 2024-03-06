@@ -65,15 +65,14 @@ header, section, footer {
 
   ul {
     list-style: none;
-    margin: 4px 8px 0 0;
+    margin: 4px 6px 0 0;
 
     li {
       float: right;
-      padding: 2px 2px;
-      border: 3px solid #3A7CBE;
-      border-radius: 6px;
-      background: #5198DF;
-      background: linear-gradient(#77B9FB, #3782CD);
+      padding: 2px 6px;
+      border: 2px solid darkgray;
+      border-radius: 4px;
+      background: #3782CD;
     }
 
     li:not(:last-child) {
@@ -287,10 +286,7 @@ kbd {
   .wrapper {.content{margin: 0 10px 0;}}
   
   .header {
-    h1 {
-      display: block;
-      font-size: 16px;
-    }
+    h1 {font-size: 16px;}
     p {display: none;}
     img {display: none}
   }
