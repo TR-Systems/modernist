@@ -2,8 +2,6 @@
 title: Style Sheet Test Page
 ---
 
-<div class="grid-toc">
-<div class="grid-toc-content">
 <div class="dropdown">
 <button onclick="menuClick()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
@@ -15,18 +13,18 @@ title: Style Sheet Test Page
 <a href="#table-testing">Table Testing</a>
 </div>
 </div>
-<h2>{{ page.title }}</h2>
-</div>
-</div>
+<h3 style="display:inline;">{{ page.title }}</h3>
 
-### KBD Testing
+Use this page to see just how stylish you can be...
+
+#### KBD Testing
 Press <kbd>Ctrl</kbd> + <kbd>c</kbd>
 
 ```
 Press <kbd>Ctrl</kbd> + <kbd>c</kbd>
 ```
 
-### Picture Testing
+#### Picture Testing
 By default for the **img** tag, the style sheet creates a *picture frame* with 4px of padding and 4px of rounded border, for a total increase in width and height of 16px, which you can over-ride by using one of the other image styles:
 
 ```
