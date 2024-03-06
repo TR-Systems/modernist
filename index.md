@@ -28,8 +28,9 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 
 | **24-02-28** | New grid styles! Check it out on the [Test Page!](test.md)
 | **24-03-01** | Easy to code drop-down **Table of Contents** or **Link Menu** button.
-| **24-03-03** | Major overhaul of Header to simplify the style sheet and improve viewing on small screens.
+| **24-03-03** | Major overhaul of body parts and styling class structure.
 | **24-03-05** | **Now fully optimized for small screen viewing!**
+| **24-03-06** | **All Done!** Got what I needed for starters. Back next winter for sticky stuff.
 
 ### Usage
 Good for static display of system documentation and other articles of interest. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.
