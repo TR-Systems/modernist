@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -112,9 +112,7 @@ header, section, footer {
     display: inline;
     font-size: 1.17em;
   }
-  h3, h4 {
-    display: inline;
-  }
+  h3, h4 {display: inline;}
 }
 
 .grid-5050 {
@@ -138,20 +136,19 @@ header, section, footer {
   margin: 0 0 12px;
 }
 
-.grid-c1 {
-  hr {height: 3px;}
-}
+.grid-c1 {hr {height: 3px;}}
 
-.grid-c2 {
-  hr {height: 3px;}
-}
+.grid-c2 {hr {height: 3px;}}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
 
-h3, h4, h5, h6 {color: #3782CD;}
+h1 {font-size:1.6em} /* 2em */
+h2 {font-size:1.4em} /* 1.5em */
+h3 {font-size:1.2em} /* 1.17em */
+h4 {font-size:1.0em} /* 1.33em */
 
 p, ul, ol, table, pre, dl {
   margin: 0 0 8px;
@@ -276,7 +273,7 @@ kbd {
 }
 
 @media screen and (max-width: 900px) {
-  .wrapper {width:100%;}
+  .wrapper {width: 100%;}
 }
 
 @media screen and (max-width:600px) {
@@ -288,7 +285,7 @@ kbd {
   .header {
     h1 {font-size: 16px;}
     p {display: none;}
-    img {display: none}
+    img {display: none;}
   }
 
   .content {
