@@ -2,10 +2,8 @@
 title: Modernist Theme for GitHub Pages by TR-Systems
 ---
 
-<div class="grid-toc">
-<div class="grid-toc-content">
 <div class="dropdown">
-<button onclick="menuClick()" class="dropbtn">Table of Contents</button>
+<button onclick="buttonClick()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
 <a href="#test-on-windows">Test On Windows</a>
 <a href="#test-on-raspberry-pi">Test On Ras Pi</a>
@@ -13,11 +11,7 @@ title: Modernist Theme for GitHub Pages by TR-Systems
 <a href="#technical-details">Technical Details</a>
 <a href="/test.html">Test Page</a>
 </div>
-</div>
-</div>
-<div class="grid-toc-content">
-<h3 style="display:inline;">{{ page.title }}</h3>
-</div>
+<h3>{{ page.title }}</h3>
 </div>
 
 ### Under Perpetual Construction and Testing!

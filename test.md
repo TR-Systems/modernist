@@ -2,10 +2,8 @@
 title: Style Sheet Test Page
 ---
 
-<div class="grid-toc">
-<div class="grid-toc-content">
 <div class="dropdown">
-<button onclick="menuClick()" class="dropbtn">Table of Contents</button>
+<button onclick="buttonClick()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
 <a href="#grid-styles">Grid Styles</a>
 <a href="#toc-made-easy">TOC Made Easy</a>
@@ -14,11 +12,7 @@ title: Style Sheet Test Page
 <a href="#pipe-testing">Pipe Testing</a>
 <a href="#table-testing">Table Testing</a>
 </div>
-</div>
-</div>
-<div class="grid-toc-content">
-<h3 style="display:inline;">{{ page.title }}</h3>
-</div>
+<h3>{{ page.title }}</h3>
 </div>
 
 Use this page to see just how stylish you can be...
@@ -31,19 +25,19 @@ Press <kbd>Ctrl</kbd> + <kbd>c</kbd>
 ```
 
 #### Picture Testing
-By default for the **img** tag, the style sheet creates a *picture frame* with 4px of padding and 4px of rounded border, for a total increase in width and height of 16px, which you can over-ride by using one of the other image styles:
+Use one of the custom **image classes** to to create a picture frame or round over the corners:
 
 ```
-<img width="20%" src="assets/images/zion-np.jpg" alt="Zion National Park">
- <img class="img-border2" width="20%" src="assets/images/zion-np.jpg">
+<img width="20%" src="assets/images/zion-np.jpg">
  <img class="img-noborder" width="20%" src="assets/images/zion-np.jpg">
- <img class="img-raw" width="200" src="assets/images/zion-np.jpg">
+ <img class="img-border2" width="20%" src="assets/images/zion-np.jpg">
+ <img class="img-border4" width="20%" src="assets/images/zion-np.jpg">
 ```
 
-<img width="20%" src="assets/images/zion-np.jpg" alt="Zion National Park">
- <img class="img-border2" width="20%" src="assets/images/zion-np.jpg">
+<img width="20%" src="assets/images/zion-np.jpg">
  <img class="img-noborder" width="20%" src="assets/images/zion-np.jpg">
- <img class="img-raw" width="200" src="assets/images/zion-np.jpg">
+ <img class="img-border2" width="20%" src="assets/images/zion-np.jpg">
+ <img class="img-border4" width="20%" src="assets/images/zion-np.jpg">
 
 ---
 
@@ -108,24 +102,17 @@ Other grid classes include **grid-6633 and grid-3366**. Like I said, you can run
 <div class="grid-c1">
 <hr>
 <h4>First Element in the Grid</h4>
-<img class="img-border2" src="assets/images/zion-np.jpg">
+<p>With image width=50%</p>
+<img width="50%" class="img-border2" src="assets/images/zion-np.jpg">
 </div>
-
-
 <div class="grid-c2">
 <hr>
 <h4>Second Element</h4>
 <hr>
 <p>Virgin River - Zion National Park</p>
 <hr>
-<p>800x600 image resized by the browser to fit the column width and using the smaller border so it doesn't intrude on the gap between columns as much.</p>
-<p>Three images after this paragraph, with a space between and width=80, 100, 120.</p>
-<img width="80" src="assets/images/zion-np.jpg"> 
-<img width="100" src="assets/images/zion-np.jpg"> 
-<img width="120" src="assets/images/zion-np.jpg">
-<p>Then a new paragraph to end the content of this element.</p>
+<p>800x600 image resized to fit 50% of the grid column.</p>
 </div>
-
 <div class="grid-c1">
 <hr>
 <h4>Third Element</h4>
@@ -137,7 +124,6 @@ var fun = function lang(l) {
 }
 </pre>
 </div>
-
 <div class="grid-c2">
 <hr>
 <h4>Fourth Element</h4>
@@ -155,33 +141,15 @@ Next markdown paragraph after the grid.
 <div class="grid-c1">
 <hr>
 <h4>First Element in the Grid</h4>
-<p>Using img-noborder.</p>
-<img class="img-noborder" src="assets/images/zion-np.jpg">
+<p>With image width=66%</p>
+<img width="66%" class="img-noborder" src="assets/images/zion-np.jpg">
 </div>
-
 <div class="grid-c2">
 <hr>
 <h4>Second Element</h4>
 <hr>
 <p>Virgin River - Zion National Park</p>
 <hr>
-</div>
-
-<div class="grid-c1">
-<hr>
-<h4>Third Element</h4>
-<pre>
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-</pre>
-</div>
-
-<div class="grid-c2">
-<hr>
-<h4>Images Without Borders</h4>
-<img class="img-noborder" src="assets/images/zion-np.jpg">
 </div>
 </div>
 

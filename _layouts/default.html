@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="{{ site.favicon }}">
 {% endif %}
 <!-- Scripts for the Dropdown Links Button -->
-{% include menu-button-script.html %}
+{% include dropdown-script.html %}
 <!-- UPDATE the URL and the FILE! -->
 {% if site.url == "https://tr-systems.github.io/modernist" %}
   {% include tr-systems-ga.html %}
@@ -22,7 +22,7 @@
         <div class="grid-hdr">
             <div class="item1">
               {% if site.logo %} 
-                <img src="{{ site.logo }}" width="32"><h1>{{ site.title }}</h1>
+                <img src="{{ site.logo }}"><h1>{{ site.title }}</h1>
               {% else %}
                 <h1>{{ site.title }}</h1>
               {% endif %}
