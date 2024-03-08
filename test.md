@@ -2,6 +2,8 @@
 title: Style Sheet Test Page
 ---
 
+<div class="grid-toc">
+<div class="grid-toc-content">
 <div class="dropdown">
 <button onclick="menuClick()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
@@ -13,7 +15,11 @@ title: Style Sheet Test Page
 <a href="#table-testing">Table Testing</a>
 </div>
 </div>
+</div>
+<div class="grid-toc-content">
 <h3 style="display:inline;">{{ page.title }}</h3>
+</div>
+</div>
 
 Use this page to see just how stylish you can be...
 

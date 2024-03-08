@@ -2,6 +2,8 @@
 title: Modernist Theme for GitHub Pages by TR-Systems
 ---
 
+<div class="grid-toc">
+<div class="grid-toc-content">
 <div class="dropdown">
 <button onclick="menuClick()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
@@ -12,7 +14,11 @@ title: Modernist Theme for GitHub Pages by TR-Systems
 <a href="/test.html">Test Page</a>
 </div>
 </div>
+</div>
+<div class="grid-toc-content">
 <h3 style="display:inline;">{{ page.title }}</h3>
+</div>
+</div>
 
 ### Under Perpetual Construction and Testing!
 I am using this as a learning tool for developing and testing changes for my [TR-Systems site](https://tr-systems.github.io/web/){:target="_blank"}. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"}  on GitHub.
