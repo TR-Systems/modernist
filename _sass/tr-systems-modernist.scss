@@ -22,7 +22,7 @@ header, section, footer {
 .wrapper {
   width: 900px;
   position: relative;
-  margin: 0 auto 6px;
+  margin: 8px auto 6px;
   padding-bottom: 8px;
   border-radius: 8px;
   background: white;
@@ -51,7 +51,7 @@ header, section, footer {
     display: inline-block;
     margin-left: 6px;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 24px;
     color: #069;
   }
 
@@ -259,7 +259,10 @@ kbd {
 
   body {font-size: 14px;}
 
-  .wrapper {.content {margin: 0 10px 0;}}
+  .wrapper {
+    margin-top: 0;
+    .content {margin: 0 10px 0;}
+  }
   
   .header {
     img {width: 16px;}
