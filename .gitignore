@@ -7,4 +7,4 @@ Gemfile.lock
 .jekyll-cache
 .jekyll-metadata
 vendor
-assets\css\style.scss
+assets/css/
