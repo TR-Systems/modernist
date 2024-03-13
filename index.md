@@ -1,18 +1,7 @@
 ---
 title: Modernist Theme for GitHub Pages by TR-Systems
+toc: toc-homepage.html
 ---
-
-<div class="dropdown">
-<button onclick="buttonClick()" class="dropbtn">Table of Contents</button>
-<div id="myDropdown" class="dropdown-content">
-<a href="#test-on-windows">Test On Windows</a>
-<a href="#test-on-raspberry-pi">Test On Ras Pi</a>
-<a href="#design-elements">Design Elements</a>
-<a href="#technical-details">Technical Details</a>
-<a href="/test.html">Test Page</a>
-</div>
-<h3>{{ page.title }}</h3>
-</div>
 
 ### Under Perpetual Construction and Testing!
 I am using this as a learning tool for developing and testing changes for my [TR-Systems site](https://tr-systems.github.io/web/){:target="_blank"}. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"}  on GitHub.
@@ -26,6 +15,8 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 | **24-03-03** | Major overhaul of body parts and styling class structure.
 | **24-03-05** | **Now fully optimized for small screen viewing!**
 | **24-03-06** | **All Done!** Got what I needed for starters. Back next winter for sticky stuff.
+| **24-03-13** | **Now** I am, winter wasn't quite over.
+| **24-03-13** | Scrolling content with optional **TOC in fixed header always on screen**. Optimized for **printing**.
 
 ### Usage
 Good for static display of system documentation and other articles of interest. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.
@@ -152,10 +143,10 @@ FINALLY, for the first time in this never ending all time consuming silly winter
 I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} and more from W3Schools to learn how to be stylish.
 
 ### Media Screen Styles
-Fully customized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. All grids with two columns are reset to one column.
+Fully optimized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. Grids with two columns are reset to one.
 
 ### Media Print Style
-Removes link buttons from header and toc/menu buttons from content. Also removes first two lines of footer, controlled in **default.html** by using "<p class=noprint>".
+Removes description, link and toc buttons from header, and the middle line of footer by using  **<p class=nodisplay>** in **default.html**, which is also used to remove that line from small screens. If you don't want any footer lines to print, edit default.html and use **class=noprint** for those lines.
 
 ### List Item Spacing
 Lists with a little space between. Easy to find and adjust in the style sheet.
