@@ -3,7 +3,7 @@
 .dropbtn {
   background-color: #3782CD;
   color: white;
-  margin: 0 0 6px;
+  margin: 0; /* 0 0 6px; */
   padding: 1px 6px;
   font-size: 14px;
   font-weight: normal;
@@ -17,13 +17,13 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  h1, h2, h3 {display: inline-block;}
 }
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: aliceblue; /* #f1f1f1; */
-  min-width: 240px;
+  background-color: #C6EAFA;
+  min-width: max-content;
+  margin-left: 30px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -31,7 +31,7 @@
 .dropdown-content a {
   color: black;
   font-size: 14px;
-  padding: 4px 8px;
+  padding: 4px 40px 4px 8px;
   text-decoration: none;
   display: block;
 }

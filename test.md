@@ -1,19 +1,7 @@
 ---
 title: Style Sheet Test Page
+toc: toc-testpage.html
 ---
-
-<div class="dropdown">
-<button onclick="buttonClick()" class="dropbtn">Table of Contents</button>
-<div id="myDropdown" class="dropdown-content">
-<a href="#toc-made-easy">TOC Made Easy</a>
-<a href="#grid-styles">Grid Styles</a>
-<a href="#50-50-grid">50-50 Grid</a>
-<a href="#66-33-grid">66-33 Grid</a>
-<a href="#pipe-testing">Pipe Testing</a>
-<a href="#table-testing">Table Testing</a>
-</div>
-<h3>{{ page.title }}</h3>
-</div>
 
 Use this page to see just how stylish you can be...
 
@@ -42,25 +30,33 @@ Use one of the custom **image classes** to to create a picture frame or round ov
 ---
 
 ### TOC Made Easy
-Use this at the start of each page that warrants it.
+First, create html files in the **_includes** folder that look like this. Every header in your content file will be assigned a name that you can reference with spaces in the header repaced with dashes:
 
 ```
----
-title: Style Sheet Test Page
----
-
+<div class="toc">
 <div class="dropdown">
 <button onclick="buttonClick()" class="dropbtn">Table of Contents</button>
 <div id="myDropdown" class="dropdown-content">
-<a href="#grid-styles">Grid Styles</a>
 <a href="#toc-made-easy">TOC Made Easy</a>
+<a href="#grid-styles">Grid Styles</a>
 <a href="#50-50-grid">50-50 Grid</a>
 <a href="#66-33-grid">66-33 Grid</a>
 <a href="#pipe-testing">Pipe Testing</a>
 <a href="#table-testing">Table Testing</a>
 </div>
+</div>
 <h3>{{ page.title }}</h3>
 </div>
+```
+
+Then, put this **front matter** at the start of the markdown file for the page, with an empty line before your first line of content.
+
+```
+---
+title: Style Sheet Test Page
+toc: toc-testpage.html
+---
+
 ```
 
 ---
