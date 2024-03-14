@@ -380,9 +380,8 @@ kbd {
   border-radius: 4px;
   cursor: pointer;
 }
-.toc-button:hover, .toc-button:focus {
-  background-color: #434B55;
-}
+.toc-button:hover {background-color: #434B55;}
+
 .toc-dropdown {
   position: relative;
   display: inline-block;
@@ -392,6 +391,7 @@ kbd {
   position: absolute;
   background-color: #C6EAFA;
   min-width: max-content;
+  margin-top: 0px;
   margin-left: 30px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -404,6 +404,7 @@ kbd {
   text-decoration: none;
   display: block;
 }
+.toc-dropdown a:hover {background-color: aliceblue}
 .toc-show {display: block;}
 
 /* Dropdown Link Button for TOC */
@@ -435,6 +436,7 @@ kbd {
   text-decoration: none;
   display: block;
 }
+.menu-dropdown a:hover {background-color: aliceblue}
 .menu-show {display: block;}
 
 /* Default GitHub Code Highlighter */
