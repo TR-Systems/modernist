@@ -10,8 +10,9 @@
 {% if site.favicon %}
   <link rel="shortcut icon" href="{{ site.favicon }}">
 {% endif %}
-<!-- Scripts for the Dropdown Links Button -->
-{% include dropdown-script.html %}
+<!-- Scripts for Dropdown Buttons -->
+{% include menu-button-script.html %}
+{% include toc-button-script.html %}
 <!-- UPDATE the URL and the FILE! -->
 {% if site.url == "https://tr-systems.github.io/modernist" %}
   {% include tr-systems-ga.html %}
@@ -40,7 +41,7 @@
               {% endif %}
           {% endif %}
         </ul>
-        <button onclick="window.print()"><i class="material-icons">print</i></button>
+        <button class="icon-button" onclick="window.print()"><i class="material-icons">print</i></button>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         {% if page.toc %}
           {% include {{ page.toc }} %}
