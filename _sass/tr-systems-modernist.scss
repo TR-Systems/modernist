@@ -1,7 +1,7 @@
 /* Code Highlighter */
 @import "rouge-github";
 /* Dropdown Link Button */
-@import "dropdown";
+@import "toc-dropdown";
 
 /* Modernist Theme for GitHub Pages by TR-Systems */
 html {
@@ -35,7 +35,7 @@ header {
 
   img {
     display: inline;
-    width: 32px;
+    width: 16px;
     margin: 4px 0 0 4px;
     padding: 0;
     border: 2px solid #3782CD;
@@ -46,15 +46,15 @@ header {
     display: inline;
     margin-left: 6px;
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 1.2em;
     color: #069;
   }
   p {
     display: block;
     margin-left: 6px;
-    margin-bottom: 2px;
+    margin-bottom: 0;
     color: #434B55;
-    font-size: 15px;
+    font-size: 14px;
     font-style: italic;
   }
   ul {
@@ -100,14 +100,13 @@ header {
 .toc {
   display: inline-block;
   padding-top: 2px;
-  padding-bottom: 2px;
   border-top: 2px solid silver;
   width: 900px;
   h1, h2, h3 {
+    color: black;
     display: inline-block;
-    font-size: 1.2em;
   }
-  .dropbtn {margin-left: 30px;}
+  .toc-button {margin-left: 30px;}
 }
 
 .content {
@@ -120,7 +119,6 @@ header {
 
 .footer {
   display: block;
-  padding-bottom: 2px;
   background: #434B55;
   border-top: 2px solid silver;
   border-radius: 0 0 8px 8px;
@@ -302,11 +300,11 @@ kbd {
       font-size: 1em;
       margin-left: 10px;
     }
-    .dropbtn {
+    .toc-button {
       font-size: 12px;
       margin-left: 10px;
     }
-    .dropdown-content {margin-left: 10px;}
+    .toc-dropdown-content {margin-left: 10px;}
   }
 
   .content {
@@ -318,7 +316,7 @@ kbd {
     h4 {font-size: 1.0em;}
     td {font-size: 12px;}
     code, pre {font-size: 12px;}
-    .dropbtn {font-size: 14px}
+    .toc-button {font-size: 14px}
     p, ul, ol, table, pre, dl {margin-bottom: 6px;}
     p.nodisplay {display:none;}
     ul {padding-left: 20px;}
@@ -355,7 +353,7 @@ kbd {
         font-size: 1.6em;
       }
     }
-    .dropbtn {display: none;}
+    .toc-button {display: none;}
   }
   .wrapper {
     .content {
