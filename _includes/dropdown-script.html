@@ -1,17 +1,17 @@
 <script>
 /* Show and hide dropdown content on button click  */
 function tocButtonClick() {
-  document.getElementById("tocContent").classList.toggle("show");
+  document.getElementById("tocContent").classList.toggle("toc-show");
 }
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.toc-button')) {
-    var dropdowns = document.getElementsByClassName("toc-dropdown-content");
+    var dropdowns = document.getElementsByClassName("toc-drop-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      if (openDropdown.classList.contains('toc-show')) {
+        openDropdown.classList.remove('toc-show');
       }
     }
   }
