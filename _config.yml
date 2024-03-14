@@ -50,10 +50,8 @@ exclude:
 
 highlighter: rouge
 
-# Header and Footer Elements used in -layouts/default.html
-
+# Required Header Elements used in -layouts/default.html
 title: Your Logo and Site Title
-
 description: Describing What You Do
 
 # Update with your github userid and repo name
@@ -62,9 +60,8 @@ url: https://tr-systems.github.io/modernist
 baseurl:
 
 # Optional Header Elements
-# logo is reduced to 32 wide, to left of title
-# favicon MUST BE 32x32
-
+# Logo is reduced to 16x16. Favicon MUST BE 32x32
+menu: site-menu.html
 logo: assets/images/logo-github.png
 favicon: assets/images/logo-github.png
 

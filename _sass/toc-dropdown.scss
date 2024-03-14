@@ -1,6 +1,5 @@
-/* Dropdown Link Button for TOC or NAV */
-/* https://www.w3schools.com/howto/howto_js_dropdown.asp */
-.dropbtn {
+/* Dropdown Link Button for TOC */
+.toc-button {
   background-color: #3782CD;
   color: white;
   margin: 0; /* 0 0 6px; */
@@ -11,14 +10,14 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.dropbtn:hover, .dropbtn:focus {
+.toc-button:hover, .toc-button:focus {
   background-color: #2980B9;
 }
-.dropdown {
+.toc-dropdown {
   position: relative;
   display: inline-block;
 }
-.dropdown-content {
+.toc-dropdown-content {
   display: none;
   position: absolute;
   background-color: #C6EAFA;
@@ -28,12 +27,12 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.dropdown-content a {
+.toc-dropdown-content a {
   color: black;
   font-size: 14px;
   padding: 4px 40px 4px 8px;
   text-decoration: none;
   display: block;
 }
-.dropdown a:hover {background-color: #ddd;}
+.toc-dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
