@@ -21,30 +21,35 @@
   <body>
     <div class="wrapper">
       <header>
+        {% if site.menu %}
+        {% include {{ site.menu }} %}
+        {% endif %}
         {% if site.logo %} 
-          <img src="{{ site.logo }}"><h1>{{ site.title }}</h1>
+        <img src="{{ site.logo }}"><h1>{{ site.title }}</h1>
         {% else %}
-          <h1>{{ site.title }}</h1>
+        <h1>{{ site.title }}</h1>
         {% endif %}
         <ul>
           {% if site.home-page %}
-            <li><a href="{{ site.url }}{{ site.home-page }}">{{ site.home-text }}</a></li>
+          <li><a href="{{ site.url }}{{ site.home-page }}">{{ site.home-text }}</a></li>
           {% endif %}
           {% if site.about-page %}
-            <li><a href="{{ site.url }}{{ site.about-page }}">{{ site.about-text }}</a></li>
+          <li><a href="{{ site.url }}{{ site.about-page }}">{{ site.about-text }}</a></li>
           {% endif %}
           {% if site.hlink1-url %}
-            <li><a target="_blank" href="{{ site.hlink1-url }}">{{ site.hlink1-text }}</a></li>
-            {% else %}
-              {% if site.hlink1-page %}
-                <li><a href="{{ site.url }}{{ site.hlink1-page }}">{{ site.hlink1-text }}</a></li>
-              {% endif %}
+          <li><a target="_blank" href="{{ site.hlink1-url }}">{{ site.hlink1-text }}</a></li>
+          {% else %}
+          {% if site.hlink1-page %}
+          <li><a href="{{ site.url }}{{ site.hlink1-page }}">{{ site.hlink1-text }}</a></li>
+          {% endif %}
           {% endif %}
         </ul>
-        <button class="icon-button" onclick="window.print()"><i class="material-icons">print</i></button>
+        <button class="print-button" onclick="window.print()">
+        <i class="material-icons">print</i>
+        </button>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         {% if page.toc %}
-          {% include {{ page.toc }} %}
+        {% include {{ page.toc }} %}
         {% endif %}
       </header>
       <div class="content">

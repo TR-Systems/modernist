@@ -26,14 +26,14 @@ body {
 }
 
 header {
-  background:#C6EAFA;
+  background: #C6EAFA;
   background: linear-gradient(#DDFBFC, #C6EAFA);
   border-bottom: 2px solid silver;
   border-radius: 8px 8px 0 0;
 
   img {
     display: inline;
-    width: 16px;
+    width: 20px;
     margin: 4px 0 0 4px;
     padding: 0;
     border: 2px solid #3782CD;
@@ -42,14 +42,14 @@ header {
   }
   h1 {
     display: inline;
-    margin-left: 6px;
+    margin-left: 10px;
     margin-bottom: 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #069;
   }
   p {
     display: block;
-    margin-left: 6px;
+    margin-left: 10px;
     margin-bottom: 0;
     color: #434B55;
     font-size: 14px;
@@ -82,31 +82,43 @@ header {
     }
     li:hover {background-color: #434B55}
   }
-  .icon-button {
+  .print-button {
     float: right;
     margin-right: 4px;
-    background: #DDFBFC;
+    background: none;
     border: none;
-    font-size: 16px;
+    i {
+      margin-top: 4px;
+      font-size: 20px;
+    }
   }
-  .icon-button:hover {background-color: silver}
-}
+  .print-button:hover {background-color: silver}
+  
+  .menu-button {
+    margin-top: 4px;
+    margin-left: 10px;
+    i {
+      font-size: 20px;
+    }
+  }
 
-.material-icons {
-  font-size: 12px;
-  background: none;
 }
 
 .toc {
   display: inline-block;
   padding-top: 2px;
+  padding-bottom: 2px;
   border-top: 2px solid silver;
   width: 900px;
   h1, h2, h3 {
     color: black;
     display: inline-block;
   }
-  .toc-button {margin-left: 30px;}
+  .toc-button {margin-left: 10px;}
+  .toc-drop-content {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
 }
 
 .content {
@@ -118,6 +130,7 @@ header {
 }
 
 .footer {
+  position: relative;
   display: block;
   background: #434B55;
   border-top: 2px solid silver;
@@ -290,8 +303,12 @@ kbd {
   .wrapper {margin-bottom: 0}
 
   header {
-    img {width: 16px;}
-    h1 {font-size: 1.2em;}
+    .menu-button {margin-left: 4px}
+    img {display: none}
+    h1 {
+      margin-left: 0;
+      font-size: 1.1em;
+    }
     p {display: none;}
   }
   .toc {
@@ -327,7 +344,6 @@ kbd {
     .footer {padding-bottom: 2px;}
   }
 
-  
   .grid-5050 {
     grid-template-columns: 1fr;
     grid-column-gap: 8px;
@@ -344,7 +360,8 @@ kbd {
 
 @media print {
   header {
-    position: relative;
+    .menu-button {display: none}
+    .print-button {display: none}
     ul {display: none;}
     p {display: none;}
     .toc {
@@ -353,7 +370,7 @@ kbd {
         font-size: 1.6em;
       }
     }
-    .toc-button {display: none;}
+    .toc-button {display: none}
   }
   .wrapper {
     .content {
@@ -382,17 +399,13 @@ kbd {
 }
 .toc-button:hover {background-color: #434B55;}
 
-.toc-dropdown {
-  position: relative;
-  display: inline-block;
-}
+.toc-dropdown {display: inline-block}
+
 .toc-drop-content {
   display: none;
   position: absolute;
   background-color: #C6EAFA;
   min-width: max-content;
-  margin-top: 0px;
-  margin-left: 30px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -409,22 +422,21 @@ kbd {
 
 /* Dropdown Link Button for TOC */
 .menu-button {
-  margin: 4px 0 0 4px;
-  font-size: 1em;
+  padding: 0;
+  background: none;
+  border: none;
   cursor: pointer;
 }
-.menu-button:hover, .toc-button:focus {
-  background-color: silver;
-}
-.menu-dropdown {
-  display: inline;
-}
+.menu-button:hover {background-color: silver;}
+
+.menu-dropdown {display: inline-block}
+
 .menu-drop-content {
   display: none;
   position: absolute;
   background-color: #C6EAFA;
   min-width: max-content;
-  margin-left: 30px;
+  margin-left: 6px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -432,7 +444,7 @@ kbd {
 .menu-drop-content a {
   color: black;
   font-size: 14px;
-  padding: 4px 40px 4px 8px;
+  padding: 4px 20px 4px 8px;
   text-decoration: none;
   display: block;
 }
