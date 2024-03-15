@@ -56,15 +56,21 @@
 
       {{ content }}
 
-      <div class="footer">
-        <p>{{ site.contact-info1 }} {{ site.contact-info2 }}</p>
-        {% if site.footer-url %}
-          <p class="nodisplay"><small>{{ site.footer-text1 }} <a target="-blank" href="{{ site.footer-url }}">{{ site.footer-text2 }}</a></small></p>
-        {% else %}
-          <p class="nodisplay"><small>{{ site.footer-text1 }} {{ site.footer-text2 }}</small></p>
-        {% endif %}
-        <p>&copy;{{ site.copyright }}</p> 
       </div>
+      <div class="footer">
+      <div class="grid-5050">
+      <div class="item1">
+      <p>{{ site.contact-info1 }} {{ site.contact-info2 }}</p>
+      </div>
+      <div class="item2">
+      <p>&copy;{{ site.copyright }}</p>
+      </div>
+      </div>
+      {% if site.footer-url %}
+      <p class="nodisplay"><small>{{ site.footer-text1 }} <a target="-blank" href="{{ site.footer-url }}">{{ site.footer-text2 }}</a></small></p>
+      {% else %}
+      <p class="nodisplay"><small>{{ site.footer-text1 }} {{ site.footer-text2 }}</small></p>
+      {% endif %}
       </div>
     </div>
   </body>
