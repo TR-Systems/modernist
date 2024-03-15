@@ -92,12 +92,12 @@ contact-info2: <em>trsystems.help</em> at the little G mail place.
 
 # Second line with font-size: small in default.html
 
-footer-text1: Website powered by Github Pages using modified Modernist Theme
+#footer-text1: Website powered by Github Pages using modified Modernist Theme
 
 # Text2 displayed only if url is specified
 
-footer-text2: <em>Use my template and get started today!</em>
-footer-url: https://tr-systems.github.io/modernist/
+#footer-text2: <em>Use my template and get started today!</em>
+#footer-url: https://tr-systems.github.io/modernist/
 
 # Third line of footer, with &copy symbol preceding in default.html
 
