@@ -1,9 +1,11 @@
 <script>
-/* Show and hide dropdown content on button click  */
+function menuButtonClick() {
+  document.getElementById("menuContent").classList.toggle("menu-show");
+}
 function tocButtonClick() {
   document.getElementById("tocContent").classList.toggle("toc-show");
 }
-// Close the dropdown if the user clicks outside of it
+// Collapse the TOC if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.toc-button')) {
     var dropdowns = document.getElementsByClassName("toc-drop-content");
