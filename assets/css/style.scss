@@ -5,7 +5,7 @@
 html {
   height: 100%;
   background: #6C7989;
-  background: #6C7989 linear-gradient(#6C7989, #434B55) fixed;
+  background: linear-gradient(#6C7989, #434B55);
 }
 
 body {
@@ -196,6 +196,27 @@ li:not(:last-child) {
   padding-bottom: 4px;
 }
 
+table {
+  border-collapse: collapse;
+  width: auto;
+}
+
+th {
+  text-align: left;
+  font-weight: normal;
+  background-color: #3782CD;
+  color: white;
+}
+
+th, td {
+  border: 2px solid darkgray;
+  padding: 3px 6px 3px 6px;
+}
+
+tr:nth-child(even){background-color: rgba(#000, 0.05);}
+
+tr:hover {background-color: white;}
+
 code, pre {
   font-size:14px;
   overflow-x:auto;
@@ -208,36 +229,13 @@ pre {
   background: aliceblue;
 }
 
-table {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  border-collapse: collapse;
-  width: auto;
-}
-
-th {
-  text-align: left;
-  background-color: #3782CD;
-  color: white;
-}
- 
-td, th {
-  border: 2px solid #ddd;
-  padding: 3px 6px 3px 6px;
-}
-
-tr:nth-child(even){background-color: rgba(#000, 0.1);}
-
-tr:hover {background-color: aliceblue;}
-
 blockquote {
   font-size: 14px;
   margin: 4px 0 8px;
   padding: 2px 6px;
   border: 2px solid silver;
   border-radius: 6px;
-  background: aliceblue;
-
+  background: azure;
   p {margin-bottom: 0}
 }
 

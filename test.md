@@ -5,27 +5,20 @@ toc: toc-testpage.html
 
 Use this page to see just how stylish you can be...
 
-#### KBD Testing
-Press <kbd>Ctrl</kbd> + <kbd>c</kbd>
-
-```
-Press <kbd>Ctrl</kbd> + <kbd>c</kbd>
-```
-
 #### Picture Testing
 Use one of the custom **image classes** to to create a picture frame or round over the corners:
 
 ```
-<img width="20%" src="assets/images/zion-np.jpg">
- <img class="img-noborder" width="20%" src="assets/images/zion-np.jpg">
- <img class="img-border2" width="20%" src="assets/images/zion-np.jpg">
- <img class="img-border4" width="20%" src="assets/images/zion-np.jpg">
+<img width="20%" src="images/zion-np.jpg">
+ <img class="img-noborder" width="20%" src="images/zion-np.jpg">
+ <img class="img-border2" width="20%" src="images/zion-np.jpg">
+ <img class="img-border4" width="20%" src="images/zion-np.jpg">
 ```
 
-<img width="20%" src="assets/images/zion-np.jpg">
- <img class="img-noborder" width="20%" src="assets/images/zion-np.jpg">
- <img class="img-border2" width="20%" src="assets/images/zion-np.jpg">
- <img class="img-border4" width="20%" src="assets/images/zion-np.jpg">
+<img width="20%" src="images/zion-np.jpg">
+ <img class="img-noborder" width="20%" src="images/zion-np.jpg">
+ <img class="img-border2" width="20%" src="images/zion-np.jpg">
+ <img class="img-border4" width="20%" src="images/zion-np.jpg">
 
 ---
 
@@ -78,7 +71,7 @@ Other grid classes include **grid-6633 and grid-3366**. Like I said, you can run
 <hr>
 <h4>First Element in the Grid</h4>
 <p>With image width=50%</p>
-<img width="50%" class="img-border2" src="assets/images/zion-np.jpg">
+<img width="50%" class="img-border2" src="images/zion-np.jpg">
 </div>
 <div class="grid-c2">
 <hr>
@@ -117,7 +110,7 @@ Next markdown paragraph after the grid.
 <hr>
 <h4>First Element in the Grid</h4>
 <p>With image width=66%</p>
-<img width="66%" class="img-noborder" src="assets/images/zion-np.jpg">
+<img width="66%" class="img-noborder" src="images/zion-np.jpg">
 </div>
 <div class="grid-c2">
 <hr>
@@ -137,17 +130,7 @@ Using the Pipe/Vertical Bar Symbol yields table cells
 
 | One pipe, one table data cell
 
-| Two pipes with image after the second  | <img class="img-border2" width="160" src="assets/images/zion-np.jpg">
-
----
-
-### Table Testing
-Trying to fill a table data cell with a background color.
-
-| Hex Code | Color |
-| -------- | ----- |
-| #6C7989 | <span style="font-size:36px;height:36px;width:36px;background:#6C7989;"> x </span> |
-| next | next |
+| Two pipes with image after the second  | <img class="img-border2" width="160" src="images/zion-np.jpg">
 
 ---
 
