@@ -27,15 +27,14 @@ First, create html files in the **_includes** folder that look like this. Every 
 
 ```
 <div class="toc">
-<div class="dropdown">
-<button onclick="buttonClick()" class="dropbtn">Table of Contents</button>
-<div id="myDropdown" class="dropdown-content">
+<div class="toc-dropdown">
+<button onclick="tocButtonClick()" class="toc-button">Table of Contents</button>
+<div id="tocContent" class="toc-drop-content">
 <a href="#toc-made-easy">TOC Made Easy</a>
 <a href="#grid-styles">Grid Styles</a>
 <a href="#50-50-grid">50-50 Grid</a>
 <a href="#66-33-grid">66-33 Grid</a>
 <a href="#pipe-testing">Pipe Testing</a>
-<a href="#table-testing">Table Testing</a>
 </div>
 </div>
 <h3>{{ page.title }}</h3>
@@ -55,11 +54,9 @@ toc: toc-testpage.html
 ---
 
 ### Grid Styles
-Placing text and other content next to an image can be done in several ways and gets really complicated really fast, but I got his working with a custom grid classes in the style sheet and html in the markdown. This appears to be the only way to create a grid out of markdown. You will see how when you edit **test.md**.
+Placing text and other content next to an image can be done in several ways and gets really complicated really fast, but I got his working with grid classes in the style sheet and html in the markdown. This appears to be the only way to create a grid out of markdown. You will see how when you edit **test.md**.
 
-You can run wild with these, provided you don't mind editing raw html in your pages, which is prone to the slightest slip or miss that makes your web page run wild, too.
-
-But it works and it ain't that hard. Easy to copy/paste the basic structure needed and then fill in the content.
+You can run wild with these, provided you don't mind editing raw html in your pages, which is prone to the slightest slip or miss that makes your web page run wild, too. Easy to copy/paste the basic structure needed and then fill in the content.
 
 ### 50-50 Grid
 Each element in the grid starts with a horizontal rule that spans the width of the column, with a 32px gap.
