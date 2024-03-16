@@ -223,20 +223,8 @@ content
 content
 ##### Test Header5
 content
-###### Test Header65
+###### Test Header6
 content
-## Technical Details
-**_layouts/default.html** is used to build the header and footer. **Custom local variables in _config.yml** provide the content. Link buttons will not be displayed if they are not configured.
-
-**_sass/tr-systems-modernist.scss** is the primary style sheet, substantially modified from the original.
-
-**_sass/dropdown.scss** provides styling for the links button, the basics of which were obtained from W3Schools and then styled to match the theme here.
-
-**_sass/rouge-github.scss** is the default Rouge style sheet used in GitHub for code highlighting, replacing **rouge-base16-dark** that came with the original, which I have left in the **_sass** folder.
-
-**assets/css/style.scss** is the **site style sheet**, which imports **tr-systems**, which imports **dropdown** and **rouge**.
-
-**Note:** If you change the name of the site style sheet, you need to update the reference in **default.html**.
 
 ---
 
