@@ -127,7 +127,7 @@ I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:targ
 Fully optimized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. Grids are reset to one column. Removes description and logo from header. Removes tagline from  footer.
 
 ### Media Print Style
-Removes description, link and toc buttons from header, and tag line of footer by using  **<p class=nodisplay>** in **default.html**. If you don't want any footer lines to print, edit default.html and use **class=noprint** for those lines.
+Removes description, link and toc buttons from header and the entire footer.
 
 ### List Item Spacing
 Lists with a little space between. Easy to find and adjust in the style sheet.
