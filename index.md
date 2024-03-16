@@ -3,7 +3,7 @@ title: Modernist Theme for GitHub Pages by TR-Systems
 toc: toc-homepage.html
 ---
 
-### Under Perpetual Construction and Testing!
+### Under Perpetual Construction and Testing
 I am using this as a learning tool for developing and testing changes for my [TR-Systems site](https://tr-systems.github.io/web/){:target="_blank"}. Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"}  on GitHub.
 
 This design started out by copying the GitHub Pages Modernist Theme, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
@@ -19,7 +19,7 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 | **24-03-13** | Scrolling content with optional **TOC in fixed header always on screen**. Optimized for **printing**.
 
 ### Usage
-Good for static display of system documentation and other articles of interest. Navigation is through the home page, which I will be improving upon as time, other interests and the seasons dictate.
+Good for static display of system documentation and other articles of interest, which I will be improving upon as time, other interests and the seasons dictate.
 
 ### Use This Template
 Open this repository on GitHub and then click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***. Give your repo a web friendly name like "web" or "mycoolthing" since the repo name is the top level path in the URL for your website.
@@ -33,10 +33,10 @@ ALL YOU NEED TO DO is **edit _config.yml, index, about and readme.md** to make i
 There are only a few other simple things you need to do in order to publish your web site, and that's where [GitHub Pages Help](https://docs.github.com/en/pages){:target="_blank"} and [Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github){:target="_blank"} comes in handy. All of GitHub is very well documented in their Help pages. GitHub for Dummies helped me out in the very beginning, too.
 
 ### Editing and Publishing
-The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process. There may be a better way but this works for me since I've been doing all editing online up to this point. More on that below.
+The repo has two branches. Apply changes and new content to the top level "edit" branch, then pull them down into the "publish" branch for the automatic "pages build" process.
 
 ### Google Analytics
-**Google Analytics is configured on this site for the GA stream "tr-systems.github.io/modernist/"** by using an **if** statement in **_layouts/default.html** that you will need to update or remove, along with the **include** statement and the GA snippet file for tr-systems in the **_includes** folder.
+**Google Analytics** is configured on this site for the GA stream "**tr-systems.github.io/modernist/**" by using an **if** statement in **_layouts/default.html** that you will need to update or remove, along with the **include** statement and the GA snippet file for tr-systems in the **_includes** folder.
 
 ### Getting Started
 [GitHub Pages Help](https://docs.github.com/en/pages){:target="_blank"}. I spent hours studying this material. I'm trying to make this so you don't really have to, *once you understand what a pull request is all about, that is. :)*
@@ -82,31 +82,12 @@ Ok, 98 gems installed, a brick of web I guess.
 8. Run **bundle exec jekyll serve**
 9. **Error:** jekyll 3.9.5 | File to import not found or unreadable: **tr-systems-modernist**.
 
-**@import** in **assets/css/style.scss** is simply not working locally. This issue has been posted on the [GitHub Community](https://github.com/orgs/community/discussions/108932){:target="_blank"} and [Jekyll Talk](https://talk.jekyllrb.com/t/error-file-to-import-not-found-or-unreadable-style-sheet/8973){:target="_blank"}, knowing that Jekyll on Windows is *not officially supported*.
-
-### Workaround For Now
-Copy the *contents* of the **dropdown**, **rouge-github** and **tr-systems-modernist** style sheets in **_sass** and paste them into **assets/css/style.scss**, *starting at and replacing the import statement, leaving the first 3 lines of front matter, and removing the import for rouge from tr-systems-modernist*, so **style.scss** it looks like this:
-
-```
----
----
-
-/* Modernist Theme for GitHub Pages by TR-Systems */
-html {
-... remainder of tr-systems-modernist.scss
-
-/* Dropdown Link Button for TOC or NAV */
-... all of dropdown
-
-/* Default GitHub Code Highlighter */
-... all of rouge-github or rouge-base16-dark if you want to try it.
-```
+Using **@import** in **assets/css/style.scss** does not work locally on Windows. To get around this, all I  had to do was copy the the contents of the style sheets in **_sass** and paste them into **style.scss**. Then:
 
 1. Run **bundle exec jekyll serve**<br>
 The site now builds. See it here: http://localhost:4000
 2. You can now make content and style changes ***on the fly*** with the jekyll server running.
-3. When you're done, copy any changes you've made to **style.scss** into **tr-systems-modernist**.
-4. Push your content and style changes  up to the edit branch on GitHub using Git or GitHub Desktop, but DO NOT PUSH **style.scss**!
+3. When you're done, **push** your changes up to the **edit branch** on GitHub using Git or GitHub Desktop.
 5. Then, on GitHub, create a pull request into the publish branch for "pages build and deploy".
 6. Voila, websites made easy. Ha!
 
@@ -143,10 +124,10 @@ FINALLY, for the first time in this never ending all time consuming silly winter
 I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} and more from W3Schools to learn how to be stylish.
 
 ### Media Screen Styles
-Fully optimized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. Grids with two columns are reset to one.
+Fully optimized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. Grids are reset to one column. Removes description and logo from header. Removes tagline from  footer.
 
 ### Media Print Style
-Removes description, link and toc buttons from header, and the middle line of footer by using  **<p class=nodisplay>** in **default.html**, which is also used to remove that line from small screens. If you don't want any footer lines to print, edit default.html and use **class=noprint** for those lines.
+Removes description, link and toc buttons from header, and tag line of footer by using  **<p class=nodisplay>** in **default.html**. If you don't want any footer lines to print, edit default.html and use **class=noprint** for those lines.
 
 ### List Item Spacing
 Lists with a little space between. Easy to find and adjust in the style sheet.
@@ -166,23 +147,23 @@ more text
 * last one
 
 ### Color Scheme and Table Style
-W3Schools helped me with the table design. The colors are shown using small image files that I created from screen shots on [color sites](https://www.color-hex.com/){:target="_blank"}. There is a better way, and I will find it, but not a priority.
+The colors are shown using html "<span style=...>" in the markdown. This [color site](https://www.color-hex.com/){:target="_blank"} is a good reference.
 
 | Selector | Background Colors | Color1 | Color2 |
 | -------- | ----------------- | ------ | ------ |
-| html | background: #6C7989; | <img class="img-raw" width="48" src="assets/images/color-6C7989.png"> | x |
-| html | background: linear-gradient(#6C7989, #434B55) | <img class="img-raw" width="48" src="assets/images/color-6C7989.png"> | <img class="img-raw" width="48" src="assets/images/color-434B55.png"> |
-| header | background: #C6EAFA; | <img class="img-raw" width="48" src="assets/images/color-C6EAFA.png"> | x |
-| header | background: linear-gradient(#DDFBFC, #C6EAFA); | <img class="img-raw" width="48" src="assets/images/color-DDFBFC.png"> | <img class="img-raw" width="48" src="assets/images/color-C6EAFA.png"> |
-| header | border-bottom:2px solid #B2D2E1; | <img class="img-raw" width="48" src="assets/images/color-B2D2E1.png"> | x |
-| header: ul: before: | background:rgba(#000, 0.1); | Light Gray | x |
-| header: ul: | background: #5198DF; | <img class="img-raw" width="48" src="assets/images/color-5198DF.png"> | x |
-| header: ul: | background: linear-gradient(#77B9FB, #3782CD); | <img class="img-raw" width="48" src="assets/images/color-77B9FB.png"> | <img class="img-raw" width="48" src="assets/images/color-3782CD.png"> |
-| section | background:#FFFFFF; | WHITE | x |
-| th | background-color: #3782CD; | <img class="img-raw" width="48" src="assets/images/color-3782CD.png"> | x |
+| html | #6C7989, #434B55 | <span style="background:#6C7989;font-size:24px;padding-right:48px;margin:0;"></span> | <span style="background:#434B55;font-size:24px;padding-right:48px;margin:0;"></span> |
+| header<br>border | #DDFBFC, #C6EAFA<br>silver | <span style="background:#DDFBFC;font-size:24px;padding-right:48px;margin:0;"></span> | <span style="background:#C6EAFA;font-size:24px;padding-right:48px;margin:0;"></span> |
+| header li<br>.toc-button<br>border | #3782CD<br>#3782CD<br>darkgray | <span style="background:#3782CD;font-size:24px;padding-right:48px;margin:0;"></span> | x |
+| wrapper | aliceblue | <span style="background:aliceblue;font-size:24px;padding-right:48px;margin:0;"></span> | x |
+| th | #3782CD; | <span style="background:#3782CD;font-size:24px;padding-right:48px;margin:0;"></span> | x |
+| th, td border | darkgray | <span style="background:darkgray;font-size:24px;padding-right:48px;margin:0;"></span> | x |
+| tr:even<br>tr:hover | rgba(#000, 0.05)<br>white | <span style="background-color:rgba(0,0,0,0.05);font-size:24px;padding-right:48px;margin:0;"></span> | x |
+| blockquote | azure | <span style="background:azure;font-size:24px;padding-right:48px;margin:0;"></span> | x |
+| footer<br>border | #434B55<br>silver | <span style="background:#434B55;font-size:24px;padding-right:48px;margin:0;"></span> | x |
 
 
-#### Java code with highlighting by **rouge-github.scss**.
+#### Java Code Highlighting
+This is the default Rouge highlighter for GitHub Pages. Many other options are available.
 
 ```js
 // Javascript code with syntax highlighting.
@@ -213,6 +194,13 @@ var fun = function lang(l) {
 > blockquote text with break<br>more text
 >
 > second paragraph
+
+#### Keyboard Keys
+Press <kbd>Ctrl</kbd> + <kbd>c</kbd>
+
+```
+Press <kbd>Ctrl</kbd> + <kbd>c</kbd>
+```
 
 #### Definition List
 
