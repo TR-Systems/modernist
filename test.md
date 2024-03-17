@@ -1,5 +1,6 @@
 ---
 title: Style Sheet Test Page
+print: print-button.html
 toc: toc-testpage.html
 ---
 

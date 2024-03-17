@@ -43,9 +43,9 @@
           {% endif %}
           {% endif %}
         </ul>
-        <button class="print-button" onclick="window.print()">
-        <i class="material-icons">print</i>
-        </button>
+        {% if page.print %}
+        {% include {{ page.print }} %}
+        {% endif %}
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         {% if page.toc %}
         {% include {{ page.toc }} %}
