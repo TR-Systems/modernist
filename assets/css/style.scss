@@ -288,6 +288,14 @@ kbd {
 }
 
 /* Dropdown Link Button for TOC */
+.menu-button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu-button:hover {background-color: silver;}
+
 .toc-button {
   background-color: #3782CD;
   color: white;
@@ -301,9 +309,9 @@ kbd {
 }
 .toc-button:hover {background-color: #434B55;}
 
-.toc-dropdown {display: inline-block}
+.dropdown {display: inline-block}
 
-.toc-drop-content {
+.drop-content {
   display: none;
   position: absolute;
   background-color: #C6EAFA;
@@ -312,46 +320,17 @@ kbd {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.toc-drop-content a {
+.drop-content a {
   color: black;
   font-size: 14px;
   padding: 4px 8px 4px 8px;
   text-decoration: none;
   display: block;
 }
-.toc-dropdown a:hover {background-color: aliceblue}
-.toc-show {display: block}
+.dropdown a:hover {background-color: aliceblue}
 
-/* Dropdown Link Button for TOC */
-.menu-button {
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.menu-button:hover {background-color: silver;}
-
-.menu-dropdown {display: inline-block}
-
-.menu-drop-content {
-  display: none;
-  position: absolute;
-  background-color: #C6EAFA;
-  min-width: 128px;
-  margin-left: 6px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.menu-drop-content a {
-  color: black;
-  font-size: 14px;
-  padding: 4px 20px 4px 8px;
-  text-decoration: none;
-  display: block;
-}
-.menu-dropdown a:hover {background-color: aliceblue}
 .menu-show {display: block}
+.toc-show {display: block}
 
 @media screen and (max-width: 900px) {
   .wrapper {width: 100%;}
