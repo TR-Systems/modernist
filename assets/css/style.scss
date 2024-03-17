@@ -32,7 +32,6 @@ header {
   border-radius: 8px 8px 0 0;
 
   .menu {
-    display: inline-block;
     .menu-button {
       margin-top: 4px;
       margin-left: 10px;
@@ -40,7 +39,7 @@ header {
     }
     .drop-content {
       min-width: 128px;
-     margin-left: 6px;
+      margin-left: 6px;
     }
   }
   img {
@@ -107,7 +106,6 @@ header {
   .print-button:hover {background-color: silver}
 
   .toc {
-    display: inline-block;
     padding-top: 2px;
     padding-bottom: 2px;
     border-top: 2px solid silver;
@@ -123,6 +121,8 @@ header {
   }
 }
 
+.menu {display: inline-block}
+
 .menu-button {
   padding: 0;
   background: none;
@@ -130,6 +130,8 @@ header {
   cursor: pointer;
 }
 .menu-button:hover {background-color: silver;}
+
+.toc {display: inline-block}
 
 .toc-button {
   background-color: #3782CD;
