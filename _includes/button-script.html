@@ -8,7 +8,7 @@ function tocButtonClick() {
 // Collapse the TOC if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.toc-button')) {
-    var dropdowns = document.getElementsByClassName("toc-drop-content");
+    var dropdowns = document.getElementsByClassName("drop-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
