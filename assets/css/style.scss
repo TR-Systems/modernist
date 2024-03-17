@@ -39,13 +39,15 @@ header {
     }
     .drop-content {
       min-width: 128px;
+      margin-top: 4px;
       margin-left: 6px;
     }
   }
   img {
     display: inline;
     width: 20px;
-    margin: 4px 0 0 4px;
+    margin-top: 4px;
+    margin-left: 4px;
     padding: 0;
     border: 2px solid #3782CD;
     border-radius: 4px;
