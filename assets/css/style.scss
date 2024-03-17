@@ -31,10 +31,17 @@ header {
   border: 2px solid silver;
   border-radius: 8px 8px 0 0;
 
-  .menu-button {
-    margin-top: 4px;
-    margin-left: 10px;
-    i {font-size: 20px;}
+  .menu {
+    display: inline-block;
+    .menu-button {
+      margin-top: 4px;
+      margin-left: 10px;
+      i {font-size: 20px;}
+    }
+    .drop-content {
+      min-width: 128px;
+     margin-left: 6px;
+    }
   }
   img {
     display: inline;
@@ -69,7 +76,7 @@ header {
       margin-top: 4px;
       margin-right: 4px;
       padding: 2px 6px;
-      border: 2px solid darkgray;
+      border: 2px solid silver;
       border-radius: 4px;
       background: #3782CD;
     }
@@ -98,25 +105,67 @@ header {
     }
   }
   .print-button:hover {background-color: silver}
-}
 
-.toc {
-  display: inline-block;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  border-top: 2px solid silver;
-  width: 900px;
-  h1, h2, h3 {
-    color: black;
+  .toc {
     display: inline-block;
-  }
-  .toc-button {margin-left: 10px;}
-  .toc-drop-content {
-    margin-top: 0px;
-    margin-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-top: 2px solid silver;
+    width: 898px;
+    h1, h2, h3 {
+      display: inline-block;
+    }
+    .toc-button {margin-left: 10px;}
+    .drop-content {
+      margin-top: 0px;
+      margin-left: 10px;
+    }
   }
 }
 
+.menu-button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu-button:hover {background-color: silver;}
+
+.toc-button {
+  background-color: #3782CD;
+  color: white;
+  padding: 1px 6px;
+  font-size: 14px;
+  font-weight: normal;
+  border: 2px solid silver;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.toc-button:hover {background-color: #434B55;}
+
+.dropdown {display: inline-block}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #C6EAFA;
+  min-width: max-content;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.drop-content a {
+  color: black;
+  font-size: 14px;
+  padding: 4px 8px 4px 8px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {background-color: aliceblue}
+
+.menu-show {display: block}
+.toc-show {display: block}
+  
 .content {
   flex: 1;
   margin-top: 8px;
@@ -173,7 +222,6 @@ header {
 }
 
 .grid-c1 {hr {height: 2px;}}
-
 .grid-c2 {hr {height: 2px;}}
 
 h1, h2, h3, h4, h5, h6 {
@@ -209,7 +257,7 @@ th {
 }
 
 th, td {
-  border: 2px solid darkgray;
+  border: 2px solid silver;
   padding: 3px 6px 3px 6px;
 }
 
@@ -287,51 +335,6 @@ kbd {
   vertical-align: middle;
 }
 
-/* Dropdown Link Button for TOC */
-.menu-button {
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.menu-button:hover {background-color: silver;}
-
-.toc-button {
-  background-color: #3782CD;
-  color: white;
-  margin: 0; /* 0 0 6px; */
-  padding: 1px 6px;
-  font-size: 14px;
-  font-weight: normal;
-  border: 2px solid darkgray;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.toc-button:hover {background-color: #434B55;}
-
-.dropdown {display: inline-block}
-
-.drop-content {
-  display: none;
-  position: absolute;
-  background-color: #C6EAFA;
-  min-width: max-content;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.drop-content a {
-  color: black;
-  font-size: 14px;
-  padding: 4px 8px 4px 8px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown a:hover {background-color: aliceblue}
-
-.menu-show {display: block}
-.toc-show {display: block}
-
 @media screen and (max-width: 900px) {
   .wrapper {width: 100%;}
   .header {width: 100%}
@@ -347,23 +350,23 @@ kbd {
   header {
     .menu-button {margin-left: 4px}
     img {display: none}
-    h1 {
+    h1, h2, h3 {
       margin-left: 0;
       font-size: 1.1em;
     }
     p {display: none;}
-  }
-  .toc {
-    width: 100%;
-    h1, h2, h3, {
-      font-size: 1em;
-      margin-left: 10px;
+    .toc {
+      width: 100%;
+      h1, h2, h3, {
+        font-size: 1em;
+        margin-left: 10px;
+      }
+      .toc-button {
+        font-size: 12px;
+        margin-left: 10px;
+      }
+      .drop-content {margin-left: 10px;}
     }
-    .toc-button {
-      font-size: 12px;
-      margin-left: 10px;
-    }
-    .toc-drop-content {margin-left: 10px;}
   }
 
   .content {
