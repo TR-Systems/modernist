@@ -1,5 +1,5 @@
 ---
-title: Modernist Theme for GitHub Pages by TR-Systems
+title: Modern Blue Theme for GitHub Pages by TR-Systems
 print: print-button.html
 toc: toc-homepage.html
 ---
