@@ -73,14 +73,14 @@ link1-url:
 link2-text: About
 link2-page: /about.html
 link2-url:
-link3-text: TR-Sys
+link3-text: Test
 link3-page: /test.html
-link3-url: https://tr-systems.github.io/web/
+link3-url:
 # You can also insert a line break for larger buttons
 # But maybe not as good on small screens
 #link1-text: Home<br>Page
-#link2-text: About<br>This Site
-#link3-text: TR<br>Systems
+#link2-text: About<br>My Site
+#link3-text: Test<br>Page
 
 # Footer uses 50-50 grid for Contact and Copyright, followed by a Tagline
 # DO NOT publish personal email addresses. You will be spammed beyond belief.
