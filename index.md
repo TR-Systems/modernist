@@ -1,5 +1,5 @@
 ---
-title: Modernist Theme for GitHub Pages by TR-Systems
+title: Modern Blue Theme for GitHub Pages by TR-Systems
 print: print-button.html
 toc: toc-homepage.html
 ---
@@ -18,6 +18,7 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 | **24-03-13** | Scrolling content with optional **TOC in fixed header always on screen**. Optimized for **printing**.
 | **24-03-17** | But wait, there's more! **Optional site menu and print buttons** in header.
 | **24-03-18** | Overhaul config variables and default html for clarity and purpose. Add a bit more style.
+| **24-03-18** | Now called **Modern Blue**, so as not to intrude or confuse. Repo name stays the same.
 
 ### Usage
 Good for static display of system documentation and other articles of interest, which I will be improving upon as time, other interests and the seasons dictate.
