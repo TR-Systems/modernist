@@ -154,10 +154,10 @@ The colors are shown using html "<span style=...>" in the markdown. This [color 
 | -------- | ----------------- | ------ | ------ |
 | html | #6C7989, #434B55 | <span style="background:#6C7989;font-size:24px;padding-right:48px;margin:0;"></span> | <span style="background:#434B55;font-size:24px;padding-right:48px;margin:0;"></span> |
 | header<br>border | #DDFBFC, #C6EAFA<br>silver | <span style="background:#DDFBFC;font-size:24px;padding-right:48px;margin:0;"></span> | <span style="background:#C6EAFA;font-size:24px;padding-right:48px;margin:0;"></span> |
-| header li<br>.toc-button<br>border | #3782CD<br>#3782CD<br>darkgray | <span style="background:#3782CD;font-size:24px;padding-right:48px;margin:0;"></span> | x |
+| header li<br>.toc-button<br>border | #3782CD<br>#3782CD<br>silver | <span style="background:#3782CD;font-size:24px;padding-right:48px;margin:0;"></span> | x |
 | wrapper | aliceblue | <span style="background:aliceblue;font-size:24px;padding-right:48px;margin:0;"></span> | x |
 | th | #3782CD; | <span style="background:#3782CD;font-size:24px;padding-right:48px;margin:0;"></span> | x |
-| th, td border | darkgray | <span style="background:darkgray;font-size:24px;padding-right:48px;margin:0;"></span> | x |
+| th, td border | silver | <span style="background:silver;font-size:24px;padding-right:48px;margin:0;"></span> | x |
 | tr:even<br>tr:hover | rgba(#000, 0.05)<br>white | <span style="background-color:rgba(0,0,0,0.05);font-size:24px;padding-right:48px;margin:0;"></span> | x |
 | blockquote | azure | <span style="background:azure;font-size:24px;padding-right:48px;margin:0;"></span> | x |
 | footer<br>border | #434B55<br>silver | <span style="background:#434B55;font-size:24px;padding-right:48px;margin:0;"></span> | x |
