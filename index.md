@@ -15,9 +15,9 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 | **24-03-01** | Easy to code drop-down **Table of Contents** or **Link Menu** button.
 | **24-03-03** | Major overhaul of body parts and styling class structure.
 | **24-03-05** | **Now fully optimized for small screen viewing!**
-| **24-03-06** | **All Done!** Got what I needed for starters. Back next winter for sticky stuff.
-| **24-03-13** | **Now** I am, winter wasn't quite over.
 | **24-03-13** | Scrolling content with optional **TOC in fixed header always on screen**. Optimized for **printing**.
+| **24-03-17** | But wait, there's more! **Optional site menu and print buttons** in header.
+| **24-03-18** | Overhaul config variables and default html for clarity and purpose. Add a bit more style.
 
 ### Usage
 Good for static display of system documentation and other articles of interest, which I will be improving upon as time, other interests and the seasons dictate.
@@ -125,10 +125,10 @@ FINALLY, for the first time in this never ending all time consuming silly winter
 I am using the [CSS Reference](https://www.w3schools.com/cssref/index.php){:target="blank"} and more from W3Schools to learn how to be stylish.
 
 ### Media Screen Styles
-Fully optimized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. Grids are reset to one column. Removes description and logo from header. Removes tagline from  footer.
+Fully optimized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. Grids are reset to one column. Description and logo are removed from header. Tagline is removed from footer.
 
 ### Media Print Style
-Removes description, link and toc buttons from header and the entire footer.
+Description and all link buttons are removed from header. Footer is removed.
 
 ### List Item Spacing
 Lists with a little space between. Easy to find and adjust in the style sheet.

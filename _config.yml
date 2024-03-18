@@ -50,14 +50,13 @@ exclude:
 
 highlighter: rouge
 
-# Required Header Elements used in -layouts/default.html
+# Keep your title short for best viewing on small screens
+# Description is removed from small screens so you can make it long here
 title: Your Logo and Site Title
 description: Describing What You Do
 
 # Update with your github userid and repo name
-
 url: https://tr-systems.github.io/modernist
-baseurl:
 
 # Optional Header Elements
 # Logo is reduced to 16x16. Favicon MUST BE 32x32
@@ -65,40 +64,34 @@ menu: site-menu.html
 logo: images/logo-github.png
 favicon: images/logo-github.png
 
-# Optional links in the upper right corner of the header
-# Two lines only, keep text and words short to fit in box, use <br> to force break
-# Update with your userid and repo name
+# Optional Link buttons in upper right corner of the header
+# Keep text very short for small screen viewing
+# URL takes precedence over page, see default.html
+link1-text: Home
+link1-page: /index.html
+link1-url:
+link2-text: About
+link2-page: /about.html
+link2-url:
+link3-text: TR-Sys
+link3-page: /test.html
+link3-url: https://tr-systems.github.io/web/
+# You can also insert a line break for larger buttons
+# But maybe not as good on small screens
+#link1-text: Home<br>Page
+#link2-text: About<br>This Site
+#link3-text: TR<br>Systems
 
-home-text: Home
-home-page: /index.html
-
-about-text: About
-about-page: /about.html
-
-# url takes precedence over page, see default.html
-hlink1-text: Test
-hlink1-page: /test.html
-# hlink1-url: https://to somewhere else
-
-# Three paragraphs (lines) for Footer Content
-# Notice how you can apply simple html emphasis formatting
-# BUT only because default.html DOES NOT
-# Do not publish email addresses, you will be spammed beyond belief.
-
-# First line of footer
-
-contact-info1: <strong>Contact:</strong>
-contact-info2: <em>trsystems.help</em> at the little G mail place.
-
-# Second line with font-size: small in default.html
-
-#footer-text1: Website powered by Github Pages using modified Modernist Theme
-
-# Text2 displayed only if url is specified
-
-#footer-text2: <em>Use my template and get started today!</em>
-#footer-url: https://tr-systems.github.io/modernist/
-
-# Third line of footer, with &copy symbol preceding in default.html
-
-copyright: <em>Copyright yyyy Your Name, Your Location</em>
+# Footer uses 50-50 grid for Contact and Copyright, followed by a Tagline
+# DO NOT publish personal email addresses. You will be spammed beyond belief.
+# Choose ONE: text only or valid email address
+# Email takes precedence
+email:
+contact: <strong>Contact:</strong> <em>trsystems.help</em> at the little G mail place.
+# Copyright symbol will prefix this text (see default.html)
+copyright: Copyright yyyy Your Name, Your Location
+# Either one or both:
+tagline: Website powered by Github Pages using Modernist Theme by TR-Systems
+# Only displayed only if url is specified
+tagline2: <em>Use my template and get started today!</em>
+tagline2-url: https://tr-systems.github.io/modernist/
