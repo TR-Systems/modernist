@@ -21,3 +21,15 @@ This is not an introduction to GitHub. It's easy to create an account. After you
 Voila, web sites made easy! Ha!
 
 All you need to do now is start editing and writing. And have fun!
+
+Start by editing the files in the edit branch, then create a pull request into the publish branch for the automatic **pages build and deploy** process (i.e. GitHub Action).
+
+There are a number of ways to create the pull request. Here's the one I use:
+
+1. After committing a change to the edit branch, do this:
+2, Switch to the publish branch. You will see that is is "1 commit behind" the edit branch. Click on that.
+3. Click on the button to create a pull request.
+4. Scroll down to review the changes being made, line by line.
+
+
+
