@@ -230,4 +230,28 @@ content
 
 ---
 
+### Technical Details
+#### _config.yml
+Contains the variables that define all of the content in the header and footer of every page and thus is the first file you need to edit. Most of the content variables for the header and footer are optional.
+
+#### _layouts/default.html
+Defines the HTML structure of your pages and is where the values of the config variables are placed on the page.
+
+#### assets/css/style.scss
+Defines how all content appears on your pages and is referenced in the <head> section of **default.html**. Jekyll copies and renames it to **style.css** when building the site.
+
+#### assets/images
+Cut and crop your image files down in size and resolution before uploading. You can then fine-tune the size of an image on a page using width or height settings when you reference it. There is much more to this topic than I can possibly share with you here. Just don't upload full res pics from your camera.
+
+#### _includes
+This is where you will define your **site menu** for all pages and a **table of contents** for any page that warrants, which are referenced in **default.html**. The **site menu** is called out in the **config** file using the **menu** variable. A **toc** is called out in the front matter of the page using the **toc** variable.
+
+#### print-button.html
+If you want the print button to appear in the header, call it out in the front matter of your page using the **print** variable.
+
+#### button-script.html
+This is the script that displays the dropdown list for the site menu and toc buttons when clicked. Currently, it will only hide the toc content when you click elsewhere on the page. So for now, the only way to hide the site menu is to click on it again. This is a work in progress and a major change in the script and methods being used is required. Still learning. 
+
+---
+
 End of Document
