@@ -24,7 +24,7 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 Good for static display of system documentation and other articles of interest, which I will be improving upon as time, other interests and the seasons dictate.
 
 ### Use This Template
-Open this repository on GitHub and then click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***Include all Branches***. Give your repo a web friendly name like "web" or "mycoolthing" since the repo name is the top level path in the URL for your website.
+Open this repository on GitHub and then click the green button in the upper right to ***Use this template***, ***Create new Repository*** and ***DO NOT Include all Branches***. Give your repo a web friendly name like "web" or "mycoolthing" since the repo name is the top level path in the URL for your website. Then, click here to [Get Started](getstarted.html).
 
 ### Use a Team/Pro Account
 Even as a total newbie to GitHub, I recommend this low-cost option so you can use a custom domain name and publish from a private repo in a separate Team account (e.g TR-Systems), instead of publishing from a public repo on your personal account.
