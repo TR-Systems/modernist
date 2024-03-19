@@ -19,6 +19,7 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 | **24-03-17** | But wait, there's more! **Optional site menu and print buttons** in header.
 | **24-03-18** | Overhaul config variables and default html for clarity and purpose. Add a bit more style.
 | **24-03-18** | Now called **Modern Blue**, so as not to intrude or confuse. Repo name stays the same.
+| **24-03-19** | New Get Started page for beginners
 
 ### Usage
 Good for static display of system documentation and other articles of interest, which I will be improving upon as time, other interests and the seasons dictate.

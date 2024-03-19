@@ -3,7 +3,7 @@ print: print-button.html
 ---
 
 ## Get Started
-This is not an introduction to GitHub. It's easy to create an account. After you login, use these steps to create a new repository and publish it "as is" without editing any files. Tthis will simply confirm that your site will build and deploy.
+This is not an introduction to GitHub. It's easy to create an account. After you login, use these steps to create a new repository and publish it "as is" without editing any files. This simply confirms that your site will build and deploy.
 
 1. Open [TR-System/modernist](https://github.com/tr-systems/modernist){:target="_blank"}
 2. Click the button in the upper right to <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Use this Template</span>
