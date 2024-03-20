@@ -5,6 +5,9 @@ function menuButtonClick() {
 function tocButtonClick() {
   document.getElementById("tocContent").classList.toggle("toc-show");
 }
+function editButtonClick() {
+  document.getElementById("editContent").classList.toggle("button-show");
+}
 // Collapse the TOC if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.toc-button')) {
