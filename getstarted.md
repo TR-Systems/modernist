@@ -11,7 +11,7 @@ This is not an introduction to GitHub. It's easy to create an account. After you
 3. Give your repo a web-friendly name. DO NOT include all branches. If using a personal account, you must create a public repo, and only one of your public repos can have a website. This restriction does not apply for Team accounts.
 4. Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Create repository</span>
 5. The repo will be copied and created.
-6. Create the **publish** branch by clicking on the **edit** branch button, then type "publish" and press <kbd>Enter</kbd>.<br>As show here by clicking this button, too:
+6. Create the **publish** branch by clicking on the **edit** branch button, then type "publish" and press <kbd>Enter</kbd>.<br>As shown here by clicking this button:
 
 <div class="dropdown">
 <button type="image" onclick="editButtonClick()" style="margin-left:24px; margin-bottom:6px; padding:0;">

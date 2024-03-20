@@ -152,20 +152,20 @@ more text
 ### Color Scheme and Table Style
 The colors are shown using html "<span style=...>" in the markdown. This [color site](https://www.color-hex.com/){:target="_blank"} is a good reference.
 
-| Selector | Background Colors | Color1 | Color2 |
-| -------- | ----------------- | ------ | ------ |
-| html | #6C7989, #434B55 | <span style="background:#6C7989;font-size:24px;padding-right:48px;margin:0;"></span> | <span style="background:#434B55;font-size:24px;padding-right:48px;margin:0;"></span> |
-| header<br>border | #DDFBFC, #C6EAFA<br>silver | <span style="background:#DDFBFC;font-size:24px;padding-right:48px;margin:0;"></span> | <span style="background:#C6EAFA;font-size:24px;padding-right:48px;margin:0;"></span> |
-| header li<br>.toc-button<br>border | #3782CD<br>#3782CD<br>silver | <span style="background:#3782CD;font-size:24px;padding-right:48px;margin:0;"></span> | x |
-| wrapper | aliceblue | <span style="background:aliceblue;font-size:24px;padding-right:48px;margin:0;"></span> | x |
-| th | #3782CD; | <span style="background:#3782CD;font-size:24px;padding-right:48px;margin:0;"></span> | x |
-| th, td border | silver | <span style="background:silver;font-size:24px;padding-right:48px;margin:0;"></span> | x |
-| tr:even<br>tr:hover | rgba(#000, 0.05)<br>white | <span style="background-color:rgba(0,0,0,0.05);font-size:24px;padding-right:48px;margin:0;"></span> | x |
-| blockquote | azure | <span style="background:azure;font-size:24px;padding-right:48px;margin:0;"></span> | x |
-| footer<br>border | #434B55<br>silver | <span style="background:#434B55;font-size:24px;padding-right:48px;margin:0;"></span> | x |
+| Color1 | Color2 | Selector |
+| ------ | ------ | -------- |
+| <span style="background:#6C7989;padding:2px 16px;color:white;">#6C7989</span> | <span style="background:#434B55;padding:2px 16px;color:white;">#434B55</span> | html background, footer background (color2) |
+| <span style="background:#069;padding:2px 17px;color:white;">#006699</span> | | header (h1, p, li, toc-button, border}, th |
+| <span style="background:#d1e5fc;padding:2px 14px;">#D1E5FC</span> | <span style="background:#b3d5fb;padding:2px 12px;">#B3D5FB</span> | header background, drop-content background |
+| <span style="background:aliceblue;padding:2px 16px">aliceblue</span> | | wrapper background (content) |
+| <span style="background-color:#e0eefd;padding:2px 14px">#E0EEFD</span> | | tr:even |
+| <span style="background-color:white;padding:2px 28px">white</span> | | tr:hover |
+| <span style="background:azure;padding:2px 28px;">azure</span> | | blockquote background |
+| <span style="background:silver;padding:2px 28px">silver</span> | | border: th, td, toc-button, menu-button, footer |
 
 
-#### Java Code Highlighting
+
+### Code Highlighting
 This is the default Rouge highlighter for GitHub Pages. Many other options are available.
 
 ```js
