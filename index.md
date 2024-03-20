@@ -1,5 +1,5 @@
 ---
-title: Modern Blue Theme for GitHub Pages by TR-Systems
+title: Lakeside Blues Theme for GitHub Pages by TR-Systems
 print: print-button.html
 toc: toc-homepage.html
 ---
@@ -18,7 +18,7 @@ This design started out by copying the GitHub Pages Modernist Theme, which [look
 | **24-03-13** | Scrolling content with optional **TOC in fixed header always on screen**. Optimized for **printing**.
 | **24-03-17** | But wait, there's more! **Optional site menu and print buttons** in header.
 | **24-03-18** | Overhaul config variables and default html for clarity and purpose. Add a bit more style.
-| **24-03-18** | Now called **Modern Blue**, so as not to intrude or confuse. Repo name stays the same.
+| **24-03-18** | Now called **Lakeside Blues**, so as not to intrude or confuse. Repo name stays the same.
 | **24-03-19** | New Get Started page for beginners
 
 ### Usage
