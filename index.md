@@ -6,7 +6,7 @@ toc: toc-homepage.html
 ### Under Perpetual Construction and Testing
 I am using this as a learning tool for developing and testing changes for my [TR-Systems site](https://tr-systems.github.io/web/){:target="_blank"}.
 
-Feel free to grab it and go. To do so, open my [Public Template Repository](https://github.com/tr-systems/modernist){:target="_blank"} on GitHub and cick here to [Get Started](getstarted.md).
+Feel free to grab it and go. To do so, cick here to [Get Started Today!](getstarted.md).
 
 This design started out by copying the GitHub Pages Modernist Theme, which [looks like this](https://pages-themes.github.io/modernist/){:target="_blank"}.
 
