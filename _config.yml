@@ -73,8 +73,8 @@ link1-url:
 link2-text: About
 link2-page: /about.html
 link2-url:
-link3-text: Test
-link3-page: /test.html
+link3-text: Design
+link3-page: /design.html
 link3-url:
 # You can also insert a line break for larger buttons
 # But maybe not as good on small screens
