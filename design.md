@@ -14,9 +14,9 @@ If you want the site menu button to appear in the upper left corner of the page 
 ### <span style="color:#069">TOC Made Easy</span>
 Open **_includes/toc-design.html** to see just how easy it is. Each header in a page will be assigned an **id** that you can reference in the TOC, with spaces in the header repaced with dashes when the site is built.
 
-**TIP:** If you use any non-alphanumeric characters in your headers, you may need to view the page source in your browser to get the **id** that was assigned. Those characters may be removed. Also, if you use a "-" in your header, expect to use "---" in your toc href.
+**TIP:** If you use any non-alphanumeric characters in your headers, you may need to view the page source in your browser to get the **id** that was assigned. Those characters may be removed.
 
-After you have created a TOC file, you need to call it out in the **front matter** of the page, along with the **print button** if you want, like this:
+After you have created a TOC **html** file, you need to call it out in the **front matter** of the page using the **title, toc** and optional **print** variable, like this:
 
 ```
 ---
@@ -24,30 +24,14 @@ title: Design Elements
 toc: toc-design.html
 print: print-button.html
 ---
-
+<blank line>
+I am using the CSS Reference from W3Schools...
 ```
-
----
-
-### Image Classes
-Use one of the custom **image classes** to to create a picture frame or round over the corners:
-
-```
-<img width="20%" src="images/zion-np.jpg">
- <img class="img-noborder" width="20%" src="images/zion-np.jpg">
- <img class="img-border2" width="20%" src="images/zion-np.jpg">
- <img class="img-border4" width="20%" src="images/zion-np.jpg">
-```
-
-<img width="20%" src="images/zion-np.jpg">
- <img class="img-noborder" width="20%" src="images/zion-np.jpg">
- <img class="img-border2" width="20%" src="images/zion-np.jpg">
- <img class="img-border4" width="20%" src="images/zion-np.jpg">
 
 ---
 
 ### Media Screen Styles
-Fully optimized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. Grids are reset to one column. Description and logo are removed from header. Tagline is removed from footer.
+Fully optimized for viewing on small screens by reducing font sizes, header sizes, bottom margins and left/right page margins for all content. Grids are reset to one column. Description and logo are removed from header. Tagline is removed from footer. When designing your pages, it's important to consider how they are going to look on phones and tablets.
 
 ### Media Print Style
 Description and all link buttons are removed from header. Footer is removed.
@@ -70,7 +54,25 @@ The colors are shown using html "<span style=...>" in the markdown. This [color 
 
 ---
 
-### Code Highlighting
+### Image Styles
+Use one of the custom **image classes** to to create a picture frame or round over the corners:
+
+```
+<img width="20%" src="images/zion-np.jpg">
+ <img class="img-noborder" width="20%" src="images/zion-np.jpg">
+ <img class="img-border2" width="20%" src="images/zion-np.jpg">
+ <img class="img-border4" width="20%" src="images/zion-np.jpg">
+```
+
+<img width="20%" src="images/zion-np.jpg">
+ <img class="img-noborder" width="20%" src="images/zion-np.jpg">
+ <img class="img-border2" width="20%" src="images/zion-np.jpg">
+ <img class="img-border4" width="20%" src="images/zion-np.jpg">
+
+---
+
+## Other Elements
+#### <span style="color:#069">Code Highlighting</span>
 This is the default Rouge highlighter for GitHub Pages. Many other options are available.
 
 ```js
@@ -81,26 +83,13 @@ var fun = function lang(l) {
 }
 ```
 
-#### Groovy code
+#### <span style="color:#069">Formatted Text</span>
+<pre>
+Formatted monospace text
+Without highlighting by using html < pre > tag.
+</pre>
 
-```groovy
-    errcd = "OK"
-    for (feature in MotionFeatures) {
-        if (filter == "" || filter.contains("$feature.key")) {
-            if (device.currentValue("$feature.value") != "NA") {
-                errcd = SetFeatureState("$feature.value",newstate)
-                if (errcd != "OK") {break}
-            } else {
-                if (filter.contains("$feature.key")) {log.info "Requested feature *$feature.key* is NA"}
-            }
-        }
-    }
-```
-
----
-
-### Other Elements
-### <span style="color:#069">List Item Spacing</span>
+#### <span style="color:#069">List Item Spacing</span>
 Lists with a little space between. Easy to find and adjust in the style sheet.
 
 1. numbered list with break<br>
@@ -117,20 +106,20 @@ more text
     * last nested bullet
 * last one
 
-### <span style="color:#069">Blockquote</span>
+#### <span style="color:#069">Blockquote</span>
 
 > blockquote text with break<br>more text
 >
 > second paragraph
 
-### <span style="color:#069">Keyboard Keys</span>
+#### <span style="color:#069">Keyboard Keys</span>
 Press <kbd>Ctrl</kbd> + <kbd>c</kbd>
 
 ```
 Press <kbd>Ctrl</kbd> + <kbd>c</kbd>
 ```
 
-### <span style="color:#069">Definition List</span>
+#### <span style="color:#069">Definition List</span>
 
 Style Sheet
 : Lets people know  how stylish you are
@@ -231,30 +220,6 @@ Using the Pipe/Vertical Bar Symbol yields table cells
 | One pipe, one table data cell
 
 | Two pipes with image after the second  | <img class="img-border2" width="160" src="images/zion-np.jpg">
-
----
-
-### Technical Details
-#### _config.yml
-Contains the variables that define all of the content in the header and footer of every page and thus is the first file you need to edit. Most of the content variables for the header and footer are optional.
-
-#### _layouts/default.html
-Defines the HTML structure of your pages and is where the values of the config variables are placed on the page.
-
-#### assets/css/style.scss
-Defines how all content appears on your pages and is referenced in the <head> section of **default.html**.
-
-#### images
-Cut and crop your image files down in size and resolution before uploading. You can then fine-tune the size of an image on a page using width, height or percent settings when you reference it. There is much more to this topic than I can possibly share with you here. Just don't upload full resolution pics from your camera.
-
-#### _includes
-This is where you will define your **site menu** for all pages and a **table of contents** for any page that warrants, which are referenced in **default.html**. The **site menu** is called out in the **config** file using the **menu** variable. A **toc** is called out in the front matter of the page using the **toc** variable.
-
-#### print-button.html
-If you want the print button to appear in the header, call it out in the front matter of your page using the **print** variable.
-
-#### button-script.html
-This is the script that displays the dropdown list for the site menu and toc buttons when clicked. Currently, it will only hide the toc content when you click elsewhere on the page. So for now, the only way to hide the site menu is to click on it again. This is a work in progress and a major change in the script and methods being used is required. Still learning. 
 
 ---
 
