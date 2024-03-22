@@ -111,7 +111,7 @@ This is the script that displays the dropdown list for the site menu and toc but
 ---
 
 #### Google Analytics
-Google Analytics is configured for the GA stream "**tr-systems.github.io/modernist/**" by using an **if** statement in **_layouts/default.html** that you will need to update after you get your own GA account and stream set up, along with the GA code snippet in the **_includes** folder, should you so desire. Yyou can leave it all in place for now. The GA code snippet won't be included in your pages.
+Google Analytics is configured for the GA stream "**tr-systems.github.io/modernist/**" by using an **if** statement in **default.html** that you will need to update after you get your own GA account and stream configured, along with the GA code snippet in the **_includes** folder, should you so desire. You can leave it all in place for now. The GA code won't be included in your pages.
 
 ---
 
@@ -155,9 +155,9 @@ Ok, 98 gems installed, a brick of web I guess.
 
 The site now builds. [Check it out!](http://localhost:4000)
 
-1. You can now make content and style changes ***on the fly*** with the jekyll server running.
-2. When you're done, **push** your changes up to the **edit branch** on GitHub using Git or GitHub Desktop.
-3. Then, on GitHub, create a pull request into the publish branch for "pages build and deploy".
+1. You can now add or update files in the local clone of the repository ***on the fly*** with the jekyll server running and see them instantly in your browser with a page refresh.
+2. When you're done, review your changes using GitHub Desktop and then **push** them up to the **edit branch** on GitHub.
+3. Then, on GitHub, create the pull request into the publish branch for "pages build and deploy".
 
 ### Editing on Windows
 I'm using [Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank"}. I like the folder workspace on the left, and how it highlights content when editing. It also has tabs for editing multiple files. My only TIP is to set a block cursor and have tabs converted to spaces. You will have to dig through the settings to find those.
@@ -189,6 +189,10 @@ Ok, 97 gems now installed (one less than Windows, no wdm)
 12. Yay! It works! 
 
 FINALLY, for the first time in this never ending all time consuming silly winter project of mine, something actually worked on the first attempt! Without a single rat hole to chase down first.
+
+---
+
+Fun stuff! Hope it works for you, too!
 
 ---
 
