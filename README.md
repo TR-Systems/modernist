@@ -1,4 +1,4 @@
-## Modernist Design for Github Pages by [TR-Systems](https://TR-Systems.github.io/web/)
+## Lakeside Blue Design for Github Pages by [TR-Systems](https://TR-Systems.github.io/web/)
 ### Under Construction and Testing! (February 2024)
 
 Right click the link to preview this design in a new tab (since target blank doesn't work here), then grab it and go.
