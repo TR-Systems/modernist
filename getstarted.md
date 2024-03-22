@@ -54,13 +54,15 @@ For me, the best way to learn has been by example, so that's why I have loaded u
 So you may want to keep this page and the design page as references and also add them to the exclude statement in the config file so they aren't included in the build process for your site.
 
 ### Step 4: Edit config.yml
-Edit this file first to fill in all of your personal header and footer information. Commit your changes and pull down to publish. Keep tweaking until you get it right. This is one file that you can't edit *on the fly* when testing on Windows or Linux.
+Make sure you are editing in the edit branch! This is where you will fill in all of personal header and footer information.
 
-**Note** that all header and footer content variables other than **title** and **url** are OPTIONAL.
+**Important:** Update the **url** variable to the url of your new website.
 
-Be sure to set the **url** variable to the url of your new website.
+**Note** that all header and footer content variables other than your site **title** are OPTIONAL.
 
-You may now want to add **design.md** and **getstarted.md** to the **exclude** variable and remove links to those pages from **site-menu.html, toc-homepage.html** and the **link3** variable. 
+**TIP:** Keep your site **title** relatively short for best viewing on a phone or tablet, especially if you are going to use all three of the link buttons in the header. The goal is to keep the title and link buttons on the same line when viewing on a phone.
+
+You may now want to add **design.md** and **getstarted.md** to the **exclude** variable and remove the links to those pages from the **link3** variable and from the **site-menu.html and toc-homepage.html** files.
 
 ### Step 5: Edit index.md
 This is your home page. Make it your own. I have configured it so the **toc** and **site menu** buttons both have the same links, which is not normal, simply illustrative of what you can do. Both are optional.
@@ -71,7 +73,8 @@ Tell the world what this is all about.
 ### Step 7: Publish Your Changes
 This process will create a **pull request** to apply your changes to the files in the publish branch. There are other ways to initiate the pull request but they all end up at the same place.
 
-1. Switch to the **publish** branch. You will see that it is **1 or more commits behind** the edit branch. **Click on that link**.
+1. Switch to the **publish** branch by clicking on this button again:
+<img src="images/edit.png" style="height:20px; width:80px;"> If you have edited all three files, you will see that it is <span style="color:#069;text-decoration:underline;">3 commits behind</span> the edit branch. **Click on that link**.
 2. **Comparing Changes** appears. Scroll down to view the changes.<br>
 Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Create pull request</span>
 3. **Open a Pull Request** appears, where you can enter a title (required), optional description and view the changes again.<br>
@@ -84,7 +87,28 @@ And that's it, in a nutshell. Make changes to the edit branch and pull them down
 
 ---
 
-### Google Analytics
+### Technical Reference
+#### <span style="color:#069">_layouts/default.html</span>
+Defines the HTML structure of your pages and is where the values of the config variables are placed on the page.
+
+#### <span style="color:#069">assets/css/style.scss</span>
+Defines how all content appears on your pages and is referenced in the <head> section of **default.html**.
+
+#### <span style="color:#069">images</span>
+Cut and crop your image files way down in size and resolution before uploading to this folder and using them in your pages. You can fine-tune the size of an image on a page using width, height or percent settings when you reference it. There is much more to this topic than I can possibly share with you here. Just don't upload full resolution pics from your camera.
+
+#### <span style="color:#069">_includes</span>
+This is where you will define your **site menu** for all pages and a **table of contents** for any page that warrants, which are referenced in **default.html**. The **site menu** is called out in the **config** file using the **menu** variable. A **toc** is called out in the front matter of the page using the **toc** variable.
+
+#### <span style="color:#069">print-button.html</span>
+If you want the print button to appear in the header, call it out in the front matter of your page using the **print** variable.
+
+#### <span style="color:#069">button-script.html</span>
+This is the script that displays the dropdown list for the site menu and toc buttons when clicked and is placed in the <head> section of **default.html**. Currently, it will only hide the toc content when you click elsewhere on the page. So for now, the only way to hide the site menu is to click on it again. This is a work in progress and a major change in the script and methods being used is required. Still learning.
+
+---
+
+#### Google Analytics
 Google Analytics is configured for the GA stream "**tr-systems.github.io/modernist/**" by using an **if** statement in **_layouts/default.html** that you will need to update after you get your own GA account and stream set up, along with the GA code snippet in the **_includes** folder, should you so desire. Yyou can leave it all in place for now. The GA code snippet won't be included in your pages.
 
 ---
