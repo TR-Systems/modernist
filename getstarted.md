@@ -10,9 +10,9 @@ Step by step process for beginners, new to GitHub. It's easy to create an accoun
 Even as a total newbie to GitHub, I recommend this low-cost option so you can use a custom domain name and publish from a private repo in a separate Team account instead of publishing from a public repo on your personal account.
 
 ### Editing and Publishing
-It's important that you understand the process. The repo has two branches. With this design, you will be applying all changes and new content to the top level **edit** branch. When everything looks good, you will then **pull** those changes into the **publish** branch for the automatic **Pages Build and Deploy** action that will be executed after each commit to the that branch.
+It is important that you understand the process. This repository has two branches. All editing and adding new pages is performed in the  top level **edit** branch. When everything looks good, you will then **pull** those changes into the **publish** branch for the automatic **Pages Build and Deploy** action that will be executed after each commit to the that branch. Do not add or edit files in the **publish** branch.
 
-Steps 1 and 2 will create the repository for your new website and then publish the site without making any changes, to simply insure that the process works for you, before you start making it your own.
+To confirm the process works for you before you start making it your own, Steps 1 and 2 will create the repository for your new website and then publish the site without making any changes.
 
 ### Step 1: Create the Repository
 
@@ -37,7 +37,9 @@ Steps 1 and 2 will create the repository for your new website and then publish t
 1. You now have the publish branch open.
 2. Click the repo  <i class="material-icons" style="font-size:14px;">settings</i>**Settings** button.
 3. In the nav bar on the left, click **Pages**
-4. **Build and deployment** appears. Select **Deploy from branch**, **publish** /root. Click **Save**.
+4. **GitHub Pages Build and deployment** appears.<br>
+Select **Deploy from branch**, **publish** /root<br>
+Click **Save**.
 5. GitHub will kick off the Pages Build and Deploy action
 6. Click on **Actions** to watch that process run
 7. Go back to **Settings/Pages** and click the link to visit your site
@@ -113,7 +115,7 @@ Google Analytics is configured for the GA stream "**tr-systems.github.io/moderni
 
 ---
 
-## Develop and Test on Windows
+## Develop on Windows
 *Last updated: 2024-02-22*
 
 1. Install [Git Bash](https://gitforwindows.org/){:target="_blank"} and [GitHub Desktop for Windows](https://desktop.github.com/){:target="_blank"} (all good)<br>
@@ -150,20 +152,19 @@ gem "wdm"
 7. Run **bundle install**<br>
 Ok, 98 gems installed, a brick of web I guess.
 8. Run **bundle exec jekyll serve**
-9. **Error:** jekyll 3.9.5 | File to import not found or unreadable: **tr-systems-modernist**.
 
-Using **@import** in **assets/css/style.scss** does not work locally on Windows. To get around this, all I  had to do was copy the the contents of the style sheets in **_sass** and paste them into **style.scss**. Then:
+The site now builds. [Check it out!](http://localhost:4000)
 
-1. Run **bundle exec jekyll serve**<br>
-The site now builds. See it here: http://localhost:4000
-2. You can now make content and style changes ***on the fly*** with the jekyll server running.
-3. When you're done, **push** your changes up to the **edit branch** on GitHub using Git or GitHub Desktop.
-5. Then, on GitHub, create a pull request into the publish branch for "pages build and deploy".
-6. Voila, websites made easy. Ha!
+1. You can now make content and style changes ***on the fly*** with the jekyll server running.
+2. When you're done, **push** your changes up to the **edit branch** on GitHub using Git or GitHub Desktop.
+3. Then, on GitHub, create a pull request into the publish branch for "pages build and deploy".
+
+### Editing on Windows
+I'm using [Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank"}. I like the folder workspace on the left, and how it highlights content when editing. It also has tabs for editing multiple files. My only TIP is to set a block cursor and have tabs converted to spaces. You will have to dig through the settings to find those.
 
 ---
 
-## Develop and Test on Ras Pi
+## Develop on Ras Pi
 2-20-24: Ok, here we go, starting with a fresh Ras pi 4 B.
 
 1. Install Ruby and Jekyll per the doc referenced above and confirm:<br>
