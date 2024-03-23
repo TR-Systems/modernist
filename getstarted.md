@@ -41,7 +41,9 @@ The publish branch is now ready to receive updates from the edit branch. You are
 Click that button again and SWITCH BACK TO THE EDIT BRANCH.
 
 ### Step 2: Edit config.yml
-Fill in your header and footer information and define the links you want to provide for the three buttons in the upper left corner of the page. Follow the instructions and tips provided in the file. Commit your changes.
+Fill in your header and footer information and define the links you want to provide for the three buttons in the upper right corner of the page. Follow the instructions and tips provided in the file.
+
+<span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Commit</span> your changes.
 
 Now is a good time to skip down to Step 7 to initiate a **pull request** into the **publish** branch and then **Step 8** to configure your repository and build your new website so you can see the changes you just made and confirm the process works for you.
 
