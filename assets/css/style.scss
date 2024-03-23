@@ -118,6 +118,7 @@ header {
     width: 898px;
     h1, h2, h3 {
       display: inline-block;
+      margin-bottom: 0;
     }
     .toc-button {margin-left: 10px;}
     .drop-content {
@@ -173,7 +174,7 @@ header {
 
 .menu-show {display: block}
 .toc-show {display: block}
-.button-show {display: block}
+.mybutton-show {display: block}
   
 .content {
   flex: 1;

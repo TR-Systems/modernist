@@ -24,10 +24,10 @@ To confirm the process works for you before you start making it your own, Steps 
 6. Create the **publish** branch by clicking on the **edit** branch button, then **type "publish"** and then **click the line** that says **create branch publish from edit**, as shown here by clicking this button:
 
 <div class="dropdown">
-<button type="image" onclick="editButtonClick()" style="margin-left:24px; margin-bottom:6px; padding:0;">
+<button type="image" onclick="myButtonClick()" style="margin-left:24px; margin-bottom:6px; padding:0;">
 <img src="images/edit.png" style="height:20px; width:80px;">
 </button>
-<div id="editContent" class="drop-content" style="position:relative; margin-left:24px; background-color:aliceblue; box-shadow:none; padding:0;">
+<div id="myButtonContent" class="drop-content" style="position:relative; margin-left:24px; background-color:aliceblue; box-shadow:none; padding:0;">
 <img src="images/createbranch.png">
 </div>
 </div>
