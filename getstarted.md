@@ -10,13 +10,17 @@ Step by step process for beginners, new to GitHub. It's easy to create an accoun
 Even as a total newbie to GitHub, I recommend this low-cost option so you can use a custom domain name and publish from a private repo in a separate Team account instead of publishing from a public repo on your personal account.
 
 ### Editing and Publishing
-It is important that you understand the process. This repository has two branches. All editing and adding new pages is performed in the  top level **edit** branch. When everything looks good, you will then **pull** those changes into the **publish** branch for the automatic **Pages Build and Deploy** action that will be executed after each commit to the that branch. Do not add or edit files in the **publish** branch.
+It is important that you understand the process. This repository has two branches. All editing is performed on files in the top level **edit** branch. When you're done and ready to publish, you will then **pull** your updates into the **publish** branch for the automatic **Pages Build and Deploy** action. This may not be SOP for GitHub pages but it works for me.
 
-To confirm the process works for you before you start making it your own, Steps 1 and 2 will create the repository for your new website and then publish the site without making any changes.
+### Make it Your Own
+All you need to do is edit a few files for starters. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is to use GitHub "markdown" formatting for your content.
+
+For me, the best way to learn has been by example, so you may want to keep this page and the design page as references. You can do that without including them in your site. You will notice that much of the fancy stuff I do is with HTML.
+
+See [Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax){:target="_blank"} for more on markdown syntax. All of GitHub is well documented in their help pages.
 
 ### Step 1: Create the Repository
-
-1. Login to GitHub and open [TR-Systems/modernist](https://github.com/tr-systems/modernist){:target="_blank"}
+1. Click here to open [TR-Systems/lakeside](https://github.com/tr-systems/lakeside){:target="_blank"} on GitHub in a new browser tab. 
 2. Click the button in the upper right to <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Use this template</span> and select create new repository.
 3. **Create a New Repository** appears. **Owner** will default to your GitHub userid. Switch to your Team account if using one. Give your repo a **short web-friendly name** like "web" or "mycoolthing" since the repo name is the top level path in the url to your site. **DO NOT include all branches.** If using a personal account, you must create a public repo, and only one of your public repos can have a website. This restriction does not apply for Team accounts.
 4. Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Create repository</span>
@@ -25,67 +29,64 @@ To confirm the process works for you before you start making it your own, Steps 
 
 <div class="dropdown">
 <button type="image" onclick="myButtonClick()" style="margin-left:24px; margin-bottom:6px; padding:0;">
-<img src="images/edit.png" style="height:20px; width:80px;">
+<img src="images/edit.png">
 </button>
 <div id="myButtonContent" class="drop-content" style="position:relative; margin-left:24px; background-color:aliceblue; box-shadow:none; padding:0;">
 <img src="images/createbranch.png">
 </div>
 </div>
 
-### Step 2: Publish the Site
+The publish branch is now ready to receive updates from the edit branch. You are looking at it now.
 
-1. You now have the publish branch open.
+Click that button again and SWITCH BACK TO THE EDIT BRANCH.
+
+### Step 2: Edit config.yml
+Fill in your header and footer information and define the links you want to provide for the three buttons in the upper left corner of the page. Follow the instructions and tips provided in the file. Commit your changes.
+
+Now is a good time to skip down to Step 7 to initiate a **pull request** into the **publish** branch and then **Step 8** to configure your repository and build your new website so you can see the changes you just made and confirm the process works for you.
+
+Then come back to finish the job of making it your own.
+
+### Step 3: Edit index.md
+This is your home page. Remove the **front matter** if you do not want a toc or print button. **Note:** If you do not specify a page **title** in the **front matter** of any page, always start your content with a markdown heading for Jekyll to use as the page title shown in the browser tab, and of course, at the top of the page.
+
+### Step 4: Edit about.md
+Tell the world what this is all about.
+
+### Step 5: Edit _includes/site-menu.html
+Give users an easy way to navigate your site. Remove the links for the design and get started pages if you have excluded them from your site in the config file.
+
+### Step 6: Edit _includes/toc-homepage.html
+Either update or delete this file if you will not using it.
+
+### Step 7: Pull Changes into Publish
+This process will create a **pull request** to apply your changes to the files in the publish branch. There are other ways to initiate the pull request but they all end up at the same place.
+
+1. Switch to the **publish** branch. You will see that it is <span style="color:#069;text-decoration:underline;">N commits behind</span> the edit branch depending on how many "commits" you performed in the steps above. **Click on that link**.
+2. **Comparing Changes** appears. Scroll down to view the changes.<br>
+Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Create pull request</span>
+3. **Open a Pull Request** appears, where you can enter a title (required), optional description and view the changes again.<br>
+Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Create pull request</span> again
+4. GitHub checks to see if there are any conflicts between the two branches. There won't be as long as you never edit and commit any changes directly to the publish branch.<br>
+Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Merge pull request</span>
+5. Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Confirm Merge</span>
+6. After you have executed the next step, each time you merge changes into the publish branch, GitHub will run the **Pages Build and Deploy** action automatically.
+
+### Step 8: Configure GitHub Pages
+You only need to do this once.
+
 2. Click the repo  <i class="material-icons" style="font-size:14px;">settings</i>**Settings** button.
 3. In the nav bar on the left, click **Pages**
-4. **GitHub Pages Build and deployment** appears.<br>
+4. **GitHub Pages Build and Deployment** appears.<br>
 Select **Deploy from branch**, **publish** /root<br>
 Click **Save**.
 5. GitHub will kick off the Pages Build and Deploy action
 6. Click on **Actions** to watch that process run
 7. Go back to **Settings/Pages** and click the link to visit your site
 
-Voila, web sites made easy! Ha! Your job has just begun. Have fun!
+Voila! Websites made easy! Ha! Your job has just begun.
 
----
-
-## Step 3: Make it Your Own
-All you need to do is edit a few files to make it your own for starters. And if you're like me and never really done this kind of thing before, open those files in the editor to see just how easy it is to use GitHub markdown formatting for your content. [Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github){:target="_blank"} may cone in handy, too. All of GitHub is very well documented in their Help pages but it can be overwhelming and so much of it doesn't apply for the simple thing we're doing with here.
-
-For me, the best way to learn has been by example, so that's why I have loaded up these pages with everything I could think of, including some fancy HTML stuff, like that button and those green boxes above.
-
-So you may want to keep this page and the design page as references and also add them to the exclude statement in the config file so they aren't included in the build process for your site.
-
-### Step 4: Edit config.yml
-Make sure you are editing in the edit branch! This is where you will fill in all of personal header and footer information.
-
-**Important:** Update the **url** variable to the url of your new website.
-
-**Note** that all header and footer content variables other than your site **title** are OPTIONAL.
-
-**TIP:** Keep your site **title** relatively short for best viewing on a phone or tablet, especially if you are going to use all three of the link buttons in the header. The goal is to keep the title and link buttons on the same line when viewing on a phone.
-
-You may now want to add **design.md** and **getstarted.md** to the **exclude** variable and remove the links to those pages from the **link3** variable and from the **site-menu.html and toc-homepage.html** files.
-
-### Step 5: Edit index.md
-This is your home page. Make it your own. I have configured it so the **toc** and **site menu** buttons both have the same links, which is not normal, simply illustrative of what you can do. Both are optional.
-
-### Step 6: Edit about.md
-Tell the world what this is all about.
-
-### Step 7: Publish Your Changes
-This process will create a **pull request** to apply your changes to the files in the publish branch. There are other ways to initiate the pull request but they all end up at the same place.
-
-1. Switch to the **publish** branch by clicking on this button again:
-<img src="images/edit.png" style="height:20px; width:80px;"> If you have edited all three files, you will see that it is <span style="color:#069;text-decoration:underline;">3 commits behind</span> the edit branch. **Click on that link**.
-2. **Comparing Changes** appears. Scroll down to view the changes.<br>
-Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Create pull request</span>
-3. **Open a Pull Request** appears, where you can enter a title (required), optional description and view the changes again.<br>
-Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Create pull request</span> again
-4. GitHub checks to see if there are any conflicts between the two branches. There won't be as long as you NEVER edit and commit any changes directly to the publish branch. Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Merge pull request</span>
-5. Click <span style="border:2px solid silver;border-radius:6px;padding:0 4px;background-color:lightgreen;">Confirm Merge</span>
-6. Click Actions to watch **Pages Build and Deploy** run.
-
-And that's it, in a nutshell. Make changes to the edit branch and pull them down to publish.
+But that's it, in a nutshell, apply changes to the edit branch and pull them into publish.
 
 ---
 
@@ -111,7 +112,9 @@ This is the script that displays the dropdown list for the site menu and toc but
 ---
 
 #### Google Analytics
-Google Analytics is configured for the GA stream "**tr-systems.github.io/modernist/**" by using an **if** statement in **default.html** that you will need to update after you get your own GA account and stream configured, along with the GA code snippet in the **_includes** folder, should you so desire. You can leave it all in place for now. The GA code won't be included in your pages.
+Setting up Google Analytics is easy. All you need to do is create an account and then define a "stream" for it to monitor, that being the url for your website. That will provide you with the "code snippet" that you need to put into an html file in the **_includes** folder and then call it out using the **google-analytics** variable in the config file.
+
+So until then, please be sure to comment-out that variable in your config file. Thank you!
 
 ---
 
@@ -129,38 +132,27 @@ gem -v returns 3.4.19
 bundle -v returns Bundler version 2.5.6
 jekyll -v returns jekyll 4.3.3
 ```
-4. Clone the top level edit branch of the modernist repo using GitHub Desktop
-5. Add **.gitignore** file to modernist root
-```
-_site
-_posts
-Gemfile
-Gemfile.lock
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-```
-5. Add **Gemfile** to modernist root:
+4. Clone the edit branch of your repo using GitHub Desktop
+5. Add **Gemfile** to the root folder
 ```
 source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 gem "webrick"
 gem "wdm"
 ```
-6. Open Git Bash and switch to modernist root (edit branch)
+6. Open Git Bash and cd to your repo root folder (edit branch)
 7. Run **bundle install**<br>
 Ok, 98 gems installed, a brick of web I guess.
 8. Run **bundle exec jekyll serve**
 
-The site now builds. [Check it out!](http://localhost:4000)
+The site now builds and is served locally from the **_site** folder, where you will see your markdown files converted to html. [Check it out!](http://localhost:4000)
 
 1. You can now add or update files in the local clone of the repository ***on the fly*** with the jekyll server running and see them instantly in your browser with a page refresh.
 2. When you're done, review your changes using GitHub Desktop and then **push** them up to the **edit branch** on GitHub.
 3. Then, on GitHub, create the pull request into the publish branch for "pages build and deploy".
 
 ### Editing on Windows
-I'm using [Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank"}. I like the folder workspace on the left, and how it highlights content when editing. It also has tabs for editing multiple files. My only TIP is to set a block cursor and have tabs converted to spaces. You will have to dig through the settings to find those.
+I'm using [Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank"}. I like the folder workspace on the left, and how it highlights content when editing. It also has tabs for editing multiple files. My only tip is to set a block cursor and have tabs converted to spaces. You will have to dig through the settings to find those.
 
 ---
 
@@ -170,29 +162,28 @@ I'm using [Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank"
 1. Install Ruby and Jekyll per the doc referenced above and confirm:<br>
 ruby -v returns 3.1.2p20<br>
 jekyll -v returns 4.3.3
-2. Cd to local **github** folder and run **git clone 'url to modernist repo'**
-3. Add **.gitignore** file to repo root as above for Windows
-4. Add **Gemfile** to modernist root, without "wdm"
+2. Cd to local **github** folder and run **git clone 'url to your website repo'**
+3. Add **Gemfile** to the root folder, without "wdm"
 ```
 source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 gem "webrick"
 ```
-5. Cd to **modernist** and run **git fetch** to get some changes between step 2 and now
-6. **sudo su**
-7. Run **bundle add webrick**<br>
+4. Cd to the root folder of your repository and run **git fetch** to get some changes between step 2 and now
+5. **sudo su**
+6. Run **bundle add webrick**<br>
 Adds a LOT of Jekyll gems, themes and other web stuff, a brick of web I guess.
-8. **exit** out of su
-9. Run **bundle install**<br>
+7. **exit** out of su
+8. Run **bundle install**<br>
 Ok, 97 gems now installed (one less than Windows, no wdm)
-11. Run **bundle exec jekyll serve**
-12. Yay! It works! 
+9. Run **bundle exec jekyll serve**
+10. Yay! It works! 
 
 FINALLY, for the first time in this never ending all time consuming silly winter project of mine, something actually worked on the first attempt! Without a single rat hole to chase down first.
 
 ---
 
-Fun stuff! Hope it works for you, too!
+Fun stuff... hope it is for you, too!
 
 ---
 

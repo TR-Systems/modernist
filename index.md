@@ -1,5 +1,5 @@
 ---
-title: Lakeside Blue for GitHub Pages by TR-Systems
+title: Lakeside Blues for GitHub Pages by TR-Systems
 toc: toc-homepage.html
 ---
 
