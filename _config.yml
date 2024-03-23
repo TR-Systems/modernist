@@ -1,41 +1,66 @@
-# This is what you get when you run "jekyll new" to initialize a new site localy
-# All of the custom stuff for the modernist theme starts below
-# Welcome to Jekyll!
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-#
-# title: Your awesome title
-# email: your-email@example.com
-# description:
-# baseurl:
-# url:
-# twitter_username: jekyllrb
-# github_username:  jekyll
+# Site-wide settings used to configure and personalize your site.
+# If you look at the default.html file, you will see them
+# accessed using {{ site.title }}, {{ site.description }}, etc.
 
-# Build settings
-# theme:
+# Come back later with your own GA code snippet.
+# REMOVE NOW - MAKE IT A COMMENT
+google-analytics: tr-systems-ga.html
 
-# plugins:
-#   - jekyll-feed
+# Keep your title short for best viewing on small screens
+# Description is removed from small screens so you can make it long here
+title: Your Logo and Site Title
+description: Describing What You Do
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
+# Optional Header Elements
+# Favicon MUST BE 32x32. Logo is reduced to 20x20.
+logo: images/logo-github.png
+favicon: images/logo-github.png
+
+# Update the file in the _includes folder
+menu: site-menu.html
+
+# Optional Link buttons in upper right corner of the header
+# Keep text very short for small screen viewing
+# URL takes precedence over page, see default.html
+link1-text: Home
+link1-page: index.html
+link1-url:
+link2-text: About
+link2-page: about.html
+link2-url:
+# Update or COMMENT if not wanted
+link3-text: Design
+link3-page: design.html
+link3-url:
+# You can also insert a line break for larger buttons
+# But maybe not as good on small screens
+#link1-text: Home<br>Page
+#link2-text: About<br>My Site
+#link3-text: Design<br>Elements
+
+# Footer uses 50-50 grid for Contact and Copyright, followed by a single tagline
+# DO NOT publish personal email addresses. You will be spammed beyond belief.
+# Choose ONE for Contact Info: valid email address or text only
+# Email takes precedence
+email:
+contact: <strong>Contact:</strong> <em>trsystems.help</em> at the little G mail place.
+
+# Copyright symbol will prefix this text (see default.html)
+copyright: Copyright yyyy Your Name, Your Location
+
+# Choose either one or both - will be on the same line
+tagline: Website powered by Github Pages using Lakeside Blue Theme by TR-Systems
+
+# Displayed only if url is specified
+tagline2: <em>Use my template and get started today!</em>
+tagline2-url: https://tr-systems.github.io/modernist/
+
+# Exclude these files and folders from the Jekyll build process
+# Created by default for a new Jekyll site
 #
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+# Add design.md and getstarted.md if not using them
 exclude:
+  - README.md
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
@@ -46,52 +71,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - README.md
 
+# Defines the code highlighter to be used
 highlighter: rouge
-
-# Keep your title short for best viewing on small screens
-# Description is removed from small screens so you can make it long here
-title: Your Logo and Site Title
-description: Describing What You Do
-
-# Update with your github userid and repo name
-url: https://tr-systems.github.io/modernist
-
-# Optional Header Elements
-# Logo is reduced to 16x16. Favicon MUST BE 32x32
-menu: site-menu.html
-logo: images/logo-github.png
-favicon: images/logo-github.png
-
-# Optional Link buttons in upper right corner of the header
-# Keep text very short for small screen viewing
-# URL takes precedence over page, see default.html
-link1-text: Home
-link1-page: /index.html
-link1-url:
-link2-text: About
-link2-page: /about.html
-link2-url:
-link3-text: Design
-link3-page: /design.html
-link3-url:
-# You can also insert a line break for larger buttons
-# But maybe not as good on small screens
-#link1-text: Home<br>Page
-#link2-text: About<br>My Site
-#link3-text: Test<br>Page
-
-# Footer uses 50-50 grid for Contact and Copyright, followed by a Tagline
-# DO NOT publish personal email addresses. You will be spammed beyond belief.
-# Choose ONE: text only or valid email address
-# Email takes precedence
-email:
-contact: <strong>Contact:</strong> <em>trsystems.help</em> at the little G mail place.
-# Copyright symbol will prefix this text (see default.html)
-copyright: Copyright yyyy Your Name, Your Location
-# Either one or both:
-tagline: Website powered by Github Pages using Lakeside Blues Theme by TR-Systems
-# Only displayed only if url is specified
-tagline2: <em>Use my template and get started today!</em>
-tagline2-url: https://tr-systems.github.io/modernist/
