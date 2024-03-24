@@ -60,6 +60,10 @@ tagline2-url: https://tr-systems.github.io/modernist/
 #
 # Add design.md and getstarted.md if not using them
 exclude:
+  - index.md
+  - design.md
+  - getstarted.md
+  - about.md
   - README.md
   - .sass-cache/
   - .jekyll-cache/
